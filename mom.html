@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Momemtum</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Daily Results</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="longsfo.html">Longs-FO</a>
+</li>
+<li>
+  <a href="longsnonfo.html">Longs-NonFO</a>
+</li>
+<li>
+  <a href="shorts.html">Shorts</a>
+</li>
+<li>
+  <a href="mom.html">Momemtum</a>
+</li>
+<li>
+  <a href="dailyObs.html">Daily Stats</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Momemtum</h1>
+
+</div>
+
+
+<table class="table table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;font-weight: bold;">
+SYMBOL
+</th>
+<th style="text-align:right;font-weight: bold;">
+CLOSE
+</th>
+<th style="text-align:right;font-weight: bold;">
+MomLevel
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+FILATEX
+</td>
+<td style="text-align:right;">
+44.15
+</td>
+<td style="text-align:right;">
+7.89566
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+KRBL
+</td>
+<td style="text-align:right;">
+337.25
+</td>
+<td style="text-align:right;">
+6.22496
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MAHINDCIE
+</td>
+<td style="text-align:right;">
+257.35
+</td>
+<td style="text-align:right;">
+5.98844
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GALLISPAT
+</td>
+<td style="text-align:right;">
+268.90
+</td>
+<td style="text-align:right;">
+5.88024
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GTNIND
+</td>
+<td style="text-align:right;">
+14.35
+</td>
+<td style="text-align:right;">
+5.68781
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MAHSCOOTER
+</td>
+<td style="text-align:right;">
+2875.55
+</td>
+<td style="text-align:right;">
+5.48793
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FEDDERELEC
+</td>
+<td style="text-align:right;">
+29.65
+</td>
+<td style="text-align:right;">
+5.48773
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+UNIPLY
+</td>
+<td style="text-align:right;">
+81.10
+</td>
+<td style="text-align:right;">
+5.30563
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GPPL
+</td>
+<td style="text-align:right;">
+105.50
+</td>
+<td style="text-align:right;">
+4.63151
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+CELESTIAL
+</td>
+<td style="text-align:right;">
+15.55
+</td>
+<td style="text-align:right;">
+4.23718
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PNBHOUSING
+</td>
+<td style="text-align:right;">
+1128.65
+</td>
+<td style="text-align:right;">
+4.07567
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+CONTROLPR
+</td>
+<td style="text-align:right;">
+395.50
+</td>
+<td style="text-align:right;">
+4.01045
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NDTV
+</td>
+<td style="text-align:right;">
+51.20
+</td>
+<td style="text-align:right;">
+3.59825
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HONAUT
+</td>
+<td style="text-align:right;">
+18347.85
+</td>
+<td style="text-align:right;">
+3.43656
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+EIDPARRY
+</td>
+<td style="text-align:right;">
+240.85
+</td>
+<td style="text-align:right;">
+3.35957
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+IDFC
+</td>
+<td style="text-align:right;">
+46.20
+</td>
+<td style="text-align:right;">
+3.31409
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+CONCOR
+</td>
+<td style="text-align:right;">
+652.25
+</td>
+<td style="text-align:right;">
+3.26547
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NCLIND
+</td>
+<td style="text-align:right;">
+163.90
+</td>
+<td style="text-align:right;">
+3.21899
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+CARERATING
+</td>
+<td style="text-align:right;">
+1254.15
+</td>
+<td style="text-align:right;">
+3.20592
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HERITGFOOD
+</td>
+<td style="text-align:right;">
+610.40
+</td>
+<td style="text-align:right;">
+3.15407
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JYOTHYLAB
+</td>
+<td style="text-align:right;">
+234.65
+</td>
+<td style="text-align:right;">
+3.07931
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PDSMFL
+</td>
+<td style="text-align:right;">
+255.25
+</td>
+<td style="text-align:right;">
+3.07249
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+BIGBLOC
+</td>
+<td style="text-align:right;">
+92.40
+</td>
+<td style="text-align:right;">
+2.97441
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SREINFRA
+</td>
+<td style="text-align:right;">
+62.15
+</td>
+<td style="text-align:right;">
+2.87617
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FORTUNEFIN
+</td>
+<td style="text-align:right;">
+201.40
+</td>
+<td style="text-align:right;">
+2.85098
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AVANTIFEED
+</td>
+<td style="text-align:right;">
+538.15
+</td>
+<td style="text-align:right;">
+2.82317
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NAGREEKCAP
+</td>
+<td style="text-align:right;">
+37.10
+</td>
+<td style="text-align:right;">
+2.79410
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SHIVAMAUTO
+</td>
+<td style="text-align:right;">
+59.05
+</td>
+<td style="text-align:right;">
+2.78263
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GPTINFRA
+</td>
+<td style="text-align:right;">
+147.60
+</td>
+<td style="text-align:right;">
+2.67081
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+BASF
+</td>
+<td style="text-align:right;">
+1948.30
+</td>
+<td style="text-align:right;">
+2.64857
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SHANTIGEAR
+</td>
+<td style="text-align:right;">
+126.80
+</td>
+<td style="text-align:right;">
+2.64648
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NATNLSTEEL
+</td>
+<td style="text-align:right;">
+13.60
+</td>
+<td style="text-align:right;">
+2.62904
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+BANG
+</td>
+<td style="text-align:right;">
+49.70
+</td>
+<td style="text-align:right;">
+2.59157
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+APCL
+</td>
+<td style="text-align:right;">
+153.00
+</td>
+<td style="text-align:right;">
+2.58273
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+KOLTEPATIL
+</td>
+<td style="text-align:right;">
+274.65
+</td>
+<td style="text-align:right;">
+2.54980
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SIYSIL
+</td>
+<td style="text-align:right;">
+521.00
+</td>
+<td style="text-align:right;">
+2.54054
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+BANARISUG
+</td>
+<td style="text-align:right;">
+1473.90
+</td>
+<td style="text-align:right;">
+2.42512
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+RPPINFRA
+</td>
+<td style="text-align:right;">
+209.75
+</td>
+<td style="text-align:right;">
+2.35766
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TIFIN
+</td>
+<td style="text-align:right;">
+614.55
+</td>
+<td style="text-align:right;">
+2.30884
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HITECHCORP
+</td>
+<td style="text-align:right;">
+144.75
+</td>
+<td style="text-align:right;">
+2.28920
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ORBTEXP
+</td>
+<td style="text-align:right;">
+134.20
+</td>
+<td style="text-align:right;">
+2.23411
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+VSSL
+</td>
+<td style="text-align:right;">
+119.55
+</td>
+<td style="text-align:right;">
+2.16943
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+RBLBANK
+</td>
+<td style="text-align:right;">
+552.05
+</td>
+<td style="text-align:right;">
+2.13715
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+IDBI
+</td>
+<td style="text-align:right;">
+54.90
+</td>
+<td style="text-align:right;">
+2.13590
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FINPIPE
+</td>
+<td style="text-align:right;">
+577.85
+</td>
+<td style="text-align:right;">
+2.13445
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JISLJALEQS
+</td>
+<td style="text-align:right;">
+76.80
+</td>
+<td style="text-align:right;">
+2.10461
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TITAN
+</td>
+<td style="text-align:right;">
+878.50
+</td>
+<td style="text-align:right;">
+2.09723
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SUNDARMFIN
+</td>
+<td style="text-align:right;">
+1599.80
+</td>
+<td style="text-align:right;">
+2.09608
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NAUKRI
+</td>
+<td style="text-align:right;">
+1186.35
+</td>
+<td style="text-align:right;">
+2.07256
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FSC
+</td>
+<td style="text-align:right;">
+676.90
+</td>
+<td style="text-align:right;">
+2.06572
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

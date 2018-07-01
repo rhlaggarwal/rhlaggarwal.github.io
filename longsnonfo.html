@@ -1,0 +1,1788 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Longs-NonFO</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Daily Results</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="longsfo.html">Longs-FO</a>
+</li>
+<li>
+  <a href="longsnonfo.html">Longs-NonFO</a>
+</li>
+<li>
+  <a href="shorts.html">Shorts</a>
+</li>
+<li>
+  <a href="mom.html">Momemtum</a>
+</li>
+<li>
+  <a href="dailyObs.html">Daily Stats</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Longs-NonFO</h1>
+
+</div>
+
+
+<table class="table table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;font-weight: bold;">
+SYMBOL
+</th>
+<th style="text-align:left;font-weight: bold;">
+Marketcap
+</th>
+<th style="text-align:right;font-weight: bold;">
+CLOSE
+</th>
+<th style="text-align:right;font-weight: bold;">
+entry_price
+</th>
+<th style="text-align:left;font-weight: bold;">
+entry_date
+</th>
+<th style="text-align:right;font-weight: bold;">
+avg10D
+</th>
+<th style="text-align:right;font-weight: bold;">
+MomLevel
+</th>
+<th style="text-align:right;font-weight: bold;">
+HighPercent
+</th>
+<th style="text-align:left;font-weight: bold;">
+Category
+</th>
+<th style="text-align:right;font-weight: bold;">
+RankPercentile
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+BAJAJHLDNG
+</td>
+<td style="text-align:left;">
+33,396
+</td>
+<td style="text-align:right;">
+2882.40
+</td>
+<td style="text-align:right;">
+2762.30
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-05-18
+</td>
+<td style="text-align:right;">
+-0.379
+</td>
+<td style="text-align:right;">
+0.45746
+</td>
+<td style="text-align:right;">
+11.26
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+67.39
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PGHH
+</td>
+<td style="text-align:left;">
+30,812
+</td>
+<td style="text-align:right;">
+9924.75
+</td>
+<td style="text-align:right;">
+9648.15
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-13
+</td>
+<td style="text-align:right;">
+0.194
+</td>
+<td style="text-align:right;">
+1.21984
+</td>
+<td style="text-align:right;">
+4.11
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+69.23
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PAGEIND
+</td>
+<td style="text-align:left;">
+29,674
+</td>
+<td style="text-align:right;">
+27814.25
+</td>
+<td style="text-align:right;">
+24540.75
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-05-25
+</td>
+<td style="text-align:right;">
+0.465
+</td>
+<td style="text-align:right;">
+1.48071
+</td>
+<td style="text-align:right;">
+2.80
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+84.09
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+LTI
+</td>
+<td style="text-align:left;">
+29,349
+</td>
+<td style="text-align:right;">
+1671.40
+</td>
+<td style="text-align:right;">
+1414.95
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-04-02
+</td>
+<td style="text-align:right;">
+-0.196
+</td>
+<td style="text-align:right;">
+0.52386
+</td>
+<td style="text-align:right;">
+4.98
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MPHASIS
+</td>
+<td style="text-align:left;">
+21,483
+</td>
+<td style="text-align:right;">
+1084.20
+</td>
+<td style="text-align:right;">
+869.70
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-04-04
+</td>
+<td style="text-align:right;">
+0.164
+</td>
+<td style="text-align:right;">
+1.22164
+</td>
+<td style="text-align:right;">
+6.13
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+70.59
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GRAPHITE
+</td>
+<td style="text-align:left;">
+15,969
+</td>
+<td style="text-align:right;">
+840.10
+</td>
+<td style="text-align:right;">
+840.10
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-29
+</td>
+<td style="text-align:right;">
+0.315
+</td>
+<td style="text-align:right;">
+0.53279
+</td>
+<td style="text-align:right;">
+7.46
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+98.54
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+VBL
+</td>
+<td style="text-align:left;">
+13,599
+</td>
+<td style="text-align:right;">
+753.60
+</td>
+<td style="text-align:right;">
+667.70
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-05-02
+</td>
+<td style="text-align:right;">
+-0.230
+</td>
+<td style="text-align:right;">
+0.62426
+</td>
+<td style="text-align:right;">
+5.21
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SUNDRMFAST
+</td>
+<td style="text-align:left;">
+13,477
+</td>
+<td style="text-align:right;">
+625.30
+</td>
+<td style="text-align:right;">
+633.65
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-05-31
+</td>
+<td style="text-align:right;">
+-0.250
+</td>
+<td style="text-align:right;">
+0.65135
+</td>
+<td style="text-align:right;">
+6.39
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+92.11
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PFIZER
+</td>
+<td style="text-align:left;">
+12,084
+</td>
+<td style="text-align:right;">
+2579.50
+</td>
+<td style="text-align:right;">
+2234.20
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-04-20
+</td>
+<td style="text-align:right;">
+0.010
+</td>
+<td style="text-align:right;">
+0.62039
+</td>
+<td style="text-align:right;">
+3.57
+</td>
+<td style="text-align:left;">
+N
+</td>
+<td style="text-align:right;">
+75.00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ASTRAL
+</td>
+<td style="text-align:left;">
+12,011
+</td>
+<td style="text-align:right;">
+1007.75
+</td>
+<td style="text-align:right;">
+959.35
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-05-24
+</td>
+<td style="text-align:right;">
+0.063
+</td>
+<td style="text-align:right;">
+0.40840
+</td>
+<td style="text-align:right;">
+5.35
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+82.04
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MINDAIND
+</td>
+<td style="text-align:left;">
+11,313
+</td>
+<td style="text-align:right;">
+1264.30
+</td>
+<td style="text-align:right;">
+1216.85
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-07
+</td>
+<td style="text-align:right;">
+-0.257
+</td>
+<td style="text-align:right;">
+0.25131
+</td>
+<td style="text-align:right;">
+6.90
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+100.00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SANOFI
+</td>
+<td style="text-align:left;">
+11,957
+</td>
+<td style="text-align:right;">
+5187.35
+</td>
+<td style="text-align:right;">
+5068.35
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-05
+</td>
+<td style="text-align:right;">
+0.188
+</td>
+<td style="text-align:right;">
+0.70545
+</td>
+<td style="text-align:right;">
+3.02
+</td>
+<td style="text-align:left;">
+N
+</td>
+<td style="text-align:right;">
+41.18
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+IBVENTURES
+</td>
+<td style="text-align:left;">
+11,017
+</td>
+<td style="text-align:right;">
+487.65
+</td>
+<td style="text-align:right;">
+450.45
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-08
+</td>
+<td style="text-align:right;">
+0.020
+</td>
+<td style="text-align:right;">
+0.46298
+</td>
+<td style="text-align:right;">
+10.36
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MAHINDCIE
+</td>
+<td style="text-align:left;">
+9,377
+</td>
+<td style="text-align:right;">
+257.35
+</td>
+<td style="text-align:right;">
+257.35
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-29
+</td>
+<td style="text-align:right;">
+0.100
+</td>
+<td style="text-align:right;">
+5.98844
+</td>
+<td style="text-align:right;">
+6.79
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+SCHAEFFLER
+</td>
+<td style="text-align:left;">
+8,959
+</td>
+<td style="text-align:right;">
+5553.60
+</td>
+<td style="text-align:right;">
+5553.60
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-29
+</td>
+<td style="text-align:right;">
+0.311
+</td>
+<td style="text-align:right;">
+1.45055
+</td>
+<td style="text-align:right;">
+7.27
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ABBOTINDIA
+</td>
+<td style="text-align:left;">
+15,253
+</td>
+<td style="text-align:right;">
+7238.20
+</td>
+<td style="text-align:right;">
+6519.65
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-15
+</td>
+<td style="text-align:right;">
+1.081
+</td>
+<td style="text-align:right;">
+2.04515
+</td>
+<td style="text-align:right;">
+7.79
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+68.63
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+CYIENT
+</td>
+<td style="text-align:left;">
+8,337
+</td>
+<td style="text-align:right;">
+766.50
+</td>
+<td style="text-align:right;">
+766.50
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-29
+</td>
+<td style="text-align:right;">
+0.494
+</td>
+<td style="text-align:right;">
+1.10918
+</td>
+<td style="text-align:right;">
+13.59
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+LALPATHLAB
+</td>
+<td style="text-align:left;">
+7,229
+</td>
+<td style="text-align:right;">
+957.70
+</td>
+<td style="text-align:right;">
+902.10
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-21
+</td>
+<td style="text-align:right;">
+1.008
+</td>
+<td style="text-align:right;">
+1.54519
+</td>
+<td style="text-align:right;">
+2.74
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+VIPIND
+</td>
+<td style="text-align:left;">
+6,322
+</td>
+<td style="text-align:right;">
+426.20
+</td>
+<td style="text-align:right;">
+410.35
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-05-23
+</td>
+<td style="text-align:right;">
+-0.459
+</td>
+<td style="text-align:right;">
+0.67220
+</td>
+<td style="text-align:right;">
+7.42
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+89.32
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ZYDUSWELL
+</td>
+<td style="text-align:left;">
+5,606
+</td>
+<td style="text-align:right;">
+1339.95
+</td>
+<td style="text-align:right;">
+1309.45
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-11
+</td>
+<td style="text-align:right;">
+-0.673
+</td>
+<td style="text-align:right;">
+0.78975
+</td>
+<td style="text-align:right;">
+9.40
+</td>
+<td style="text-align:left;">
+N
+</td>
+<td style="text-align:right;">
+46.67
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ZENSARTECH
+</td>
+<td style="text-align:left;">
+5,398
+</td>
+<td style="text-align:right;">
+1279.00
+</td>
+<td style="text-align:right;">
+1241.55
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-12
+</td>
+<td style="text-align:right;">
+0.419
+</td>
+<td style="text-align:right;">
+0.45815
+</td>
+<td style="text-align:right;">
+3.18
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+68.63
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MONSANTO
+</td>
+<td style="text-align:left;">
+4,938
+</td>
+<td style="text-align:right;">
+2868.60
+</td>
+<td style="text-align:right;">
+2644.10
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-03-26
+</td>
+<td style="text-align:right;">
+0.026
+</td>
+<td style="text-align:right;">
+0.35578
+</td>
+<td style="text-align:right;">
+1.38
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+36.59
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+IEX
+</td>
+<td style="text-align:left;">
+4,922
+</td>
+<td style="text-align:right;">
+1659.75
+</td>
+<td style="text-align:right;">
+1659.75
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-29
+</td>
+<td style="text-align:right;">
+0.268
+</td>
+<td style="text-align:right;">
+1.62946
+</td>
+<td style="text-align:right;">
+2.08
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TEAMLEASE
+</td>
+<td style="text-align:left;">
+4,880
+</td>
+<td style="text-align:right;">
+2964.80
+</td>
+<td style="text-align:right;">
+2817.55
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-07
+</td>
+<td style="text-align:right;">
+-0.176
+</td>
+<td style="text-align:right;">
+0.87291
+</td>
+<td style="text-align:right;">
+10.43
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+BSE
+</td>
+<td style="text-align:left;">
+4,624
+</td>
+<td style="text-align:right;">
+839.75
+</td>
+<td style="text-align:right;">
+833.80
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-05-28
+</td>
+<td style="text-align:right;">
+-0.230
+</td>
+<td style="text-align:right;">
+0.81892
+</td>
+<td style="text-align:right;">
+28.74
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+VMART
+</td>
+<td style="text-align:left;">
+3,828
+</td>
+<td style="text-align:right;">
+2481.60
+</td>
+<td style="text-align:right;">
+2369.95
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-07
+</td>
+<td style="text-align:right;">
+0.408
+</td>
+<td style="text-align:right;">
+0.90529
+</td>
+<td style="text-align:right;">
+11.34
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+100.00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MERCK
+</td>
+<td style="text-align:left;">
+4,226
+</td>
+<td style="text-align:right;">
+2377.40
+</td>
+<td style="text-align:right;">
+1184.00
+</td>
+<td style="text-align:left;width: 40em; ">
+2017-12-14
+</td>
+<td style="text-align:right;">
+-0.027
+</td>
+<td style="text-align:right;">
+0.30762
+</td>
+<td style="text-align:right;">
+10.89
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+94.44
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MAHSCOOTER
+</td>
+<td style="text-align:left;">
+3,143
+</td>
+<td style="text-align:right;">
+2875.55
+</td>
+<td style="text-align:right;">
+2604.40
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-07
+</td>
+<td style="text-align:right;">
+0.374
+</td>
+<td style="text-align:right;">
+5.48793
+</td>
+<td style="text-align:right;">
+16.65
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+63.16
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GREAVESCOT
+</td>
+<td style="text-align:left;">
+3,044
+</td>
+<td style="text-align:right;">
+144.65
+</td>
+<td style="text-align:right;">
+136.50
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-12
+</td>
+<td style="text-align:right;">
+0.822
+</td>
+<td style="text-align:right;">
+2.35191
+</td>
+<td style="text-align:right;">
+15.31
+</td>
+<td style="text-align:left;">
+N
+</td>
+<td style="text-align:right;">
+27.18
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+WHEELS
+</td>
+<td style="text-align:left;">
+3,134
+</td>
+<td style="text-align:right;">
+2222.50
+</td>
+<td style="text-align:right;">
+2375.75
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-19
+</td>
+<td style="text-align:right;">
+1.156
+</td>
+<td style="text-align:right;">
+0.94860
+</td>
+<td style="text-align:right;">
+17.50
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+63.16
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MAHLIFE
+</td>
+<td style="text-align:left;">
+2,432
+</td>
+<td style="text-align:right;">
+558.85
+</td>
+<td style="text-align:right;">
+467.35
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-05-03
+</td>
+<td style="text-align:right;">
+-0.091
+</td>
+<td style="text-align:right;">
+1.24198
+</td>
+<td style="text-align:right;">
+16.39
+</td>
+<td style="text-align:left;">
+N
+</td>
+<td style="text-align:right;">
+52.00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+BHARATRAS
+</td>
+<td style="text-align:left;">
+2,405
+</td>
+<td style="text-align:right;">
+6415.95
+</td>
+<td style="text-align:right;">
+6415.95
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-29
+</td>
+<td style="text-align:right;">
+0.031
+</td>
+<td style="text-align:right;">
+1.34322
+</td>
+<td style="text-align:right;">
+9.66
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+98.78
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GARWALLROP
+</td>
+<td style="text-align:left;">
+2,194
+</td>
+<td style="text-align:right;">
+1042.90
+</td>
+<td style="text-align:right;">
+985.75
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-07
+</td>
+<td style="text-align:right;">
+0.159
+</td>
+<td style="text-align:right;">
+1.29016
+</td>
+<td style="text-align:right;">
+4.15
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+96.05
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TCIEXP
+</td>
+<td style="text-align:left;">
+1,905
+</td>
+<td style="text-align:right;">
+575.30
+</td>
+<td style="text-align:right;">
+547.95
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-08
+</td>
+<td style="text-align:right;">
+-0.065
+</td>
+<td style="text-align:right;">
+0.59458
+</td>
+<td style="text-align:right;">
+13.75
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MMFL
+</td>
+<td style="text-align:left;">
+1,533
+</td>
+<td style="text-align:right;">
+1281.75
+</td>
+<td style="text-align:right;">
+1220.25
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-07
+</td>
+<td style="text-align:right;">
+-1.016
+</td>
+<td style="text-align:right;">
+0.38032
+</td>
+<td style="text-align:right;">
+13.65
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+90.78
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MUTHOOTCAP
+</td>
+<td style="text-align:left;">
+1,444
+</td>
+<td style="text-align:right;">
+1032.05
+</td>
+<td style="text-align:right;">
+941.60
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-12
+</td>
+<td style="text-align:right;">
+-0.724
+</td>
+<td style="text-align:right;">
+1.33464
+</td>
+<td style="text-align:right;">
+8.59
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+KHADIM
+</td>
+<td style="text-align:left;">
+1,306
+</td>
+<td style="text-align:right;">
+817.20
+</td>
+<td style="text-align:right;">
+817.20
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-29
+</td>
+<td style="text-align:right;">
+0.341
+</td>
+<td style="text-align:right;">
+0.58190
+</td>
+<td style="text-align:right;">
+5.27
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PUNJABCHEM
+</td>
+<td style="text-align:left;">
+674
+</td>
+<td style="text-align:right;">
+515.15
+</td>
+<td style="text-align:right;">
+522.60
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-07
+</td>
+<td style="text-align:right;">
+-0.608
+</td>
+<td style="text-align:right;">
+0.42334
+</td>
+<td style="text-align:right;">
+10.48
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+86.96
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PLASTIBLEN
+</td>
+<td style="text-align:left;">
+536
+</td>
+<td style="text-align:right;">
+210.85
+</td>
+<td style="text-align:right;">
+213.40
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-05-31
+</td>
+<td style="text-align:right;">
+0.007
+</td>
+<td style="text-align:right;">
+0.28490
+</td>
+<td style="text-align:right;">
+36.95
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+48.78
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+VIMTALABS
+</td>
+<td style="text-align:left;">
+478
+</td>
+<td style="text-align:right;">
+226.45
+</td>
+<td style="text-align:right;">
+226.45
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-29
+</td>
+<td style="text-align:right;">
+0.564
+</td>
+<td style="text-align:right;">
+0.77443
+</td>
+<td style="text-align:right;">
+6.94
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+80.39
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NELCO
+</td>
+<td style="text-align:left;">
+457
+</td>
+<td style="text-align:right;">
+250.30
+</td>
+<td style="text-align:right;">
+169.75
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-04-02
+</td>
+<td style="text-align:right;">
+-0.905
+</td>
+<td style="text-align:right;">
+0.58429
+</td>
+<td style="text-align:right;">
+13.67
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+90.20
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+INDSWFTLAB
+</td>
+<td style="text-align:left;">
+285
+</td>
+<td style="text-align:right;">
+87.45
+</td>
+<td style="text-align:right;">
+72.65
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-05-22
+</td>
+<td style="text-align:right;">
+-0.274
+</td>
+<td style="text-align:right;">
+0.90860
+</td>
+<td style="text-align:right;">
+20.46
+</td>
+<td style="text-align:left;">
+N
+</td>
+<td style="text-align:right;">
+66.67
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ALBERTDAVD
+</td>
+<td style="text-align:left;">
+229
+</td>
+<td style="text-align:right;">
+415.95
+</td>
+<td style="text-align:right;">
+402.20
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-11
+</td>
+<td style="text-align:right;">
+-1.055
+</td>
+<td style="text-align:right;">
+0.88590
+</td>
+<td style="text-align:right;">
+16.48
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HIGHGROUND
+</td>
+<td style="text-align:left;">
+143
+</td>
+<td style="text-align:right;">
+14.60
+</td>
+<td style="text-align:right;">
+13.10
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-05-29
+</td>
+<td style="text-align:right;">
+-1.425
+</td>
+<td style="text-align:right;">
+1.61961
+</td>
+<td style="text-align:right;">
+25.51
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+INVENTURE
+</td>
+<td style="text-align:left;">
+135
+</td>
+<td style="text-align:right;">
+17.10
+</td>
+<td style="text-align:right;">
+17.25
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-22
+</td>
+<td style="text-align:right;">
+0.488
+</td>
+<td style="text-align:right;">
+0.55548
+</td>
+<td style="text-align:right;">
+28.75
+</td>
+<td style="text-align:left;">
+N
+</td>
+<td style="text-align:right;">
+45.65
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+BANG
+</td>
+<td style="text-align:left;">
+50
+</td>
+<td style="text-align:right;">
+49.70
+</td>
+<td style="text-align:right;">
+33.50
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-04-11
+</td>
+<td style="text-align:right;">
+1.475
+</td>
+<td style="text-align:right;">
+2.59157
+</td>
+<td style="text-align:right;">
+6.31
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+79.13
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GSKCONS
+</td>
+<td style="text-align:left;">
+26
+</td>
+<td style="text-align:right;">
+6504.80
+</td>
+<td style="text-align:right;">
+6449.50
+</td>
+<td style="text-align:left;width: 40em; ">
+2018-06-28
+</td>
+<td style="text-align:right;">
+0.516
+</td>
+<td style="text-align:right;">
+1.83773
+</td>
+<td style="text-align:right;">
+6.27
+</td>
+<td style="text-align:left;">
+L
+</td>
+<td style="text-align:right;">
+61.54
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
