@@ -213,13 +213,22 @@ $(document).ready(function () {
     <li>
       <a href="pebased.html">PE Based Investing</a>
     </li>
+  </ul>
+</li>
+<li>
+  <a href="analytics.html">Analytics</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Blog
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
     <li>
       <a href="power.html">Power of Compounding</a>
     </li>
   </ul>
-</li>
-<li>
-  <a href="https://trademyway-rahul.blogspot.com/">Blog</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -238,6 +247,19 @@ $(document).ready(function () {
 </div>
 
 
+<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript">
+         $(document).ready(function() {
+             var table = $("table").DataTable();
+             $('a.toggle-vis').on( 'click', function (e) {
+                e.preventDefault();
+        var column = table.column( $(this).attr('data-column') );
+        column.visible( ! column.visible() );
+    } );
+         } );
+</script>
 <table class="table table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
