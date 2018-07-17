@@ -262,12 +262,7 @@ $(document).ready(function () {
 <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript">
          $(document).ready(function() {
-             var table = $("table").DataTable();
-             $('a.toggle-vis').on( 'click', function (e) {
-                e.preventDefault();
-        var column = table.column( $(this).attr('data-column') );
-        column.visible( ! column.visible() );
-    } );
+             $("table").DataTable();
          } );
 </script>
 <table class="table table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
