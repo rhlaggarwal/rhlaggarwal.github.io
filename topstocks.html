@@ -267,7 +267,11 @@ $(document).ready(function () {
 </script>
 <script>
 $(document).ready(function(){
-    $('.topStock').hide();
+    $(".topStock").hide()
+    $("#top10Ytable").show();
+    $('#top10Y').addClass("button2");
+    $('#top5Y').removeClass("button2");
+    $('#top1Y').removeClass("button2");
     $('#top10Y').click(function(){
          $(".topStock").hide()
          $("#top10Ytable").show();
@@ -309,6 +313,7 @@ $(document).ready(function(){
 <strong>Back to Analytics</strong>
 </button>
 </div>
+<br/> <br/>
 <div id="top10Ytable" class="topStock" style="display:table">
 <table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
 <thead>

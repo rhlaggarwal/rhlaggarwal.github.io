@@ -268,6 +268,11 @@ $(document).ready(function () {
 <script>
 $(document).ready(function(){
     $('.trade').hide();
+    $("#longsftable").show();
+    $('#longsf').addClass("button2");
+    $('#longsC').removeClass("button2");
+    $('#shorts').removeClass("button2");
+    $('#mom').removeClass("button2");
     $('#longsf').click(function(){
          $(".trade").hide()
          $("#longsftable").show();
@@ -323,6 +328,7 @@ $(document).ready(function(){
 <strong>Home Page</strong>
 </button>
 </div>
+<br/> <br/>
 <div id="longsftable" class="trade" style="display:table">
 <table class="table table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
 <thead>
