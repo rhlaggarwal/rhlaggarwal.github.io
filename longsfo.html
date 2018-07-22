@@ -182,26 +182,8 @@ $(document).ready(function () {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Trades
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="longsfo.html">Longs-Futures</a>
-    </li>
-    <li>
-      <a href="longsnonfo.html">Longs-Cash</a>
-    </li>
-    <li>
-      <a href="shorts.html">Shorts-Futures</a>
-    </li>
-    <li>
-      <a href="mom.html">Momemtum</a>
-    </li>
-  </ul>
+        <li>
+  <a href="trades.html">Trades</a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -253,7 +235,9 @@ $(document).ready(function () {
 <script src="http://cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript">
          $(document).ready(function() {
-             $("table").DataTable();
+             $("table").DataTable({
+                "iDisplayLength": 25
+             });
          } );
 </script>
 <table class="table table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
@@ -467,7 +451,6 @@ Retail
 14.32
 </td>
 <td style="text-align:right;">
-NA
 </td>
 </tr>
 <tr>
@@ -1272,7 +1255,6 @@ Bank - PSU
 2.15
 </td>
 <td style="text-align:right;">
-NA
 </td>
 </tr>
 <tr>
