@@ -305,6 +305,9 @@ $(document).ready(function(){
          $('#shorts').removeClass("button2");
          $('#mom').addClass("button2");
     });
+    $('#guide').click(function(){
+         location.href = "guidelines.html"
+    });
 });
 </script>
 <p>Active Trade signals</p>
@@ -320,6 +323,9 @@ $(document).ready(function(){
 </button>
 <button class="button" id="mom">
 <strong>Momentum</strong>
+</button>
+<button class="button" id="guide">
+<strong>Guidelines</strong>
 </button>
 </div>
 <br/> <br/>
@@ -368,13 +374,153 @@ RankPercentile
 1
 </td>
 <td style="text-align:left;">
+GRANULES
+</td>
+<td style="text-align:left;width: 100em; ">
+Consumer, Non-cyclical
+</td>
+<td style="text-align:right;">
+94.40
+</td>
+<td style="text-align:right;">
+94.400
+</td>
+<td style="text-align:left;">
+2018-07-23
+</td>
+<td style="text-align:right;">
+0.962
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+1.31783
+</td>
+<td style="text-align:right;">
+37.07
+</td>
+<td style="text-align:right;">
+46.00
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+REPCOHOME
+</td>
+<td style="text-align:left;width: 100em; ">
+Housing Fin
+</td>
+<td style="text-align:right;">
+599.65
+</td>
+<td style="text-align:right;">
+599.650
+</td>
+<td style="text-align:left;">
+2018-07-23
+</td>
+<td style="text-align:right;">
+0.342
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+0.94167
+</td>
+<td style="text-align:right;">
+28.00
+</td>
+<td style="text-align:right;">
+14.29
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+ITC
+</td>
+<td style="text-align:left;width: 100em; ">
+FMCG
+</td>
+<td style="text-align:right;">
+284.15
+</td>
+<td style="text-align:right;">
+284.150
+</td>
+<td style="text-align:left;">
+2018-07-23
+</td>
+<td style="text-align:right;">
+0.362
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+1.31431
+</td>
+<td style="text-align:right;">
+3.81
+</td>
+<td style="text-align:right;">
+20.00
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+ULTRACEMCO
+</td>
+<td style="text-align:left;width: 100em; ">
+Cement
+</td>
+<td style="text-align:right;">
+4009.65
+</td>
+<td style="text-align:right;">
+4009.650
+</td>
+<td style="text-align:left;">
+2018-07-23
+</td>
+<td style="text-align:right;">
+0.291
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+1.24724
+</td>
+<td style="text-align:right;">
+12.83
+</td>
+<td style="text-align:right;">
+47.06
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
 SUNPHARMA
 </td>
 <td style="text-align:left;width: 100em; ">
 Pharma
 </td>
 <td style="text-align:right;">
-560.10
+561.75
 </td>
 <td style="text-align:right;">
 560.100
@@ -383,16 +529,16 @@ Pharma
 2018-07-20
 </td>
 <td style="text-align:right;">
-0.058
+-0.105
 </td>
 <td style="text-align:right;">
-0.00
+0.29
 </td>
 <td style="text-align:right;">
-0.54558
+0.49310
 </td>
 <td style="text-align:right;">
-8.02
+7.75
 </td>
 <td style="text-align:right;">
 24.32
@@ -400,7 +546,7 @@ Pharma
 </tr>
 <tr>
 <td style="text-align:right;">
-2
+6
 </td>
 <td style="text-align:left;">
 BALKRISIND
@@ -409,7 +555,7 @@ BALKRISIND
 Consumer, Cyclical
 </td>
 <td style="text-align:right;">
-1199.75
+1201.85
 </td>
 <td style="text-align:right;">
 1199.750
@@ -418,16 +564,16 @@ Consumer, Cyclical
 2018-07-20
 </td>
 <td style="text-align:right;">
-0.008
+-0.075
 </td>
 <td style="text-align:right;">
-0.00
+0.18
 </td>
 <td style="text-align:right;">
-1.36580
+1.21287
 </td>
 <td style="text-align:right;">
-11.27
+11.12
 </td>
 <td style="text-align:right;">
 86.84
@@ -435,7 +581,7 @@ Consumer, Cyclical
 </tr>
 <tr>
 <td style="text-align:right;">
-3
+7
 </td>
 <td style="text-align:left;">
 APOLLOTYRE
@@ -444,7 +590,7 @@ APOLLOTYRE
 Tyres
 </td>
 <td style="text-align:right;">
-280.30
+275.90
 </td>
 <td style="text-align:right;">
 280.300
@@ -453,16 +599,16 @@ Tyres
 2018-07-20
 </td>
 <td style="text-align:right;">
-0.708
+0.528
 </td>
 <td style="text-align:right;">
-0.00
+-1.57
 </td>
 <td style="text-align:right;">
-1.72954
+1.85975
 </td>
 <td style="text-align:right;">
-8.77
+10.20
 </td>
 <td style="text-align:right;">
 25.00
@@ -470,7 +616,7 @@ Tyres
 </tr>
 <tr>
 <td style="text-align:right;">
-4
+8
 </td>
 <td style="text-align:left;">
 IGL
@@ -479,7 +625,7 @@ IGL
 Utilities
 </td>
 <td style="text-align:right;">
-278.65
+281.25
 </td>
 <td style="text-align:right;">
 278.650
@@ -488,16 +634,16 @@ Utilities
 2018-07-20
 </td>
 <td style="text-align:right;">
-0.865
+0.583
 </td>
 <td style="text-align:right;">
-0.00
+0.93
 </td>
 <td style="text-align:right;">
-1.31376
+1.11342
 </td>
 <td style="text-align:right;">
-19.21
+18.45
 </td>
 <td style="text-align:right;">
 96.00
@@ -505,7 +651,7 @@ Utilities
 </tr>
 <tr>
 <td style="text-align:right;">
-5
+9
 </td>
 <td style="text-align:left;">
 INFIBEAM
@@ -514,7 +660,7 @@ INFIBEAM
 Retail
 </td>
 <td style="text-align:right;">
-167.85
+173.15
 </td>
 <td style="text-align:right;">
 167.850
@@ -523,23 +669,23 @@ Retail
 2018-07-20
 </td>
 <td style="text-align:right;">
-1.127
+1.433
 </td>
 <td style="text-align:right;">
-0.00
+3.16
 </td>
 <td style="text-align:right;">
-1.03254
+1.35229
 </td>
 <td style="text-align:right;">
-14.32
+11.61
 </td>
 <td style="text-align:right;">
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-6
+10
 </td>
 <td style="text-align:left;">
 KSCL
@@ -548,7 +694,7 @@ KSCL
 Consumer, Non-cyclical
 </td>
 <td style="text-align:right;">
-580.40
+604.50
 </td>
 <td style="text-align:right;">
 567.300
@@ -557,16 +703,16 @@ Consumer, Non-cyclical
 2018-07-19
 </td>
 <td style="text-align:right;">
-0.457
+0.881
 </td>
 <td style="text-align:right;">
-2.31
+6.56
 </td>
 <td style="text-align:right;">
-0.93174
+1.21702
 </td>
 <td style="text-align:right;">
-18.02
+14.62
 </td>
 <td style="text-align:right;">
 38.00
@@ -574,7 +720,7 @@ Consumer, Non-cyclical
 </tr>
 <tr>
 <td style="text-align:right;">
-7
+11
 </td>
 <td style="text-align:left;">
 PEL
@@ -583,7 +729,7 @@ PEL
 Consumer, Non-cyclical
 </td>
 <td style="text-align:right;">
-2501.95
+2551.75
 </td>
 <td style="text-align:right;">
 2560.400
@@ -592,16 +738,16 @@ Consumer, Non-cyclical
 2018-07-18
 </td>
 <td style="text-align:right;">
-0.106
+0.383
 </td>
 <td style="text-align:right;">
--2.28
+-0.34
 </td>
 <td style="text-align:right;">
-0.57809
+0.56636
 </td>
 <td style="text-align:right;">
-17.35
+15.70
 </td>
 <td style="text-align:right;">
 76.00
@@ -609,7 +755,7 @@ Consumer, Non-cyclical
 </tr>
 <tr>
 <td style="text-align:right;">
-8
+12
 </td>
 <td style="text-align:left;">
 LICHSGFIN
@@ -618,7 +764,7 @@ LICHSGFIN
 Housing Fin
 </td>
 <td style="text-align:right;">
-518.05
+521.40
 </td>
 <td style="text-align:right;">
 516.750
@@ -627,16 +773,16 @@ Housing Fin
 2018-07-18
 </td>
 <td style="text-align:right;">
-0.702
+0.838
 </td>
 <td style="text-align:right;">
-0.25
+0.90
 </td>
 <td style="text-align:right;">
-1.41424
+1.32929
 </td>
 <td style="text-align:right;">
-31.55
+31.10
 </td>
 <td style="text-align:right;">
 28.57
@@ -644,7 +790,7 @@ Housing Fin
 </tr>
 <tr>
 <td style="text-align:right;">
-9
+13
 </td>
 <td style="text-align:left;">
 ADANIENT
@@ -653,7 +799,7 @@ ADANIENT
 Consumer, Cyclical
 </td>
 <td style="text-align:right;">
-162.95
+171.20
 </td>
 <td style="text-align:right;">
 142.200
@@ -662,16 +808,16 @@ Consumer, Cyclical
 2018-07-18
 </td>
 <td style="text-align:right;">
-3.958
+4.402
 </td>
 <td style="text-align:right;">
-14.59
+20.39
 </td>
 <td style="text-align:right;">
-2.46716
+2.57603
 </td>
 <td style="text-align:right;">
-27.09
+23.40
 </td>
 <td style="text-align:right;">
 55.26
@@ -679,7 +825,7 @@ Consumer, Cyclical
 </tr>
 <tr>
 <td style="text-align:right;">
-10
+14
 </td>
 <td style="text-align:left;">
 WIPRO
@@ -688,7 +834,7 @@ WIPRO
 Technology
 </td>
 <td style="text-align:right;">
-283.00
+276.45
 </td>
 <td style="text-align:right;">
 279.450
@@ -697,16 +843,16 @@ Technology
 2018-07-12
 </td>
 <td style="text-align:right;">
-0.748
+0.435
 </td>
 <td style="text-align:right;">
-1.27
+-1.07
 </td>
 <td style="text-align:right;">
-1.44135
+2.01392
 </td>
 <td style="text-align:right;">
-15.27
+17.23
 </td>
 <td style="text-align:right;">
 18.37
@@ -714,7 +860,7 @@ Technology
 </tr>
 <tr>
 <td style="text-align:right;">
-11
+15
 </td>
 <td style="text-align:left;">
 TORNTPHARM
@@ -723,7 +869,7 @@ TORNTPHARM
 Pharma
 </td>
 <td style="text-align:right;">
-1420.95
+1450.05
 </td>
 <td style="text-align:right;">
 1457.050
@@ -732,16 +878,16 @@ Pharma
 2018-07-10
 </td>
 <td style="text-align:right;">
-0.017
+0.030
 </td>
 <td style="text-align:right;">
--2.48
+-0.48
 </td>
 <td style="text-align:right;">
-0.59781
+0.59451
 </td>
 <td style="text-align:right;">
-6.82
+4.91
 </td>
 <td style="text-align:right;">
 72.97
@@ -749,7 +895,7 @@ Pharma
 </tr>
 <tr>
 <td style="text-align:right;">
-12
+16
 </td>
 <td style="text-align:left;">
 HAVELLS
@@ -758,7 +904,7 @@ HAVELLS
 Industrial
 </td>
 <td style="text-align:right;">
-560.40
+610.05
 </td>
 <td style="text-align:right;">
 573.950
@@ -767,24 +913,24 @@ Industrial
 2018-07-10
 </td>
 <td style="text-align:right;">
-0.178
+1.021
 </td>
 <td style="text-align:right;">
--2.36
+6.29
 </td>
 <td style="text-align:right;">
-1.52964
+3.51756
 </td>
 <td style="text-align:right;">
-5.42
+0.80
 </td>
 <td style="text-align:right;">
-69.08
+69.23
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-13
+17
 </td>
 <td style="text-align:left;">
 HCLTECH
@@ -793,7 +939,7 @@ HCLTECH
 Technology
 </td>
 <td style="text-align:right;">
-999.20
+1004.85
 </td>
 <td style="text-align:right;">
 961.550
@@ -802,16 +948,16 @@ Technology
 2018-07-09
 </td>
 <td style="text-align:right;">
-0.580
+0.450
 </td>
 <td style="text-align:right;">
-3.92
+4.50
 </td>
 <td style="text-align:right;">
-0.63653
+0.63130
 </td>
 <td style="text-align:right;">
-9.82
+9.31
 </td>
 <td style="text-align:right;">
 36.73
@@ -819,7 +965,7 @@ Technology
 </tr>
 <tr>
 <td style="text-align:right;">
-14
+18
 </td>
 <td style="text-align:left;">
 RELIANCE
@@ -828,7 +974,7 @@ RELIANCE
 Energy
 </td>
 <td style="text-align:right;">
-1128.65
+1120.30
 </td>
 <td style="text-align:right;">
 997.100
@@ -837,16 +983,16 @@ Energy
 2018-07-09
 </td>
 <td style="text-align:right;">
-1.460
+1.186
 </td>
 <td style="text-align:right;">
-13.19
+12.36
 </td>
 <td style="text-align:right;">
-0.93103
+0.83645
 </td>
 <td style="text-align:right;">
-0.87
+1.60
 </td>
 <td style="text-align:right;">
 81.82
@@ -854,7 +1000,7 @@ Energy
 </tr>
 <tr>
 <td style="text-align:right;">
-15
+19
 </td>
 <td style="text-align:left;">
 KPIT
@@ -863,7 +1009,7 @@ KPIT
 Technology
 </td>
 <td style="text-align:right;">
-292.70
+287.65
 </td>
 <td style="text-align:right;">
 280.000
@@ -872,16 +1018,16 @@ Technology
 2018-07-09
 </td>
 <td style="text-align:right;">
-0.907
+0.295
 </td>
 <td style="text-align:right;">
-4.54
+2.73
 </td>
 <td style="text-align:right;">
-1.24209
+1.21217
 </td>
 <td style="text-align:right;">
-4.03
+5.69
 </td>
 <td style="text-align:right;">
 61.22
@@ -889,7 +1035,7 @@ Technology
 </tr>
 <tr>
 <td style="text-align:right;">
-16
+20
 </td>
 <td style="text-align:left;">
 YESBANK
@@ -898,7 +1044,7 @@ YESBANK
 Bank - Private
 </td>
 <td style="text-align:right;">
-386.50
+386.60
 </td>
 <td style="text-align:right;">
 348.650
@@ -907,16 +1053,16 @@ Bank - Private
 2018-07-05
 </td>
 <td style="text-align:right;">
-0.930
+0.629
 </td>
 <td style="text-align:right;">
-10.86
+10.88
 </td>
 <td style="text-align:right;">
-1.25998
+1.25358
 </td>
 <td style="text-align:right;">
-1.99
+1.97
 </td>
 <td style="text-align:right;">
 87.50
@@ -924,7 +1070,7 @@ Bank - Private
 </tr>
 <tr>
 <td style="text-align:right;">
-17
+21
 </td>
 <td style="text-align:left;">
 BERGEPAINT
@@ -933,7 +1079,7 @@ BERGEPAINT
 Basic Materials
 </td>
 <td style="text-align:right;">
-309.95
+314.70
 </td>
 <td style="text-align:right;">
 290.150
@@ -942,24 +1088,24 @@ Basic Materials
 2018-07-05
 </td>
 <td style="text-align:right;">
-0.460
+0.459
 </td>
 <td style="text-align:right;">
-6.82
+8.46
 </td>
 <td style="text-align:right;">
-1.72196
+2.04242
 </td>
 <td style="text-align:right;">
-2.82
+2.27
 </td>
 <td style="text-align:right;">
-61.45
+60.98
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-18
+22
 </td>
 <td style="text-align:left;">
 MARUTI
@@ -968,7 +1114,7 @@ MARUTI
 Autos
 </td>
 <td style="text-align:right;">
-9398.95
+9701.00
 </td>
 <td style="text-align:right;">
 9220.800
@@ -977,16 +1123,16 @@ Autos
 2018-07-04
 </td>
 <td style="text-align:right;">
-0.091
+0.351
 </td>
 <td style="text-align:right;">
-1.93
+5.21
 </td>
 <td style="text-align:right;">
-0.79854
+1.21238
 </td>
 <td style="text-align:right;">
-5.98
+2.96
 </td>
 <td style="text-align:right;">
 57.89
@@ -994,7 +1140,7 @@ Autos
 </tr>
 <tr>
 <td style="text-align:right;">
-19
+23
 </td>
 <td style="text-align:left;">
 BAJAJFINSV
@@ -1003,7 +1149,7 @@ BAJAJFINSV
 NBFC
 </td>
 <td style="text-align:right;">
-6663.95
+6923.10
 </td>
 <td style="text-align:right;">
 6032.850
@@ -1012,16 +1158,16 @@ NBFC
 2018-07-04
 </td>
 <td style="text-align:right;">
-0.977
+1.257
 </td>
 <td style="text-align:right;">
-10.46
+14.76
 </td>
 <td style="text-align:right;">
-2.64124
+3.31896
 </td>
 <td style="text-align:right;">
-1.74
+0.96
 </td>
 <td style="text-align:right;">
 90.00
@@ -1029,7 +1175,7 @@ NBFC
 </tr>
 <tr>
 <td style="text-align:right;">
-20
+24
 </td>
 <td style="text-align:left;">
 GAIL
@@ -1038,7 +1184,7 @@ GAIL
 Utilities
 </td>
 <td style="text-align:right;">
-359.80
+358.80
 </td>
 <td style="text-align:right;">
 348.350
@@ -1047,16 +1193,16 @@ Utilities
 2018-07-04
 </td>
 <td style="text-align:right;">
-0.457
+0.336
 </td>
 <td style="text-align:right;">
-3.29
+3.00
 </td>
 <td style="text-align:right;">
-0.57876
+0.58922
 </td>
 <td style="text-align:right;">
-7.65
+7.91
 </td>
 <td style="text-align:right;">
 60.00
@@ -1064,7 +1210,7 @@ Utilities
 </tr>
 <tr>
 <td style="text-align:right;">
-21
+25
 </td>
 <td style="text-align:left;">
 ASIANPAINT
@@ -1073,7 +1219,7 @@ ASIANPAINT
 Basic Materials
 </td>
 <td style="text-align:right;">
-1396.45
+1433.20
 </td>
 <td style="text-align:right;">
 1293.050
@@ -1082,24 +1228,24 @@ Basic Materials
 2018-07-02
 </td>
 <td style="text-align:right;">
-0.546
+0.508
 </td>
 <td style="text-align:right;">
-8.00
+10.84
 </td>
 <td style="text-align:right;">
-1.05540
+1.44725
 </td>
 <td style="text-align:right;">
-0.86
+2.13
 </td>
 <td style="text-align:right;">
-50.60
+50.00
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-22
+26
 </td>
 <td style="text-align:left;">
 EXIDEIND
@@ -1108,7 +1254,7 @@ EXIDEIND
 Industrial
 </td>
 <td style="text-align:right;">
-265.85
+269.95
 </td>
 <td style="text-align:right;">
 258.300
@@ -1117,24 +1263,24 @@ Industrial
 2018-06-29
 </td>
 <td style="text-align:right;">
-0.125
+0.078
 </td>
 <td style="text-align:right;">
-2.92
+4.51
 </td>
 <td style="text-align:right;">
-1.13392
+1.02375
 </td>
 <td style="text-align:right;">
-3.29
+1.80
 </td>
 <td style="text-align:right;">
-54.11
+54.33
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-23
+27
 </td>
 <td style="text-align:left;">
 HDFC
@@ -1143,7 +1289,7 @@ HDFC
 Housing Fin
 </td>
 <td style="text-align:right;">
-1973.85
+1966.85
 </td>
 <td style="text-align:right;">
 1906.750
@@ -1152,16 +1298,16 @@ Housing Fin
 2018-06-22
 </td>
 <td style="text-align:right;">
-0.299
+0.326
 </td>
 <td style="text-align:right;">
-3.52
+3.15
 </td>
 <td style="text-align:right;">
-0.93415
+0.71982
 </td>
 <td style="text-align:right;">
-2.53
+2.87
 </td>
 <td style="text-align:right;">
 57.14
@@ -1169,7 +1315,7 @@ Housing Fin
 </tr>
 <tr>
 <td style="text-align:right;">
-24
+28
 </td>
 <td style="text-align:left;">
 BATAINDIA
@@ -1178,7 +1324,7 @@ BATAINDIA
 Footwear
 </td>
 <td style="text-align:right;">
-842.40
+904.00
 </td>
 <td style="text-align:right;">
 816.500
@@ -1187,16 +1333,16 @@ Footwear
 2018-06-18
 </td>
 <td style="text-align:right;">
-0.157
+0.781
 </td>
 <td style="text-align:right;">
-3.17
+10.72
 </td>
 <td style="text-align:right;">
-0.90096
+2.16759
 </td>
 <td style="text-align:right;">
-2.60
+0.63
 </td>
 <td style="text-align:right;">
 50.00
@@ -1204,7 +1350,7 @@ Footwear
 </tr>
 <tr>
 <td style="text-align:right;">
-25
+29
 </td>
 <td style="text-align:left;">
 CIPLA
@@ -1213,7 +1359,7 @@ CIPLA
 Pharma
 </td>
 <td style="text-align:right;">
-625.80
+634.10
 </td>
 <td style="text-align:right;">
 611.600
@@ -1222,16 +1368,16 @@ Pharma
 2018-06-15
 </td>
 <td style="text-align:right;">
-0.232
+0.194
 </td>
 <td style="text-align:right;">
-2.32
+3.68
 </td>
 <td style="text-align:right;">
-0.85808
+0.81041
 </td>
 <td style="text-align:right;">
-5.67
+4.42
 </td>
 <td style="text-align:right;">
 37.84
@@ -1239,7 +1385,7 @@ Pharma
 </tr>
 <tr>
 <td style="text-align:right;">
-26
+30
 </td>
 <td style="text-align:left;">
 HEXAWARE
@@ -1248,7 +1394,7 @@ HEXAWARE
 Technology
 </td>
 <td style="text-align:right;">
-502.40
+504.00
 </td>
 <td style="text-align:right;">
 441.700
@@ -1257,16 +1403,16 @@ Technology
 2018-06-12
 </td>
 <td style="text-align:right;">
-1.206
+-0.138
 </td>
 <td style="text-align:right;">
-13.74
+14.10
 </td>
 <td style="text-align:right;">
-1.08901
+0.91293
 </td>
 <td style="text-align:right;">
-9.92
+9.63
 </td>
 <td style="text-align:right;">
 69.39
@@ -1274,7 +1420,7 @@ Technology
 </tr>
 <tr>
 <td style="text-align:right;">
-27
+31
 </td>
 <td style="text-align:left;">
 MARICO
@@ -1283,7 +1429,7 @@ MARICO
 FMCG
 </td>
 <td style="text-align:right;">
-351.35
+352.05
 </td>
 <td style="text-align:right;">
 326.450
@@ -1292,16 +1438,16 @@ FMCG
 2018-06-05
 </td>
 <td style="text-align:right;">
-0.129
+0.137
 </td>
 <td style="text-align:right;">
-7.63
+7.84
 </td>
 <td style="text-align:right;">
-1.46324
+1.41997
 </td>
 <td style="text-align:right;">
-4.06
+3.86
 </td>
 <td style="text-align:right;">
 66.67
@@ -1309,7 +1455,7 @@ FMCG
 </tr>
 <tr>
 <td style="text-align:right;">
-28
+32
 </td>
 <td style="text-align:left;">
 RBLBANK
@@ -1318,7 +1464,7 @@ RBLBANK
 Bank - PSU
 </td>
 <td style="text-align:right;">
-577.80
+569.80
 </td>
 <td style="text-align:right;">
 521.900
@@ -1327,23 +1473,23 @@ Bank - PSU
 2018-05-28
 </td>
 <td style="text-align:right;">
-0.280
+-0.146
 </td>
 <td style="text-align:right;">
-10.71
+9.18
 </td>
 <td style="text-align:right;">
-2.71620
+2.73975
 </td>
 <td style="text-align:right;">
-2.15
+3.51
 </td>
 <td style="text-align:right;">
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-29
+33
 </td>
 <td style="text-align:left;">
 GODREJCP
@@ -1352,7 +1498,7 @@ GODREJCP
 FMCG
 </td>
 <td style="text-align:right;">
-1287.05
+1347.35
 </td>
 <td style="text-align:right;">
 1118.500
@@ -1361,16 +1507,16 @@ FMCG
 2018-05-24
 </td>
 <td style="text-align:right;">
-0.312
+0.713
 </td>
 <td style="text-align:right;">
-15.07
+20.46
 </td>
 <td style="text-align:right;">
-1.18191
+1.18485
 </td>
 <td style="text-align:right;">
-4.57
+0.37
 </td>
 <td style="text-align:right;">
 86.67
@@ -1378,7 +1524,7 @@ FMCG
 </tr>
 <tr>
 <td style="text-align:right;">
-30
+34
 </td>
 <td style="text-align:left;">
 BAJFINANCE
@@ -1387,7 +1533,7 @@ BAJFINANCE
 Financial
 </td>
 <td style="text-align:right;">
-2721.35
+2755.80
 </td>
 <td style="text-align:right;">
 1901.950
@@ -1396,16 +1542,16 @@ Financial
 2018-05-15
 </td>
 <td style="text-align:right;">
-1.523
+1.639
 </td>
 <td style="text-align:right;">
-43.08
+44.89
 </td>
 <td style="text-align:right;">
-3.57273
+3.72352
 </td>
 <td style="text-align:right;">
-0.86
+1.47
 </td>
 <td style="text-align:right;">
 97.87
@@ -1413,7 +1559,7 @@ Financial
 </tr>
 <tr>
 <td style="text-align:right;">
-31
+35
 </td>
 <td style="text-align:left;">
 INFY
@@ -1422,7 +1568,7 @@ INFY
 Technology
 </td>
 <td style="text-align:right;">
-1348.10
+1355.95
 </td>
 <td style="text-align:right;">
 1178.450
@@ -1431,16 +1577,16 @@ Technology
 2018-04-20
 </td>
 <td style="text-align:right;">
-0.494
+0.439
 </td>
 <td style="text-align:right;">
-14.40
+15.06
 </td>
 <td style="text-align:right;">
-1.88433
+1.08056
 </td>
 <td style="text-align:right;">
-2.62
+2.06
 </td>
 <td style="text-align:right;">
 28.57
@@ -1448,7 +1594,7 @@ Technology
 </tr>
 <tr>
 <td style="text-align:right;">
-32
+36
 </td>
 <td style="text-align:left;">
 TCS
@@ -1457,7 +1603,7 @@ TCS
 Technology
 </td>
 <td style="text-align:right;">
-1996.60
+2005.65
 </td>
 <td style="text-align:right;">
 1507.075
@@ -1466,16 +1612,16 @@ Technology
 2018-04-11
 </td>
 <td style="text-align:right;">
-0.446
+0.648
 </td>
 <td style="text-align:right;">
-32.48
+33.08
 </td>
 <td style="text-align:right;">
-0.46682
+0.43150
 </td>
 <td style="text-align:right;">
-0.75
+0.30
 </td>
 <td style="text-align:right;">
 51.02
@@ -1483,7 +1629,7 @@ Technology
 </tr>
 <tr>
 <td style="text-align:right;">
-33
+37
 </td>
 <td style="text-align:left;">
 TATAELXSI
@@ -1492,7 +1638,7 @@ TATAELXSI
 Technology
 </td>
 <td style="text-align:right;">
-1394.50
+1380.40
 </td>
 <td style="text-align:right;">
 1042.000
@@ -1501,16 +1647,16 @@ Technology
 2018-04-09
 </td>
 <td style="text-align:right;">
-0.229
+0.006
 </td>
 <td style="text-align:right;">
-33.83
+32.48
 </td>
 <td style="text-align:right;">
-0.77217
+0.68533
 </td>
 <td style="text-align:right;">
-4.12
+5.09
 </td>
 <td style="text-align:right;">
 93.88
@@ -1518,7 +1664,7 @@ Technology
 </tr>
 <tr>
 <td style="text-align:right;">
-34
+38
 </td>
 <td style="text-align:left;">
 HINDUNILVR
@@ -1527,7 +1673,7 @@ HINDUNILVR
 FMCG
 </td>
 <td style="text-align:right;">
-1655.85
+1689.65
 </td>
 <td style="text-align:right;">
 1357.450
@@ -1536,16 +1682,16 @@ FMCG
 2018-04-04
 </td>
 <td style="text-align:right;">
--0.121
+0.002
 </td>
 <td style="text-align:right;">
-21.98
+24.47
 </td>
 <td style="text-align:right;">
-2.43196
+2.25455
 </td>
 <td style="text-align:right;">
-6.97
+5.08
 </td>
 <td style="text-align:right;">
 80.00
@@ -1553,7 +1699,7 @@ FMCG
 </tr>
 <tr>
 <td style="text-align:right;">
-35
+39
 </td>
 <td style="text-align:left;">
 KOTAKBANK
@@ -1562,7 +1708,7 @@ KOTAKBANK
 Bank - Private
 </td>
 <td style="text-align:right;">
-1333.30
+1337.05
 </td>
 <td style="text-align:right;">
 1103.300
@@ -1571,16 +1717,16 @@ Bank - Private
 2018-04-03
 </td>
 <td style="text-align:right;">
--0.271
+-0.344
 </td>
 <td style="text-align:right;">
-20.85
+21.19
 </td>
 <td style="text-align:right;">
-1.91000
+1.90129
 </td>
 <td style="text-align:right;">
-5.91
+5.64
 </td>
 <td style="text-align:right;">
 75.00
@@ -1588,7 +1734,7 @@ Bank - Private
 </tr>
 <tr>
 <td style="text-align:right;">
-36
+40
 </td>
 <td style="text-align:left;">
 M&amp;M
@@ -1597,7 +1743,7 @@ M&amp;M
 Autos
 </td>
 <td style="text-align:right;">
-909.75
+910.40
 </td>
 <td style="text-align:right;">
 770.100
@@ -1606,16 +1752,16 @@ Autos
 2018-04-03
 </td>
 <td style="text-align:right;">
--0.157
+-0.234
 </td>
 <td style="text-align:right;">
-18.13
+18.22
 </td>
 <td style="text-align:right;">
-0.76280
+0.64121
 </td>
 <td style="text-align:right;">
-3.22
+3.15
 </td>
 <td style="text-align:right;">
 42.11
@@ -1623,7 +1769,7 @@ Autos
 </tr>
 <tr>
 <td style="text-align:right;">
-37
+41
 </td>
 <td style="text-align:left;">
 HDFCBANK
@@ -1632,7 +1778,7 @@ HDFCBANK
 Bank - Private
 </td>
 <td style="text-align:right;">
-2189.05
+2156.45
 </td>
 <td style="text-align:right;">
 1931.200
@@ -1641,16 +1787,16 @@ Bank - Private
 2018-04-02
 </td>
 <td style="text-align:right;">
-0.345
+0.146
 </td>
 <td style="text-align:right;">
-13.35
+11.66
 </td>
 <td style="text-align:right;">
-0.86770
+1.10340
 </td>
 <td style="text-align:right;">
-1.39
+2.86
 </td>
 <td style="text-align:right;">
 62.50
@@ -1658,7 +1804,7 @@ Bank - Private
 </tr>
 <tr>
 <td style="text-align:right;">
-38
+42
 </td>
 <td style="text-align:left;">
 NESTLEIND
@@ -1667,7 +1813,7 @@ NESTLEIND
 FMCG
 </td>
 <td style="text-align:right;">
-10348.20
+10393.40
 </td>
 <td style="text-align:right;">
 7759.950
@@ -1676,16 +1822,16 @@ FMCG
 2018-02-27
 </td>
 <td style="text-align:right;">
-0.410
+0.497
 </td>
 <td style="text-align:right;">
-33.35
+33.94
 </td>
 <td style="text-align:right;">
-1.22765
+1.11813
 </td>
 <td style="text-align:right;">
-1.91
+1.49
 </td>
 <td style="text-align:right;">
 46.67
@@ -1693,7 +1839,7 @@ FMCG
 </tr>
 <tr>
 <td style="text-align:right;">
-39
+43
 </td>
 <td style="text-align:left;">
 BRITANNIA
@@ -1702,7 +1848,7 @@ BRITANNIA
 FMCG
 </td>
 <td style="text-align:right;">
-6358.15
+6435.95
 </td>
 <td style="text-align:right;">
 4855.850
@@ -1711,16 +1857,16 @@ FMCG
 2018-02-22
 </td>
 <td style="text-align:right;">
-0.080
+0.087
 </td>
 <td style="text-align:right;">
-30.94
+32.54
 </td>
 <td style="text-align:right;">
-1.04753
+1.02904
 </td>
 <td style="text-align:right;">
-3.29
+2.10
 </td>
 <td style="text-align:right;">
 93.33
@@ -1728,7 +1874,7 @@ FMCG
 </tr>
 <tr>
 <td style="text-align:right;">
-40
+44
 </td>
 <td style="text-align:left;">
 NIITTECH
@@ -1737,7 +1883,7 @@ NIITTECH
 Technology
 </td>
 <td style="text-align:right;">
-1112.75
+1127.80
 </td>
 <td style="text-align:right;">
 639.900
@@ -1746,16 +1892,16 @@ Technology
 2017-12-20
 </td>
 <td style="text-align:right;">
-0.380
+0.239
 </td>
 <td style="text-align:right;">
-73.89
+76.25
 </td>
 <td style="text-align:right;">
-1.58149
+1.56717
 </td>
 <td style="text-align:right;">
-6.65
+5.39
 </td>
 <td style="text-align:right;">
 81.63
@@ -1809,34 +1955,34 @@ RankPercentile
 1
 </td>
 <td style="text-align:left;">
-STRTECH
+SHREECEM
 </td>
 <td style="text-align:left;">
-Industrial
+Cement
 </td>
 <td style="text-align:right;">
-330.85
+16866.95
 </td>
 <td style="text-align:right;">
-330.85
+16866.95
 </td>
 <td style="text-align:left;">
-2018-07-20
+2018-07-23
 </td>
 <td style="text-align:right;">
-1.471
+0.185
 </td>
 <td style="text-align:right;">
 0.00
 </td>
 <td style="text-align:right;">
-2.21623
+0.68062
 </td>
 <td style="text-align:right;">
-20.28
+15.02
 </td>
 <td style="text-align:right;">
-95.65
+70.59
 </td>
 </tr>
 <tr>
@@ -1844,31 +1990,31 @@ Industrial
 2
 </td>
 <td style="text-align:left;">
-PNBHOUSING
+NATHBIOGEN
 </td>
 <td style="text-align:left;">
-Housing Fin
+Consumer, Non-cyclical
 </td>
 <td style="text-align:right;">
-1255.95
+498.05
 </td>
 <td style="text-align:right;">
-1255.95
+498.05
 </td>
 <td style="text-align:left;">
-2018-07-20
+2018-07-23
 </td>
 <td style="text-align:right;">
-0.676
+0.668
 </td>
 <td style="text-align:right;">
 0.00
 </td>
 <td style="text-align:right;">
-0.17606
+0.62521
 </td>
 <td style="text-align:right;">
-26.88
+14.86
 </td>
 <td style="text-align:right;">
 </td>
@@ -1878,34 +2024,33 @@ Housing Fin
 3
 </td>
 <td style="text-align:left;">
-MRF
+CROMPTON
 </td>
 <td style="text-align:left;">
-Tyres
+Industrial
 </td>
 <td style="text-align:right;">
-76812.45
+240.55
 </td>
 <td style="text-align:right;">
-76812.45
+240.55
 </td>
 <td style="text-align:left;">
-2018-07-20
+2018-07-23
 </td>
 <td style="text-align:right;">
-0.240
+0.587
 </td>
 <td style="text-align:right;">
 0.00
 </td>
 <td style="text-align:right;">
-1.55381
+0.77630
 </td>
 <td style="text-align:right;">
-5.67
+18.46
 </td>
 <td style="text-align:right;">
-100.00
 </td>
 </tr>
 <tr>
@@ -1913,34 +2058,33 @@ Tyres
 4
 </td>
 <td style="text-align:left;">
-VIPIND
+MAXINDIA
 </td>
 <td style="text-align:left;">
-Industrial
+Healthcare
 </td>
 <td style="text-align:right;">
-430.75
+85.05
 </td>
 <td style="text-align:right;">
-430.75
+85.05
 </td>
 <td style="text-align:left;">
-2018-07-20
+2018-07-23
 </td>
 <td style="text-align:right;">
-0.401
+1.289
 </td>
 <td style="text-align:right;">
 0.00
 </td>
 <td style="text-align:right;">
-0.47308
+1.04215
 </td>
 <td style="text-align:right;">
-6.43
+44.54
 </td>
 <td style="text-align:right;">
-94.20
 </td>
 </tr>
 <tr>
@@ -1948,33 +2092,34 @@ Industrial
 5
 </td>
 <td style="text-align:left;">
-CEREBRAINT
+KILITCH
 </td>
 <td style="text-align:left;">
-Utilities
+Pharma
 </td>
 <td style="text-align:right;">
-63.00
+96.05
 </td>
 <td style="text-align:right;">
-63.00
+96.05
 </td>
 <td style="text-align:left;">
-2018-07-20
+2018-07-23
 </td>
 <td style="text-align:right;">
-1.326
+1.564
 </td>
 <td style="text-align:right;">
 0.00
 </td>
 <td style="text-align:right;">
-0.54286
+4.99796
 </td>
 <td style="text-align:right;">
-13.46
+29.35
 </td>
 <td style="text-align:right;">
+91.89
 </td>
 </tr>
 <tr>
@@ -1982,34 +2127,33 @@ Utilities
 6
 </td>
 <td style="text-align:left;">
-PAISALO
+BHAGYAPROP
 </td>
 <td style="text-align:left;">
-Financial
+Real estate
 </td>
 <td style="text-align:right;">
-309.95
+22.75
 </td>
 <td style="text-align:right;">
-309.95
+22.75
 </td>
 <td style="text-align:left;">
-2018-07-20
+2018-07-23
 </td>
 <td style="text-align:right;">
-0.355
+0.759
 </td>
 <td style="text-align:right;">
 0.00
 </td>
 <td style="text-align:right;">
-0.66808
+2.75225
 </td>
 <td style="text-align:right;">
-19.70
+38.01
 </td>
 <td style="text-align:right;">
-42.55
 </td>
 </tr>
 <tr>
@@ -2017,34 +2161,34 @@ Financial
 7
 </td>
 <td style="text-align:left;">
-GSKCONS
+STRTECH
 </td>
 <td style="text-align:left;">
-Healthcare
+Industrial
 </td>
 <td style="text-align:right;">
-6506.50
+342.55
 </td>
 <td style="text-align:right;">
-6467.40
+330.85
 </td>
 <td style="text-align:left;">
-2018-07-19
+2018-07-20
 </td>
 <td style="text-align:right;">
-0.185
+0.937
 </td>
 <td style="text-align:right;">
-0.60
+3.54
 </td>
 <td style="text-align:right;">
-0.90480
+2.34462
 </td>
 <td style="text-align:right;">
-6.25
+17.46
 </td>
 <td style="text-align:right;">
-69.23
+95.67
 </td>
 </tr>
 <tr>
@@ -2052,31 +2196,31 @@ Healthcare
 8
 </td>
 <td style="text-align:left;">
-ICICIGI
+PNBHOUSING
 </td>
 <td style="text-align:left;">
-Insurance
+Housing Fin
 </td>
 <td style="text-align:right;">
-778.65
+1256.85
 </td>
 <td style="text-align:right;">
-763.15
+1255.95
 </td>
 <td style="text-align:left;">
-2018-07-19
+2018-07-20
 </td>
 <td style="text-align:right;">
-0.834
+0.743
 </td>
 <td style="text-align:right;">
-2.03
+0.07
 </td>
 <td style="text-align:right;">
-3.49230
+0.16956
 </td>
 <td style="text-align:right;">
-10.71
+26.83
 </td>
 <td style="text-align:right;">
 </td>
@@ -2086,136 +2230,31 @@ Insurance
 9
 </td>
 <td style="text-align:left;">
-ICIL
+MRF
 </td>
 <td style="text-align:left;">
-Textiles
+Tyres
 </td>
 <td style="text-align:right;">
-82.30
+77782.50
 </td>
 <td style="text-align:right;">
-84.20
+76812.45
 </td>
 <td style="text-align:left;">
-2018-07-18
+2018-07-20
 </td>
 <td style="text-align:right;">
-1.343
+0.312
 </td>
 <td style="text-align:right;">
--2.26
+1.26
 </td>
 <td style="text-align:right;">
-0.94658
+1.44625
 </td>
 <td style="text-align:right;">
-49.91
-</td>
-<td style="text-align:right;">
-55.56
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-10
-</td>
-<td style="text-align:left;">
-GAYAPROJ
-</td>
-<td style="text-align:left;">
-Industrial
-</td>
-<td style="text-align:right;">
-190.35
-</td>
-<td style="text-align:right;">
-189.55
-</td>
-<td style="text-align:left;">
-2018-07-18
-</td>
-<td style="text-align:right;">
-1.473
-</td>
-<td style="text-align:right;">
-0.42
-</td>
-<td style="text-align:right;">
-1.01185
-</td>
-<td style="text-align:right;">
-20.36
-</td>
-<td style="text-align:right;">
-94.69
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-11
-</td>
-<td style="text-align:left;">
-3MINDIA
-</td>
-<td style="text-align:left;">
-Diversified
-</td>
-<td style="text-align:right;">
-23338.75
-</td>
-<td style="text-align:right;">
-20398.30
-</td>
-<td style="text-align:left;">
-2018-07-17
-</td>
-<td style="text-align:right;">
-1.669
-</td>
-<td style="text-align:right;">
-14.42
-</td>
-<td style="text-align:right;">
-4.93168
-</td>
-<td style="text-align:right;">
-0.64
-</td>
-<td style="text-align:right;">
-90.00
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-12
-</td>
-<td style="text-align:left;">
-ATUL
-</td>
-<td style="text-align:left;">
-Agri Products
-</td>
-<td style="text-align:right;">
-2870.75
-</td>
-<td style="text-align:right;">
-2827.75
-</td>
-<td style="text-align:left;">
-2018-07-17
-</td>
-<td style="text-align:right;">
-0.581
-</td>
-<td style="text-align:right;">
-1.52
-</td>
-<td style="text-align:right;">
-1.52231
-</td>
-<td style="text-align:right;">
-7.24
+4.47
 </td>
 <td style="text-align:right;">
 100.00
@@ -2223,34 +2262,138 @@ Agri Products
 </tr>
 <tr>
 <td style="text-align:right;">
-13
+10
 </td>
 <td style="text-align:left;">
-NH
+CEREBRAINT
+</td>
+<td style="text-align:left;">
+Utilities
+</td>
+<td style="text-align:right;">
+62.30
+</td>
+<td style="text-align:right;">
+63.00
+</td>
+<td style="text-align:left;">
+2018-07-20
+</td>
+<td style="text-align:right;">
+1.161
+</td>
+<td style="text-align:right;">
+-1.11
+</td>
+<td style="text-align:right;">
+0.55708
+</td>
+<td style="text-align:right;">
+14.42
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:left;">
+PAISALO
+</td>
+<td style="text-align:left;">
+Financial
+</td>
+<td style="text-align:right;">
+314.30
+</td>
+<td style="text-align:right;">
+309.95
+</td>
+<td style="text-align:left;">
+2018-07-20
+</td>
+<td style="text-align:right;">
+0.484
+</td>
+<td style="text-align:right;">
+1.40
+</td>
+<td style="text-align:right;">
+1.39703
+</td>
+<td style="text-align:right;">
+18.58
+</td>
+<td style="text-align:right;">
+42.55
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:left;">
+GSKCONS
 </td>
 <td style="text-align:left;">
 Healthcare
 </td>
 <td style="text-align:right;">
-250.10
+6439.50
 </td>
 <td style="text-align:right;">
-252.60
+6467.40
 </td>
 <td style="text-align:left;">
-2018-07-17
+2018-07-19
 </td>
 <td style="text-align:right;">
-0.350
+0.175
 </td>
 <td style="text-align:right;">
--0.99
+-0.43
 </td>
 <td style="text-align:right;">
-1.59204
+0.89172
 </td>
 <td style="text-align:right;">
-22.06
+7.22
+</td>
+<td style="text-align:right;">
+69.23
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:left;">
+ICICIGI
+</td>
+<td style="text-align:left;">
+Insurance
+</td>
+<td style="text-align:right;">
+783.05
+</td>
+<td style="text-align:right;">
+763.15
+</td>
+<td style="text-align:left;">
+2018-07-19
+</td>
+<td style="text-align:right;">
+1.103
+</td>
+<td style="text-align:right;">
+2.61
+</td>
+<td style="text-align:right;">
+3.83515
+</td>
+<td style="text-align:right;">
+10.20
 </td>
 <td style="text-align:right;">
 </td>
@@ -2260,34 +2403,34 @@ Healthcare
 14
 </td>
 <td style="text-align:left;">
-HINDOILEXP
+ICIL
 </td>
 <td style="text-align:left;">
-Energy
+Textiles
 </td>
 <td style="text-align:right;">
-137.75
+81.45
 </td>
 <td style="text-align:right;">
-139.95
+84.20
 </td>
 <td style="text-align:left;">
-2018-07-13
+2018-07-18
 </td>
 <td style="text-align:right;">
-0.891
+0.392
 </td>
 <td style="text-align:right;">
--1.57
+-3.27
 </td>
 <td style="text-align:right;">
-0.74903
+0.81604
 </td>
 <td style="text-align:right;">
-10.17
+50.11
 </td>
 <td style="text-align:right;">
-100.00
+55.56
 </td>
 </tr>
 <tr>
@@ -2295,34 +2438,34 @@ Energy
 15
 </td>
 <td style="text-align:left;">
-OMAXE
+GAYAPROJ
 </td>
 <td style="text-align:left;">
-Financial
+Industrial
 </td>
 <td style="text-align:right;">
-225.45
+186.50
 </td>
 <td style="text-align:right;">
-227.20
+189.55
 </td>
 <td style="text-align:left;">
-2018-07-12
+2018-07-18
 </td>
 <td style="text-align:right;">
-0.244
+0.800
 </td>
 <td style="text-align:right;">
--0.77
+-1.61
 </td>
 <td style="text-align:right;">
-0.95014
+0.94170
 </td>
 <td style="text-align:right;">
-4.25
+21.97
 </td>
 <td style="text-align:right;">
-55.32
+94.71
 </td>
 </tr>
 <tr>
@@ -2330,34 +2473,34 @@ Financial
 16
 </td>
 <td style="text-align:left;">
-ELGIEQUIP
+3MINDIA
 </td>
 <td style="text-align:left;">
-Industrial
+Diversified
 </td>
 <td style="text-align:right;">
-279.45
+22816.95
 </td>
 <td style="text-align:right;">
-282.60
+20398.30
 </td>
 <td style="text-align:left;">
-2018-07-12
+2018-07-17
 </td>
 <td style="text-align:right;">
-0.358
+1.440
 </td>
 <td style="text-align:right;">
--1.11
+11.86
 </td>
 <td style="text-align:right;">
-1.03059
+4.80165
 </td>
 <td style="text-align:right;">
-20.13
+2.87
 </td>
 <td style="text-align:right;">
-66.18
+90.00
 </td>
 </tr>
 <tr>
@@ -2365,34 +2508,34 @@ Industrial
 17
 </td>
 <td style="text-align:left;">
-EXCELCROP
+ATUL
 </td>
 <td style="text-align:left;">
-Basic Materials
+Agri Products
 </td>
 <td style="text-align:right;">
-3977.55
+2883.90
 </td>
 <td style="text-align:right;">
-3512.25
+2827.75
 </td>
 <td style="text-align:left;">
-2018-07-12
+2018-07-17
 </td>
 <td style="text-align:right;">
-2.586
+0.598
 </td>
 <td style="text-align:right;">
-13.25
+1.99
 </td>
 <td style="text-align:right;">
-5.06075
+1.52031
 </td>
 <td style="text-align:right;">
-1.67
+6.81
 </td>
 <td style="text-align:right;">
-81.93
+100.00
 </td>
 </tr>
 <tr>
@@ -2400,31 +2543,31 @@ Basic Materials
 18
 </td>
 <td style="text-align:left;">
-PKTEA
+NH
 </td>
 <td style="text-align:left;">
-Foods
+Healthcare
 </td>
 <td style="text-align:right;">
-270.60
+249.55
 </td>
 <td style="text-align:right;">
-291.40
+252.60
 </td>
 <td style="text-align:left;">
-2018-07-12
+2018-07-17
 </td>
 <td style="text-align:right;">
-1.174
+0.177
 </td>
 <td style="text-align:right;">
--7.14
+-1.21
 </td>
 <td style="text-align:right;">
-1.47276
+0.87334
 </td>
 <td style="text-align:right;">
-60.21
+22.23
 </td>
 <td style="text-align:right;">
 </td>
@@ -2434,13 +2577,187 @@ Foods
 19
 </td>
 <td style="text-align:left;">
+HINDOILEXP
+</td>
+<td style="text-align:left;">
+Energy
+</td>
+<td style="text-align:right;">
+134.20
+</td>
+<td style="text-align:right;">
+139.95
+</td>
+<td style="text-align:left;">
+2018-07-13
+</td>
+<td style="text-align:right;">
+0.463
+</td>
+<td style="text-align:right;">
+-4.11
+</td>
+<td style="text-align:right;">
+1.11608
+</td>
+<td style="text-align:right;">
+12.49
+</td>
+<td style="text-align:right;">
+100.00
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:left;">
+OMAXE
+</td>
+<td style="text-align:left;">
+Financial
+</td>
+<td style="text-align:right;">
+224.85
+</td>
+<td style="text-align:right;">
+227.20
+</td>
+<td style="text-align:left;">
+2018-07-12
+</td>
+<td style="text-align:right;">
+0.183
+</td>
+<td style="text-align:right;">
+-1.03
+</td>
+<td style="text-align:right;">
+0.98859
+</td>
+<td style="text-align:right;">
+4.50
+</td>
+<td style="text-align:right;">
+55.32
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+21
+</td>
+<td style="text-align:left;">
+ELGIEQUIP
+</td>
+<td style="text-align:left;">
+Industrial
+</td>
+<td style="text-align:right;">
+283.75
+</td>
+<td style="text-align:right;">
+282.60
+</td>
+<td style="text-align:left;">
+2018-07-12
+</td>
+<td style="text-align:right;">
+0.221
+</td>
+<td style="text-align:right;">
+0.41
+</td>
+<td style="text-align:right;">
+0.82377
+</td>
+<td style="text-align:right;">
+18.91
+</td>
+<td style="text-align:right;">
+66.35
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+22
+</td>
+<td style="text-align:left;">
+EXCELCROP
+</td>
+<td style="text-align:left;">
+Basic Materials
+</td>
+<td style="text-align:right;">
+4072.35
+</td>
+<td style="text-align:right;">
+3512.25
+</td>
+<td style="text-align:left;">
+2018-07-12
+</td>
+<td style="text-align:right;">
+2.754
+</td>
+<td style="text-align:right;">
+15.95
+</td>
+<td style="text-align:right;">
+5.20215
+</td>
+<td style="text-align:right;">
+1.13
+</td>
+<td style="text-align:right;">
+81.71
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+23
+</td>
+<td style="text-align:left;">
+PKTEA
+</td>
+<td style="text-align:left;">
+Foods
+</td>
+<td style="text-align:right;">
+278.85
+</td>
+<td style="text-align:right;">
+291.40
+</td>
+<td style="text-align:left;">
+2018-07-12
+</td>
+<td style="text-align:right;">
+1.097
+</td>
+<td style="text-align:right;">
+-4.31
+</td>
+<td style="text-align:right;">
+1.36851
+</td>
+<td style="text-align:right;">
+58.99
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+24
+</td>
+<td style="text-align:left;">
 HONAUT
 </td>
 <td style="text-align:left;">
 Industrial
 </td>
 <td style="text-align:right;">
-19172.40
+19976.70
 </td>
 <td style="text-align:right;">
 18796.50
@@ -2449,24 +2766,24 @@ Industrial
 2018-07-11
 </td>
 <td style="text-align:right;">
-0.418
+0.847
 </td>
 <td style="text-align:right;">
-2.00
+6.28
 </td>
 <td style="text-align:right;">
-0.22456
+0.60289
 </td>
 <td style="text-align:right;">
-12.63
+8.97
 </td>
 <td style="text-align:right;">
-86.47
+86.54
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-20
+25
 </td>
 <td style="text-align:left;">
 NIBL
@@ -2475,7 +2792,7 @@ NIBL
 Consumer, Cyclical
 </td>
 <td style="text-align:right;">
-21.00
+21.35
 </td>
 <td style="text-align:right;">
 22.70
@@ -2484,23 +2801,23 @@ Consumer, Cyclical
 2018-07-11
 </td>
 <td style="text-align:right;">
-0.402
+1.080
 </td>
 <td style="text-align:right;">
--7.49
+-5.95
 </td>
 <td style="text-align:right;">
-1.30797
+1.35420
 </td>
 <td style="text-align:right;">
-42.93
+41.98
 </td>
 <td style="text-align:right;">
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-21
+26
 </td>
 <td style="text-align:left;">
 POLARIS
@@ -2509,7 +2826,7 @@ POLARIS
 Technology
 </td>
 <td style="text-align:right;">
-474.10
+474.65
 </td>
 <td style="text-align:right;">
 472.75
@@ -2518,16 +2835,16 @@ Technology
 2018-07-11
 </td>
 <td style="text-align:right;">
-0.088
+0.084
 </td>
 <td style="text-align:right;">
-0.29
+0.40
 </td>
 <td style="text-align:right;">
-0.70637
+0.57626
 </td>
 <td style="text-align:right;">
-1.22
+1.10
 </td>
 <td style="text-align:right;">
 79.59
@@ -2535,7 +2852,7 @@ Technology
 </tr>
 <tr>
 <td style="text-align:right;">
-22
+27
 </td>
 <td style="text-align:left;">
 DCMSHRIRAM
@@ -2544,7 +2861,7 @@ DCMSHRIRAM
 Diversified
 </td>
 <td style="text-align:right;">
-354.25
+336.80
 </td>
 <td style="text-align:right;">
 351.70
@@ -2553,23 +2870,23 @@ Diversified
 2018-07-10
 </td>
 <td style="text-align:right;">
-1.179
+0.078
 </td>
 <td style="text-align:right;">
-0.73
+-4.24
 </td>
 <td style="text-align:right;">
-0.76293
+0.96276
 </td>
 <td style="text-align:right;">
-43.59
+46.37
 </td>
 <td style="text-align:right;">
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-23
+28
 </td>
 <td style="text-align:left;">
 RELAXO
@@ -2578,7 +2895,7 @@ RELAXO
 Footwear
 </td>
 <td style="text-align:right;">
-767.60
+787.55
 </td>
 <td style="text-align:right;">
 725.15
@@ -2587,16 +2904,16 @@ Footwear
 2018-07-10
 </td>
 <td style="text-align:right;">
-0.876
+1.082
 </td>
 <td style="text-align:right;">
-5.85
+8.61
 </td>
 <td style="text-align:right;">
-0.56385
+0.87141
 </td>
 <td style="text-align:right;">
-5.49
+3.37
 </td>
 <td style="text-align:right;">
 100.00
@@ -2604,7 +2921,7 @@ Footwear
 </tr>
 <tr>
 <td style="text-align:right;">
-24
+29
 </td>
 <td style="text-align:left;">
 ASTRAL
@@ -2613,7 +2930,7 @@ ASTRAL
 Industrial
 </td>
 <td style="text-align:right;">
-1045.15
+1076.10
 </td>
 <td style="text-align:right;">
 1035.60
@@ -2622,24 +2939,24 @@ Industrial
 2018-07-10
 </td>
 <td style="text-align:right;">
-0.549
+0.738
 </td>
 <td style="text-align:right;">
-0.92
+3.91
 </td>
 <td style="text-align:right;">
-0.95820
+1.11432
 </td>
 <td style="text-align:right;">
-4.99
+2.17
 </td>
 <td style="text-align:right;">
-85.99
+86.06
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-25
+30
 </td>
 <td style="text-align:left;">
 NAUKRI
@@ -2648,7 +2965,7 @@ NAUKRI
 Consumer, Non-cyclical
 </td>
 <td style="text-align:right;">
-1267.00
+1340.50
 </td>
 <td style="text-align:right;">
 1302.50
@@ -2657,16 +2974,16 @@ Consumer, Non-cyclical
 2018-07-10
 </td>
 <td style="text-align:right;">
-0.457
+0.762
 </td>
 <td style="text-align:right;">
--2.73
+2.92
 </td>
 <td style="text-align:right;">
-0.97205
+1.38960
 </td>
 <td style="text-align:right;">
-13.22
+8.18
 </td>
 <td style="text-align:right;">
 66.00
@@ -2674,7 +2991,7 @@ Consumer, Non-cyclical
 </tr>
 <tr>
 <td style="text-align:right;">
-26
+31
 </td>
 <td style="text-align:left;">
 AIAENG
@@ -2683,7 +3000,7 @@ AIAENG
 Industrial
 </td>
 <td style="text-align:right;">
-1599.95
+1594.75
 </td>
 <td style="text-align:right;">
 1580.65
@@ -2692,24 +3009,24 @@ Industrial
 2018-07-09
 </td>
 <td style="text-align:right;">
-0.394
+0.109
 </td>
 <td style="text-align:right;">
-1.22
+0.89
 </td>
 <td style="text-align:right;">
-0.41520
+0.30543
 </td>
 <td style="text-align:right;">
-6.42
+6.73
 </td>
 <td style="text-align:right;">
-60.87
+61.06
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-27
+32
 </td>
 <td style="text-align:left;">
 ENIL
@@ -2718,7 +3035,7 @@ ENIL
 Media
 </td>
 <td style="text-align:right;">
-698.80
+704.25
 </td>
 <td style="text-align:right;">
 725.60
@@ -2727,24 +3044,24 @@ Media
 2018-07-09
 </td>
 <td style="text-align:right;">
--0.009
+-0.293
 </td>
 <td style="text-align:right;">
--3.69
+-2.94
 </td>
 <td style="text-align:right;">
-1.16830
+1.29950
 </td>
 <td style="text-align:right;">
-26.36
+25.79
 </td>
 <td style="text-align:right;">
-66.67
+62.50
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-28
+33
 </td>
 <td style="text-align:left;">
 LTI
@@ -2753,7 +3070,7 @@ LTI
 Technology
 </td>
 <td style="text-align:right;">
-1750.95
+1721.20
 </td>
 <td style="text-align:right;">
 1667.95
@@ -2762,23 +3079,23 @@ Technology
 2018-07-06
 </td>
 <td style="text-align:right;">
-0.533
+0.264
 </td>
 <td style="text-align:right;">
-4.98
+3.19
 </td>
 <td style="text-align:right;">
-2.32802
+2.28343
 </td>
 <td style="text-align:right;">
-7.04
+8.62
 </td>
 <td style="text-align:right;">
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-29
+34
 </td>
 <td style="text-align:left;">
 TANLA
@@ -2787,7 +3104,7 @@ TANLA
 Technology
 </td>
 <td style="text-align:right;">
-39.00
+37.30
 </td>
 <td style="text-align:right;">
 33.95
@@ -2796,16 +3113,16 @@ Technology
 2018-07-05
 </td>
 <td style="text-align:right;">
-1.119
+0.284
 </td>
 <td style="text-align:right;">
-14.87
+9.87
 </td>
 <td style="text-align:right;">
-1.21020
+0.95388
 </td>
 <td style="text-align:right;">
-17.37
+20.97
 </td>
 <td style="text-align:right;">
 75.51
@@ -2813,7 +3130,7 @@ Technology
 </tr>
 <tr>
 <td style="text-align:right;">
-30
+35
 </td>
 <td style="text-align:left;">
 DMART
@@ -2822,7 +3139,7 @@ DMART
 Retail
 </td>
 <td style="text-align:right;">
-1521.50
+1531.60
 </td>
 <td style="text-align:right;">
 1538.30
@@ -2831,23 +3148,23 @@ Retail
 2018-07-04
 </td>
 <td style="text-align:right;">
--0.296
+-0.201
 </td>
 <td style="text-align:right;">
--1.09
+-0.44
 </td>
 <td style="text-align:right;">
-0.49504
+0.60800
 </td>
 <td style="text-align:right;">
-6.25
+5.63
 </td>
 <td style="text-align:right;">
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-31
+36
 </td>
 <td style="text-align:left;">
 SUVEN
@@ -2856,7 +3173,7 @@ SUVEN
 Consumer, Non-cyclical
 </td>
 <td style="text-align:right;">
-223.80
+230.40
 </td>
 <td style="text-align:right;">
 218.25
@@ -2865,16 +3182,16 @@ Consumer, Non-cyclical
 2018-07-04
 </td>
 <td style="text-align:right;">
-0.050
+0.112
 </td>
 <td style="text-align:right;">
-2.54
+5.57
 </td>
 <td style="text-align:right;">
-0.46099
+0.56741
 </td>
 <td style="text-align:right;">
-10.77
+8.13
 </td>
 <td style="text-align:right;">
 62.00
@@ -2882,7 +3199,7 @@ Consumer, Non-cyclical
 </tr>
 <tr>
 <td style="text-align:right;">
-32
+37
 </td>
 <td style="text-align:left;">
 PERSISTENT
@@ -2891,7 +3208,7 @@ PERSISTENT
 Technology
 </td>
 <td style="text-align:right;">
-824.05
+841.00
 </td>
 <td style="text-align:right;">
 829.30
@@ -2900,16 +3217,16 @@ Technology
 2018-07-04
 </td>
 <td style="text-align:right;">
--0.140
+-0.115
 </td>
 <td style="text-align:right;">
--0.63
+1.41
 </td>
 <td style="text-align:right;">
-1.13185
+0.79280
 </td>
 <td style="text-align:right;">
-6.14
+4.21
 </td>
 <td style="text-align:right;">
 44.90
@@ -2917,7 +3234,7 @@ Technology
 </tr>
 <tr>
 <td style="text-align:right;">
-33
+38
 </td>
 <td style="text-align:left;">
 IPCALAB
@@ -2926,7 +3243,7 @@ IPCALAB
 Pharma
 </td>
 <td style="text-align:right;">
-741.60
+765.10
 </td>
 <td style="text-align:right;">
 717.60
@@ -2935,16 +3252,16 @@ Pharma
 2018-07-04
 </td>
 <td style="text-align:right;">
-0.602
+0.758
 </td>
 <td style="text-align:right;">
-3.34
+6.62
 </td>
 <td style="text-align:right;">
-0.27633
+0.47392
 </td>
 <td style="text-align:right;">
-3.25
+1.68
 </td>
 <td style="text-align:right;">
 35.14
@@ -2952,7 +3269,7 @@ Pharma
 </tr>
 <tr>
 <td style="text-align:right;">
-34
+39
 </td>
 <td style="text-align:left;">
 KIRIINDUS
@@ -2961,7 +3278,7 @@ KIRIINDUS
 Basic Materials
 </td>
 <td style="text-align:right;">
-545.85
+539.85
 </td>
 <td style="text-align:right;">
 576.95
@@ -2970,24 +3287,24 @@ Basic Materials
 2018-07-03
 </td>
 <td style="text-align:right;">
--0.799
+-1.187
 </td>
 <td style="text-align:right;">
--5.39
+-6.43
 </td>
 <td style="text-align:right;">
-0.58673
+0.53242
 </td>
 <td style="text-align:right;">
-20.00
+20.88
 </td>
 <td style="text-align:right;">
-98.80
+98.78
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-35
+40
 </td>
 <td style="text-align:left;">
 HEG
@@ -2996,7 +3313,7 @@ HEG
 Industrial
 </td>
 <td style="text-align:right;">
-4122.80
+4068.45
 </td>
 <td style="text-align:right;">
 3476.00
@@ -3005,16 +3322,16 @@ Industrial
 2018-07-02
 </td>
 <td style="text-align:right;">
-1.427
+0.802
 </td>
 <td style="text-align:right;">
-18.61
+17.04
 </td>
 <td style="text-align:right;">
-0.98199
+1.01147
 </td>
 <td style="text-align:right;">
-0.54
+2.84
 </td>
 <td style="text-align:right;">
 100.00
@@ -3022,7 +3339,7 @@ Industrial
 </tr>
 <tr>
 <td style="text-align:right;">
-36
+41
 </td>
 <td style="text-align:left;">
 BHARATRAS
@@ -3031,7 +3348,7 @@ BHARATRAS
 Basic Materials
 </td>
 <td style="text-align:right;">
-6199.15
+6572.00
 </td>
 <td style="text-align:right;">
 6415.95
@@ -3040,16 +3357,16 @@ Basic Materials
 2018-06-29
 </td>
 <td style="text-align:right;">
-0.073
+-0.241
 </td>
 <td style="text-align:right;">
--3.38
+2.43
 </td>
 <td style="text-align:right;">
-0.74839
+0.88481
 </td>
 <td style="text-align:right;">
-17.87
+12.93
 </td>
 <td style="text-align:right;">
 100.00
@@ -3057,7 +3374,7 @@ Basic Materials
 </tr>
 <tr>
 <td style="text-align:right;">
-37
+42
 </td>
 <td style="text-align:left;">
 GRAPHITE
@@ -3066,7 +3383,7 @@ GRAPHITE
 Industrial
 </td>
 <td style="text-align:right;">
-1016.00
+1006.60
 </td>
 <td style="text-align:right;">
 840.10
@@ -3075,24 +3392,24 @@ Industrial
 2018-06-29
 </td>
 <td style="text-align:right;">
-0.807
+0.229
 </td>
 <td style="text-align:right;">
-20.94
+19.82
 </td>
 <td style="text-align:right;">
-0.87003
+0.85685
 </td>
 <td style="text-align:right;">
-1.11
+2.02
 </td>
 <td style="text-align:right;">
-99.03
+99.04
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-38
+43
 </td>
 <td style="text-align:left;">
 GTNIND
@@ -3101,7 +3418,7 @@ GTNIND
 Textiles
 </td>
 <td style="text-align:right;">
-16.85
+16.15
 </td>
 <td style="text-align:right;">
 14.10
@@ -3110,16 +3427,16 @@ Textiles
 2018-06-28
 </td>
 <td style="text-align:right;">
-0.622
+0.394
 </td>
 <td style="text-align:right;">
-19.50
+14.54
 </td>
 <td style="text-align:right;">
-1.38231
+1.29063
 </td>
 <td style="text-align:right;">
-29.94
+32.85
 </td>
 <td style="text-align:right;">
 35.56
@@ -3127,7 +3444,7 @@ Textiles
 </tr>
 <tr>
 <td style="text-align:right;">
-39
+44
 </td>
 <td style="text-align:left;">
 NORBTEAEXP
@@ -3136,7 +3453,7 @@ NORBTEAEXP
 Foods
 </td>
 <td style="text-align:right;">
-10.50
+10.70
 </td>
 <td style="text-align:right;">
 7.70
@@ -3145,13 +3462,13 @@ Foods
 2018-06-25
 </td>
 <td style="text-align:right;">
-1.791
+1.527
 </td>
 <td style="text-align:right;">
-36.36
+38.96
 </td>
 <td style="text-align:right;">
-0.45536
+0.56160
 </td>
 <td style="text-align:right;">
 0.00
@@ -3162,7 +3479,7 @@ Foods
 </tr>
 <tr>
 <td style="text-align:right;">
-40
+45
 </td>
 <td style="text-align:left;">
 INVENTURE
@@ -3171,7 +3488,7 @@ INVENTURE
 Financial
 </td>
 <td style="text-align:right;">
-17.25
+17.45
 </td>
 <td style="text-align:right;">
 17.25
@@ -3180,16 +3497,16 @@ Financial
 2018-06-22
 </td>
 <td style="text-align:right;">
--0.056
+0.060
 </td>
 <td style="text-align:right;">
-0.00
+1.16
 </td>
 <td style="text-align:right;">
-0.49967
+0.46111
 </td>
 <td style="text-align:right;">
-28.12
+27.29
 </td>
 <td style="text-align:right;">
 48.94
@@ -3197,7 +3514,7 @@ Financial
 </tr>
 <tr>
 <td style="text-align:right;">
-41
+46
 </td>
 <td style="text-align:left;">
 WHEELS
@@ -3206,7 +3523,7 @@ WHEELS
 Consumer, Cyclical
 </td>
 <td style="text-align:right;">
-2279.20
+2241.25
 </td>
 <td style="text-align:right;">
 2375.75
@@ -3215,16 +3532,16 @@ Consumer, Cyclical
 2018-06-19
 </td>
 <td style="text-align:right;">
-0.179
+-0.078
 </td>
 <td style="text-align:right;">
--4.06
+-5.66
 </td>
 <td style="text-align:right;">
-0.23408
+0.25782
 </td>
 <td style="text-align:right;">
-15.40
+16.81
 </td>
 <td style="text-align:right;">
 73.68
@@ -3232,7 +3549,7 @@ Consumer, Cyclical
 </tr>
 <tr>
 <td style="text-align:right;">
-42
+47
 </td>
 <td style="text-align:left;">
 APLLTD
@@ -3241,7 +3558,7 @@ APLLTD
 Pharma
 </td>
 <td style="text-align:right;">
-531.55
+545.70
 </td>
 <td style="text-align:right;">
 509.55
@@ -3250,16 +3567,16 @@ Pharma
 2018-06-18
 </td>
 <td style="text-align:right;">
-0.242
+0.609
 </td>
 <td style="text-align:right;">
-4.32
+7.09
 </td>
 <td style="text-align:right;">
-0.34781
+0.40078
 </td>
 <td style="text-align:right;">
-9.82
+7.41
 </td>
 <td style="text-align:right;">
 48.65
@@ -3267,7 +3584,7 @@ Pharma
 </tr>
 <tr>
 <td style="text-align:right;">
-43
+48
 </td>
 <td style="text-align:left;">
 ABBOTINDIA
@@ -3276,7 +3593,7 @@ ABBOTINDIA
 Consumer, Non-cyclical
 </td>
 <td style="text-align:right;">
-7311.95
+7487.00
 </td>
 <td style="text-align:right;">
 6519.65
@@ -3285,16 +3602,16 @@ Consumer, Non-cyclical
 2018-06-15
 </td>
 <td style="text-align:right;">
-0.197
+0.465
 </td>
 <td style="text-align:right;">
-12.15
+14.84
 </td>
 <td style="text-align:right;">
-0.51998
+1.21534
 </td>
 <td style="text-align:right;">
-6.85
+4.62
 </td>
 <td style="text-align:right;">
 70.00
@@ -3302,7 +3619,7 @@ Consumer, Non-cyclical
 </tr>
 <tr>
 <td style="text-align:right;">
-44
+49
 </td>
 <td style="text-align:left;">
 PGHH
@@ -3311,7 +3628,7 @@ PGHH
 Healthcare
 </td>
 <td style="text-align:right;">
-10428.95
+10527.95
 </td>
 <td style="text-align:right;">
 9648.15
@@ -3320,16 +3637,16 @@ Healthcare
 2018-06-13
 </td>
 <td style="text-align:right;">
-0.475
+0.477
 </td>
 <td style="text-align:right;">
-8.09
+9.12
 </td>
 <td style="text-align:right;">
-1.55023
+1.84723
 </td>
 <td style="text-align:right;">
-8.01
+7.14
 </td>
 <td style="text-align:right;">
 76.92
@@ -3337,7 +3654,7 @@ Healthcare
 </tr>
 <tr>
 <td style="text-align:right;">
-45
+50
 </td>
 <td style="text-align:left;">
 GREAVESCOT
@@ -3346,7 +3663,7 @@ GREAVESCOT
 Industrial
 </td>
 <td style="text-align:right;">
-143.50
+144.90
 </td>
 <td style="text-align:right;">
 136.50
@@ -3355,58 +3672,24 @@ Industrial
 2018-06-12
 </td>
 <td style="text-align:right;">
-0.137
+0.125
 </td>
 <td style="text-align:right;">
-5.13
+6.15
 </td>
 <td style="text-align:right;">
-0.32544
+0.29004
 </td>
 <td style="text-align:right;">
-15.98
+15.16
 </td>
 <td style="text-align:right;">
-36.23
+36.54
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-46
-</td>
-<td style="text-align:left;">
-MUTHOOTCAP
-</td>
-<td style="text-align:left;">
-NBFC
-</td>
-<td style="text-align:right;">
-1007.50
-</td>
-<td style="text-align:right;">
-941.60
-</td>
-<td style="text-align:left;">
-2018-06-12
-</td>
-<td style="text-align:right;">
--0.047
-</td>
-<td style="text-align:right;">
-7.00
-</td>
-<td style="text-align:right;">
-1.84145
-</td>
-<td style="text-align:right;">
-10.76
-</td>
-<td style="text-align:right;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-47
+51
 </td>
 <td style="text-align:left;">
 ZYDUSWELL
@@ -3415,7 +3698,7 @@ ZYDUSWELL
 FMCG
 </td>
 <td style="text-align:right;">
-1425.95
+1393.25
 </td>
 <td style="text-align:right;">
 1309.45
@@ -3424,16 +3707,16 @@ FMCG
 2018-06-11
 </td>
 <td style="text-align:right;">
--0.315
+-0.568
 </td>
 <td style="text-align:right;">
-8.90
+6.40
 </td>
 <td style="text-align:right;">
-0.18937
+0.46688
 </td>
 <td style="text-align:right;">
-5.57
+7.73
 </td>
 <td style="text-align:right;">
 60.00
@@ -3441,7 +3724,7 @@ FMCG
 </tr>
 <tr>
 <td style="text-align:right;">
-48
+52
 </td>
 <td style="text-align:left;">
 IBVENTURES
@@ -3450,7 +3733,7 @@ IBVENTURES
 Real estate
 </td>
 <td style="text-align:right;">
-502.95
+509.15
 </td>
 <td style="text-align:right;">
 450.45
@@ -3459,23 +3742,23 @@ Real estate
 2018-06-08
 </td>
 <td style="text-align:right;">
-0.623
+0.620
 </td>
 <td style="text-align:right;">
-11.66
+13.03
 </td>
 <td style="text-align:right;">
-0.77006
+1.01277
 </td>
 <td style="text-align:right;">
-7.55
+6.41
 </td>
 <td style="text-align:right;">
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-49
+53
 </td>
 <td style="text-align:left;">
 TCIEXP
@@ -3484,7 +3767,7 @@ TCIEXP
 Logistics
 </td>
 <td style="text-align:right;">
-580.60
+590.10
 </td>
 <td style="text-align:right;">
 547.95
@@ -3493,58 +3776,23 @@ Logistics
 2018-06-08
 </td>
 <td style="text-align:right;">
-0.456
+0.291
 </td>
 <td style="text-align:right;">
-5.96
+7.69
 </td>
 <td style="text-align:right;">
-1.93777
+1.84972
 </td>
 <td style="text-align:right;">
-9.98
+8.51
 </td>
 <td style="text-align:right;">
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-50
-</td>
-<td style="text-align:left;">
-GARWALLROP
-</td>
-<td style="text-align:left;">
-Consumer, Cyclical
-</td>
-<td style="text-align:right;">
-1088.15
-</td>
-<td style="text-align:right;">
-985.75
-</td>
-<td style="text-align:left;">
-2018-06-07
-</td>
-<td style="text-align:right;">
--0.519
-</td>
-<td style="text-align:right;">
-10.39
-</td>
-<td style="text-align:right;">
-1.56766
-</td>
-<td style="text-align:right;">
-20.13
-</td>
-<td style="text-align:right;">
-98.68
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-51
+54
 </td>
 <td style="text-align:left;">
 PUNJABCHEM
@@ -3553,7 +3801,7 @@ PUNJABCHEM
 Chemicals
 </td>
 <td style="text-align:right;">
-610.20
+661.00
 </td>
 <td style="text-align:right;">
 522.60
@@ -3562,16 +3810,16 @@ Chemicals
 2018-06-07
 </td>
 <td style="text-align:right;">
-0.683
+1.400
 </td>
 <td style="text-align:right;">
-16.76
+26.48
 </td>
 <td style="text-align:right;">
-0.63174
+1.90041
 </td>
 <td style="text-align:right;">
-4.36
+1.93
 </td>
 <td style="text-align:right;">
 91.30
@@ -3579,7 +3827,7 @@ Chemicals
 </tr>
 <tr>
 <td style="text-align:right;">
-52
+55
 </td>
 <td style="text-align:left;">
 MAHSCOOTER
@@ -3588,7 +3836,7 @@ MAHSCOOTER
 Autos
 </td>
 <td style="text-align:right;">
-3053.30
+3073.25
 </td>
 <td style="text-align:right;">
 2604.40
@@ -3597,16 +3845,16 @@ Autos
 2018-06-07
 </td>
 <td style="text-align:right;">
-0.473
+0.483
 </td>
 <td style="text-align:right;">
-17.24
+18.00
 </td>
 <td style="text-align:right;">
-1.02054
+1.07320
 </td>
 <td style="text-align:right;">
-11.50
+10.92
 </td>
 <td style="text-align:right;">
 84.21
@@ -3614,7 +3862,7 @@ Autos
 </tr>
 <tr>
 <td style="text-align:right;">
-53
+56
 </td>
 <td style="text-align:left;">
 SANOFI
@@ -3623,7 +3871,7 @@ SANOFI
 Consumer, Non-cyclical
 </td>
 <td style="text-align:right;">
-5489.20
+5579.90
 </td>
 <td style="text-align:right;">
 5068.35
@@ -3632,16 +3880,16 @@ Consumer, Non-cyclical
 2018-06-05
 </td>
 <td style="text-align:right;">
-0.464
+0.360
 </td>
 <td style="text-align:right;">
-8.30
+10.09
 </td>
 <td style="text-align:right;">
-1.90915
+0.90115
 </td>
 <td style="text-align:right;">
-2.33
+0.71
 </td>
 <td style="text-align:right;">
 52.00
@@ -3649,7 +3897,7 @@ Consumer, Non-cyclical
 </tr>
 <tr>
 <td style="text-align:right;">
-54
+57
 </td>
 <td style="text-align:left;">
 SUNDRMFAST
@@ -3658,7 +3906,7 @@ SUNDRMFAST
 Consumer, Cyclical
 </td>
 <td style="text-align:right;">
-646.90
+640.60
 </td>
 <td style="text-align:right;">
 633.65
@@ -3667,16 +3915,16 @@ Consumer, Cyclical
 2018-05-31
 </td>
 <td style="text-align:right;">
-0.253
+0.006
 </td>
 <td style="text-align:right;">
-2.09
+1.10
 </td>
 <td style="text-align:right;">
-0.54272
+0.58130
 </td>
 <td style="text-align:right;">
-3.16
+4.10
 </td>
 <td style="text-align:right;">
 96.05
@@ -3684,7 +3932,7 @@ Consumer, Cyclical
 </tr>
 <tr>
 <td style="text-align:right;">
-55
+58
 </td>
 <td style="text-align:left;">
 PLASTIBLEN
@@ -3693,7 +3941,7 @@ PLASTIBLEN
 Basic Materials
 </td>
 <td style="text-align:right;">
-222.05
+221.20
 </td>
 <td style="text-align:right;">
 213.40
@@ -3705,21 +3953,21 @@ Basic Materials
 0.615
 </td>
 <td style="text-align:right;">
-4.05
+3.66
 </td>
 <td style="text-align:right;">
-3.65016
+1.65921
 </td>
 <td style="text-align:right;">
-28.37
+26.88
 </td>
 <td style="text-align:right;">
-51.81
+51.22
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-56
+59
 </td>
 <td style="text-align:left;">
 GLAXO
@@ -3728,7 +3976,7 @@ GLAXO
 Pharma
 </td>
 <td style="text-align:right;">
-2769.15
+2780.65
 </td>
 <td style="text-align:right;">
 2464.00
@@ -3737,16 +3985,16 @@ Pharma
 2018-05-30
 </td>
 <td style="text-align:right;">
--0.338
+-0.295
 </td>
 <td style="text-align:right;">
-12.38
+12.85
 </td>
 <td style="text-align:right;">
-0.55067
+0.51862
 </td>
 <td style="text-align:right;">
-7.54
+7.15
 </td>
 <td style="text-align:right;">
 32.43
@@ -3754,7 +4002,7 @@ Pharma
 </tr>
 <tr>
 <td style="text-align:right;">
-57
+60
 </td>
 <td style="text-align:left;">
 TRITURBINE
@@ -3763,7 +4011,7 @@ TRITURBINE
 Industrial
 </td>
 <td style="text-align:right;">
-114.80
+115.20
 </td>
 <td style="text-align:right;">
 110.10
@@ -3772,24 +4020,24 @@ Industrial
 2018-05-29
 </td>
 <td style="text-align:right;">
-0.026
+0.056
 </td>
 <td style="text-align:right;">
-4.27
+4.63
 </td>
 <td style="text-align:right;">
-0.34191
+0.33156
 </td>
 <td style="text-align:right;">
-23.21
+22.94
 </td>
 <td style="text-align:right;">
-35.75
+36.06
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-58
+61
 </td>
 <td style="text-align:left;">
 PAGEIND
@@ -3798,7 +4046,7 @@ PAGEIND
 Textiles
 </td>
 <td style="text-align:right;">
-28460.90
+28513.65
 </td>
 <td style="text-align:right;">
 24540.75
@@ -3807,16 +4055,16 @@ Textiles
 2018-05-25
 </td>
 <td style="text-align:right;">
-0.024
+-0.327
 </td>
 <td style="text-align:right;">
-15.97
+16.19
 </td>
 <td style="text-align:right;">
-0.62627
+0.51733
 </td>
 <td style="text-align:right;">
-4.09
+3.92
 </td>
 <td style="text-align:right;">
 95.56
@@ -3824,7 +4072,7 @@ Textiles
 </tr>
 <tr>
 <td style="text-align:right;">
-59
+62
 </td>
 <td style="text-align:left;">
 BAJAJHLDNG
@@ -3833,7 +4081,7 @@ BAJAJHLDNG
 Financial
 </td>
 <td style="text-align:right;">
-3020.00
+3047.40
 </td>
 <td style="text-align:right;">
 2762.30
@@ -3842,16 +4090,16 @@ Financial
 2018-05-18
 </td>
 <td style="text-align:right;">
-0.257
+0.124
 </td>
 <td style="text-align:right;">
-9.33
+10.32
 </td>
 <td style="text-align:right;">
-1.28325
+1.62680
 </td>
 <td style="text-align:right;">
-7.02
+6.18
 </td>
 <td style="text-align:right;">
 68.09
@@ -3859,7 +4107,7 @@ Financial
 </tr>
 <tr>
 <td style="text-align:right;">
-60
+63
 </td>
 <td style="text-align:left;">
 ASTRAZEN
@@ -3868,7 +4116,7 @@ ASTRAZEN
 Pharma
 </td>
 <td style="text-align:right;">
-1424.00
+1439.60
 </td>
 <td style="text-align:right;">
 1044.35
@@ -3877,16 +4125,16 @@ Pharma
 2018-04-30
 </td>
 <td style="text-align:right;">
-0.309
+0.257
 </td>
 <td style="text-align:right;">
-36.35
+37.85
 </td>
 <td style="text-align:right;">
-0.14712
+0.13054
 </td>
 <td style="text-align:right;">
-6.86
+5.83
 </td>
 <td style="text-align:right;">
 70.27
@@ -3894,7 +4142,7 @@ Pharma
 </tr>
 <tr>
 <td style="text-align:right;">
-61
+64
 </td>
 <td style="text-align:left;">
 BANG
@@ -3903,7 +4151,7 @@ BANG
 Industrial
 </td>
 <td style="text-align:right;">
-54.80
+55.20
 </td>
 <td style="text-align:right;">
 33.50
@@ -3912,24 +4160,24 @@ Industrial
 2018-04-11
 </td>
 <td style="text-align:right;">
--0.105
+0.103
 </td>
 <td style="text-align:right;">
-63.58
+64.78
 </td>
 <td style="text-align:right;">
-0.70917
+0.64984
 </td>
 <td style="text-align:right;">
-8.51
+7.85
 </td>
 <td style="text-align:right;">
-90.34
+90.38
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-62
+65
 </td>
 <td style="text-align:left;">
 MPHASIS
@@ -3938,7 +4186,7 @@ MPHASIS
 Technology
 </td>
 <td style="text-align:right;">
-1162.35
+1127.40
 </td>
 <td style="text-align:right;">
 869.70
@@ -3947,16 +4195,16 @@ Technology
 2018-04-04
 </td>
 <td style="text-align:right;">
-0.490
+0.114
 </td>
 <td style="text-align:right;">
-33.65
+29.63
 </td>
 <td style="text-align:right;">
-0.96677
+1.02395
 </td>
 <td style="text-align:right;">
-5.83
+8.66
 </td>
 <td style="text-align:right;">
 73.47
@@ -3964,7 +4212,7 @@ Technology
 </tr>
 <tr>
 <td style="text-align:right;">
-63
+66
 </td>
 <td style="text-align:left;">
 RESPONIND
@@ -3973,7 +4221,7 @@ RESPONIND
 Industrial
 </td>
 <td style="text-align:right;">
-88.90
+91.75
 </td>
 <td style="text-align:right;">
 46.35
@@ -3982,24 +4230,24 @@ Industrial
 2018-04-03
 </td>
 <td style="text-align:right;">
-1.198
+0.664
 </td>
 <td style="text-align:right;">
-91.80
+97.95
 </td>
 <td style="text-align:right;">
-2.55227
+1.93202
 </td>
 <td style="text-align:right;">
-15.41
+12.70
 </td>
 <td style="text-align:right;">
-28.02
+28.37
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-64
+67
 </td>
 <td style="text-align:left;">
 MONSANTO
@@ -4017,19 +4265,19 @@ Basic Materials
 2018-03-26
 </td>
 <td style="text-align:right;">
-0.118
+0.107
 </td>
 <td style="text-align:right;">
 9.68
 </td>
 <td style="text-align:right;">
-0.47086
+0.40749
 </td>
 <td style="text-align:right;">
 6.45
 </td>
 <td style="text-align:right;">
-40.96
+40.24
 </td>
 </tr>
 </tbody>
@@ -4086,7 +4334,7 @@ KTKBANK
 Bank - PSU
 </td>
 <td style="text-align:right;">
-108.65
+110.50
 </td>
 <td style="text-align:right;">
 110.90
@@ -4095,16 +4343,16 @@ Bank - PSU
 2018-07-16
 </td>
 <td style="text-align:right;">
--0.068
+-0.623
 </td>
 <td style="text-align:right;">
-2.03
+0.36
 </td>
 <td style="text-align:right;">
-1.42781
+1.23685
 </td>
 <td style="text-align:right;">
-3.38
+5.14
 </td>
 <td style="text-align:right;">
 77.78
@@ -4121,7 +4369,7 @@ DCBBANK
 Bank - Private
 </td>
 <td style="text-align:right;">
-160.50
+159.60
 </td>
 <td style="text-align:right;">
 161.75
@@ -4130,325 +4378,13 @@ Bank - Private
 2018-07-16
 </td>
 <td style="text-align:right;">
--0.429
+-0.983
 </td>
 <td style="text-align:right;">
-0.77
+1.33
 </td>
 <td style="text-align:right;">
-3.00693
-</td>
-<td style="text-align:right;">
-3.51
-</td>
-<td style="text-align:right;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:left;">
-UJJIVAN
-</td>
-<td style="text-align:left;">
-Financial
-</td>
-<td style="text-align:right;">
-380.30
-</td>
-<td style="text-align:right;">
-373.55
-</td>
-<td style="text-align:left;">
-2018-07-16
-</td>
-<td style="text-align:right;">
-0.060
-</td>
-<td style="text-align:right;">
--1.81
-</td>
-<td style="text-align:right;">
-0.74080
-</td>
-<td style="text-align:right;">
-33.44
-</td>
-<td style="text-align:right;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:left;">
-JPASSOCIAT
-</td>
-<td style="text-align:left;">
-Industrial
-</td>
-<td style="text-align:right;">
-15.10
-</td>
-<td style="text-align:right;">
-14.05
-</td>
-<td style="text-align:left;">
-2018-07-16
-</td>
-<td style="text-align:right;">
--0.306
-</td>
-<td style="text-align:right;">
--7.47
-</td>
-<td style="text-align:right;">
-0.85808
-</td>
-<td style="text-align:right;">
-22.76
-</td>
-<td style="text-align:right;">
-22.22
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-5
-</td>
-<td style="text-align:left;">
-CGPOWER
-</td>
-<td style="text-align:left;">
-Industrial
-</td>
-<td style="text-align:right;">
-59.30
-</td>
-<td style="text-align:right;">
-57.35
-</td>
-<td style="text-align:left;">
-2018-07-13
-</td>
-<td style="text-align:right;">
--0.081
-</td>
-<td style="text-align:right;">
--3.40
-</td>
-<td style="text-align:right;">
-0.59793
-</td>
-<td style="text-align:right;">
-26.84
-</td>
-<td style="text-align:right;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-6
-</td>
-<td style="text-align:left;">
-COALINDIA
-</td>
-<td style="text-align:left;">
-Energy
-</td>
-<td style="text-align:right;">
-263.50
-</td>
-<td style="text-align:right;">
-264.80
-</td>
-<td style="text-align:left;">
-2018-07-11
-</td>
-<td style="text-align:right;">
--0.267
-</td>
-<td style="text-align:right;">
-0.49
-</td>
-<td style="text-align:right;">
-0.69265
-</td>
-<td style="text-align:right;">
-12.75
-</td>
-<td style="text-align:right;">
-50.00
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-7
-</td>
-<td style="text-align:left;">
-JSWSTEEL
-</td>
-<td style="text-align:left;">
-Commodities
-</td>
-<td style="text-align:right;">
-304.15
-</td>
-<td style="text-align:right;">
-311.70
-</td>
-<td style="text-align:left;">
-2018-07-03
-</td>
-<td style="text-align:right;">
--0.126
-</td>
-<td style="text-align:right;">
-2.42
-</td>
-<td style="text-align:right;">
-1.35814
-</td>
-<td style="text-align:right;">
-44.15
-</td>
-<td style="text-align:right;">
-17.24
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-8
-</td>
-<td style="text-align:left;">
-RELCAPITAL
-</td>
-<td style="text-align:left;">
-Financial
-</td>
-<td style="text-align:right;">
-350.75
-</td>
-<td style="text-align:right;">
-397.85
-</td>
-<td style="text-align:left;">
-2018-06-27
-</td>
-<td style="text-align:right;">
--0.472
-</td>
-<td style="text-align:right;">
-11.84
-</td>
-<td style="text-align:right;">
-1.40311
-</td>
-<td style="text-align:right;">
-4.92
-</td>
-<td style="text-align:right;">
-19.15
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-9
-</td>
-<td style="text-align:left;">
-PFC
-</td>
-<td style="text-align:left;">
-Financial
-</td>
-<td style="text-align:right;">
-71.20
-</td>
-<td style="text-align:right;">
-75.60
-</td>
-<td style="text-align:left;">
-2018-06-27
-</td>
-<td style="text-align:right;">
--0.380
-</td>
-<td style="text-align:right;">
-5.82
-</td>
-<td style="text-align:right;">
-1.02494
-</td>
-<td style="text-align:right;">
-5.48
-</td>
-<td style="text-align:right;">
-12.77
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-10
-</td>
-<td style="text-align:left;">
-RELINFRA
-</td>
-<td style="text-align:left;">
-Infrastructure
-</td>
-<td style="text-align:right;">
-386.75
-</td>
-<td style="text-align:right;">
-395.40
-</td>
-<td style="text-align:left;">
-2018-06-27
-</td>
-<td style="text-align:right;">
-0.092
-</td>
-<td style="text-align:right;">
-2.19
-</td>
-<td style="text-align:right;">
-1.05005
-</td>
-<td style="text-align:right;">
-6.06
-</td>
-<td style="text-align:right;">
-42.86
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-11
-</td>
-<td style="text-align:left;">
-IDFCBANK
-</td>
-<td style="text-align:left;">
-Bank - Private
-</td>
-<td style="text-align:right;">
-36.85
-</td>
-<td style="text-align:right;">
-41.70
-</td>
-<td style="text-align:left;">
-2018-06-26
-</td>
-<td style="text-align:right;">
--0.514
-</td>
-<td style="text-align:right;">
-11.63
-</td>
-<td style="text-align:right;">
-0.59747
+1.74430
 </td>
 <td style="text-align:right;">
 2.93
@@ -4458,7 +4394,251 @@ Bank - Private
 </tr>
 <tr>
 <td style="text-align:right;">
-12
+3
+</td>
+<td style="text-align:left;">
+JPASSOCIAT
+</td>
+<td style="text-align:left;">
+Industrial
+</td>
+<td style="text-align:right;">
+15.15
+</td>
+<td style="text-align:right;">
+14.05
+</td>
+<td style="text-align:left;">
+2018-07-16
+</td>
+<td style="text-align:right;">
+-0.719
+</td>
+<td style="text-align:right;">
+-7.83
+</td>
+<td style="text-align:right;">
+0.68766
+</td>
+<td style="text-align:right;">
+23.17
+</td>
+<td style="text-align:right;">
+22.60
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+COALINDIA
+</td>
+<td style="text-align:left;">
+Energy
+</td>
+<td style="text-align:right;">
+261.70
+</td>
+<td style="text-align:right;">
+264.80
+</td>
+<td style="text-align:left;">
+2018-07-11
+</td>
+<td style="text-align:right;">
+-0.333
+</td>
+<td style="text-align:right;">
+1.17
+</td>
+<td style="text-align:right;">
+0.66952
+</td>
+<td style="text-align:right;">
+11.98
+</td>
+<td style="text-align:right;">
+50.00
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+JSWSTEEL
+</td>
+<td style="text-align:left;">
+Commodities
+</td>
+<td style="text-align:right;">
+306.65
+</td>
+<td style="text-align:right;">
+311.70
+</td>
+<td style="text-align:left;">
+2018-07-03
+</td>
+<td style="text-align:right;">
+-0.182
+</td>
+<td style="text-align:right;">
+1.62
+</td>
+<td style="text-align:right;">
+1.36115
+</td>
+<td style="text-align:right;">
+45.33
+</td>
+<td style="text-align:right;">
+17.24
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:left;">
+RELCAPITAL
+</td>
+<td style="text-align:left;">
+Financial
+</td>
+<td style="text-align:right;">
+364.20
+</td>
+<td style="text-align:right;">
+397.85
+</td>
+<td style="text-align:left;">
+2018-06-27
+</td>
+<td style="text-align:right;">
+-0.431
+</td>
+<td style="text-align:right;">
+8.46
+</td>
+<td style="text-align:right;">
+1.40041
+</td>
+<td style="text-align:right;">
+8.94
+</td>
+<td style="text-align:right;">
+19.15
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+PFC
+</td>
+<td style="text-align:left;">
+Financial
+</td>
+<td style="text-align:right;">
+70.70
+</td>
+<td style="text-align:right;">
+75.60
+</td>
+<td style="text-align:left;">
+2018-06-27
+</td>
+<td style="text-align:right;">
+-0.491
+</td>
+<td style="text-align:right;">
+6.48
+</td>
+<td style="text-align:right;">
+0.96643
+</td>
+<td style="text-align:right;">
+4.74
+</td>
+<td style="text-align:right;">
+12.77
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:left;">
+RELINFRA
+</td>
+<td style="text-align:left;">
+Infrastructure
+</td>
+<td style="text-align:right;">
+396.50
+</td>
+<td style="text-align:right;">
+395.40
+</td>
+<td style="text-align:left;">
+2018-06-27
+</td>
+<td style="text-align:right;">
+-0.172
+</td>
+<td style="text-align:right;">
+-0.28
+</td>
+<td style="text-align:right;">
+1.02904
+</td>
+<td style="text-align:right;">
+8.73
+</td>
+<td style="text-align:right;">
+42.86
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+IDFCBANK
+</td>
+<td style="text-align:left;">
+Bank - Private
+</td>
+<td style="text-align:right;">
+37.70
+</td>
+<td style="text-align:right;">
+41.70
+</td>
+<td style="text-align:left;">
+2018-06-26
+</td>
+<td style="text-align:right;">
+-0.283
+</td>
+<td style="text-align:right;">
+9.59
+</td>
+<td style="text-align:right;">
+0.62593
+</td>
+<td style="text-align:right;">
+5.31
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
 </td>
 <td style="text-align:left;">
 IDEA
@@ -4467,7 +4647,7 @@ IDEA
 Telecom
 </td>
 <td style="text-align:right;">
-51.15
+52.55
 </td>
 <td style="text-align:right;">
 56.00
@@ -4476,16 +4656,16 @@ Telecom
 2018-06-25
 </td>
 <td style="text-align:right;">
--0.648
+-0.356
 </td>
 <td style="text-align:right;">
-8.66
+6.16
 </td>
 <td style="text-align:right;">
-1.09142
+0.95400
 </td>
 <td style="text-align:right;">
-5.90
+8.80
 </td>
 <td style="text-align:right;">
 25.00
@@ -4493,7 +4673,7 @@ Telecom
 </tr>
 <tr>
 <td style="text-align:right;">
-13
+11
 </td>
 <td style="text-align:left;">
 WOCKPHARMA
@@ -4502,7 +4682,7 @@ WOCKPHARMA
 Healthcare
 </td>
 <td style="text-align:right;">
-562.95
+555.75
 </td>
 <td style="text-align:right;">
 667.40
@@ -4511,16 +4691,16 @@ Healthcare
 2018-06-25
 </td>
 <td style="text-align:right;">
--1.139
+-1.362
 </td>
 <td style="text-align:right;">
-15.65
+16.73
 </td>
 <td style="text-align:right;">
-0.79557
+0.74209
 </td>
 <td style="text-align:right;">
-6.09
+4.73
 </td>
 <td style="text-align:right;">
 15.38
@@ -4528,7 +4708,7 @@ Healthcare
 </tr>
 <tr>
 <td style="text-align:right;">
-14
+12
 </td>
 <td style="text-align:left;">
 ALBK
@@ -4537,7 +4717,7 @@ ALBK
 Bank - PSU
 </td>
 <td style="text-align:right;">
-40.90
+41.50
 </td>
 <td style="text-align:right;">
 41.25
@@ -4546,16 +4726,16 @@ Bank - PSU
 2018-06-25
 </td>
 <td style="text-align:right;">
--0.349
+-0.237
 </td>
 <td style="text-align:right;">
-0.85
+-0.61
 </td>
 <td style="text-align:right;">
-1.25648
+1.37011
 </td>
 <td style="text-align:right;">
-9.65
+11.26
 </td>
 <td style="text-align:right;">
 37.04
@@ -4563,7 +4743,7 @@ Bank - PSU
 </tr>
 <tr>
 <td style="text-align:right;">
-15
+13
 </td>
 <td style="text-align:left;">
 CANBK
@@ -4572,7 +4752,7 @@ CANBK
 Bank - PSU
 </td>
 <td style="text-align:right;">
-236.80
+246.95
 </td>
 <td style="text-align:right;">
 249.95
@@ -4581,16 +4761,16 @@ Bank - PSU
 2018-06-25
 </td>
 <td style="text-align:right;">
--0.403
+-0.054
 </td>
 <td style="text-align:right;">
-5.26
+1.20
 </td>
 <td style="text-align:right;">
-1.28058
+1.38260
 </td>
 <td style="text-align:right;">
-9.35
+14.04
 </td>
 <td style="text-align:right;">
 74.07
@@ -4598,7 +4778,7 @@ Bank - PSU
 </tr>
 <tr>
 <td style="text-align:right;">
-16
+14
 </td>
 <td style="text-align:left;">
 TATAMTRDVR
@@ -4607,7 +4787,7 @@ TATAMTRDVR
 Autos
 </td>
 <td style="text-align:right;">
-140.85
+141.75
 </td>
 <td style="text-align:right;">
 168.80
@@ -4616,16 +4796,16 @@ Autos
 2018-06-25
 </td>
 <td style="text-align:right;">
--1.055
+-1.039
 </td>
 <td style="text-align:right;">
-16.56
+16.02
 </td>
 <td style="text-align:right;">
-0.98433
+0.91876
 </td>
 <td style="text-align:right;">
-2.74
+3.39
 </td>
 <td style="text-align:right;">
 5.26
@@ -4633,7 +4813,7 @@ Autos
 </tr>
 <tr>
 <td style="text-align:right;">
-17
+15
 </td>
 <td style="text-align:left;">
 PNB
@@ -4642,7 +4822,7 @@ PNB
 Bank - PSU
 </td>
 <td style="text-align:right;">
-75.55
+78.95
 </td>
 <td style="text-align:right;">
 81.90
@@ -4651,16 +4831,16 @@ Bank - PSU
 2018-06-22
 </td>
 <td style="text-align:right;">
--0.143
+0.197
 </td>
 <td style="text-align:right;">
-7.75
+3.60
 </td>
 <td style="text-align:right;">
-1.21460
+1.41234
 </td>
 <td style="text-align:right;">
-5.44
+10.19
 </td>
 <td style="text-align:right;">
 55.56
@@ -4668,7 +4848,7 @@ Bank - PSU
 </tr>
 <tr>
 <td style="text-align:right;">
-18
+16
 </td>
 <td style="text-align:left;">
 BALRAMCHIN
@@ -4677,7 +4857,7 @@ BALRAMCHIN
 Sugar
 </td>
 <td style="text-align:right;">
-63.45
+63.25
 </td>
 <td style="text-align:right;">
 67.35
@@ -4686,16 +4866,16 @@ Sugar
 2018-06-21
 </td>
 <td style="text-align:right;">
-0.106
+0.090
 </td>
 <td style="text-align:right;">
-5.79
+6.09
 </td>
 <td style="text-align:right;">
-1.00539
+0.86026
 </td>
 <td style="text-align:right;">
-8.09
+7.75
 </td>
 <td style="text-align:right;">
 50.00
@@ -4703,7 +4883,7 @@ Sugar
 </tr>
 <tr>
 <td style="text-align:right;">
-19
+17
 </td>
 <td style="text-align:left;">
 INDIGO
@@ -4712,7 +4892,7 @@ INDIGO
 Airlines
 </td>
 <td style="text-align:right;">
-1063.65
+1054.90
 </td>
 <td style="text-align:right;">
 1136.45
@@ -4721,23 +4901,23 @@ Airlines
 2018-06-20
 </td>
 <td style="text-align:right;">
--0.089
+-0.251
 </td>
 <td style="text-align:right;">
-6.41
+7.18
 </td>
 <td style="text-align:right;">
-0.58571
+0.66824
 </td>
 <td style="text-align:right;">
-4.08
+3.22
 </td>
 <td style="text-align:right;">
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-20
+18
 </td>
 <td style="text-align:left;">
 UNIONBANK
@@ -4746,7 +4926,7 @@ UNIONBANK
 Bank - PSU
 </td>
 <td style="text-align:right;">
-76.75
+78.95
 </td>
 <td style="text-align:right;">
 89.00
@@ -4755,16 +4935,16 @@ Bank - PSU
 2018-06-20
 </td>
 <td style="text-align:right;">
--0.512
+-0.225
 </td>
 <td style="text-align:right;">
-13.76
+11.29
 </td>
 <td style="text-align:right;">
-1.24515
+1.36400
 </td>
 <td style="text-align:right;">
-3.86
+6.83
 </td>
 <td style="text-align:right;">
 40.74
@@ -4772,7 +4952,7 @@ Bank - PSU
 </tr>
 <tr>
 <td style="text-align:right;">
-21
+19
 </td>
 <td style="text-align:left;">
 SYNDIBANK
@@ -4781,7 +4961,7 @@ SYNDIBANK
 Bank - PSU
 </td>
 <td style="text-align:right;">
-38.80
+39.50
 </td>
 <td style="text-align:right;">
 47.55
@@ -4790,16 +4970,16 @@ Bank - PSU
 2018-06-19
 </td>
 <td style="text-align:right;">
--0.429
+-0.581
 </td>
 <td style="text-align:right;">
-18.40
+16.93
 </td>
 <td style="text-align:right;">
-0.75301
+0.75866
 </td>
 <td style="text-align:right;">
-3.60
+5.47
 </td>
 <td style="text-align:right;">
 22.22
@@ -4807,7 +4987,7 @@ Bank - PSU
 </tr>
 <tr>
 <td style="text-align:right;">
-22
+20
 </td>
 <td style="text-align:left;">
 EQUITAS
@@ -4816,7 +4996,7 @@ EQUITAS
 Financial
 </td>
 <td style="text-align:right;">
-135.05
+136.00
 </td>
 <td style="text-align:right;">
 150.45
@@ -4825,23 +5005,23 @@ Financial
 2018-06-18
 </td>
 <td style="text-align:right;">
--0.354
+-0.415
 </td>
 <td style="text-align:right;">
-10.24
+9.60
 </td>
 <td style="text-align:right;">
-0.97369
+0.93855
 </td>
 <td style="text-align:right;">
-4.45
+5.18
 </td>
 <td style="text-align:right;">
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-23
+21
 </td>
 <td style="text-align:left;">
 MCDOWELL-N
@@ -4850,7 +5030,7 @@ MCDOWELL-N
 Consumer, Non-cyclical
 </td>
 <td style="text-align:right;">
-566.95
+579.30
 </td>
 <td style="text-align:right;">
 665.75
@@ -4859,16 +5039,16 @@ Consumer, Non-cyclical
 2018-06-18
 </td>
 <td style="text-align:right;">
--1.124
+-0.980
 </td>
 <td style="text-align:right;">
-14.84
+12.99
 </td>
 <td style="text-align:right;">
-0.32858
+0.35312
 </td>
 <td style="text-align:right;">
-3.46
+5.71
 </td>
 <td style="text-align:right;">
 2.00
@@ -4876,7 +5056,7 @@ Consumer, Non-cyclical
 </tr>
 <tr>
 <td style="text-align:right;">
-24
+22
 </td>
 <td style="text-align:left;">
 RCOM
@@ -4885,7 +5065,7 @@ RCOM
 Telecom
 </td>
 <td style="text-align:right;">
-12.95
+13.20
 </td>
 <td style="text-align:right;">
 15.15
@@ -4894,16 +5074,16 @@ Telecom
 2018-06-18
 </td>
 <td style="text-align:right;">
--0.377
+-0.294
 </td>
 <td style="text-align:right;">
-14.52
+12.87
 </td>
 <td style="text-align:right;">
-0.70713
+0.70672
 </td>
 <td style="text-align:right;">
-34.90
+37.50
 </td>
 <td style="text-align:right;">
 12.50
@@ -4911,7 +5091,7 @@ Telecom
 </tr>
 <tr>
 <td style="text-align:right;">
-25
+23
 </td>
 <td style="text-align:left;">
 ICICIPRULI
@@ -4920,7 +5100,7 @@ ICICIPRULI
 Insurance
 </td>
 <td style="text-align:right;">
-355.85
+374.80
 </td>
 <td style="text-align:right;">
 401.20
@@ -4929,23 +5109,23 @@ Insurance
 2018-06-15
 </td>
 <td style="text-align:right;">
--0.363
+0.096
 </td>
 <td style="text-align:right;">
-11.30
+6.58
 </td>
 <td style="text-align:right;">
-0.91938
+1.18448
 </td>
 <td style="text-align:right;">
-2.48
+7.93
 </td>
 <td style="text-align:right;">
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-26
+24
 </td>
 <td style="text-align:left;">
 ORIENTBANK
@@ -4954,7 +5134,7 @@ ORIENTBANK
 Bank - PSU
 </td>
 <td style="text-align:right;">
-71.45
+72.80
 </td>
 <td style="text-align:right;">
 80.55
@@ -4963,16 +5143,16 @@ Bank - PSU
 2018-06-15
 </td>
 <td style="text-align:right;">
--0.406
+-0.284
 </td>
 <td style="text-align:right;">
-11.30
+9.62
 </td>
 <td style="text-align:right;">
-1.88729
+1.93828
 </td>
 <td style="text-align:right;">
-8.92
+10.98
 </td>
 <td style="text-align:right;">
 25.93
@@ -4980,7 +5160,7 @@ Bank - PSU
 </tr>
 <tr>
 <td style="text-align:right;">
-27
+25
 </td>
 <td style="text-align:left;">
 CONCOR
@@ -4989,7 +5169,7 @@ CONCOR
 Industrial
 </td>
 <td style="text-align:right;">
-653.25
+658.50
 </td>
 <td style="text-align:right;">
 1263.15
@@ -4998,24 +5178,24 @@ Industrial
 2018-06-15
 </td>
 <td style="text-align:right;">
-0.051
+-0.145
 </td>
 <td style="text-align:right;">
-48.28
+47.87
 </td>
 <td style="text-align:right;">
-0.36213
+0.36735
 </td>
 <td style="text-align:right;">
-9.06
+9.93
 </td>
 <td style="text-align:right;">
-11.59
+12.02
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-28
+26
 </td>
 <td style="text-align:left;">
 ANDHRABANK
@@ -5024,7 +5204,7 @@ ANDHRABANK
 Bank - PSU
 </td>
 <td style="text-align:right;">
-30.80
+31.30
 </td>
 <td style="text-align:right;">
 35.30
@@ -5033,16 +5213,16 @@ Bank - PSU
 2018-06-15
 </td>
 <td style="text-align:right;">
--0.452
+-0.336
 </td>
 <td style="text-align:right;">
-12.75
+11.33
 </td>
 <td style="text-align:right;">
-1.54103
+1.65242
 </td>
 <td style="text-align:right;">
-5.30
+7.01
 </td>
 <td style="text-align:right;">
 29.63
@@ -5050,7 +5230,7 @@ Bank - PSU
 </tr>
 <tr>
 <td style="text-align:right;">
-29
+27
 </td>
 <td style="text-align:left;">
 BANKINDIA
@@ -5059,7 +5239,7 @@ BANKINDIA
 Bank - PSU
 </td>
 <td style="text-align:right;">
-83.25
+86.35
 </td>
 <td style="text-align:right;">
 98.45
@@ -5068,16 +5248,16 @@ Bank - PSU
 2018-06-15
 </td>
 <td style="text-align:right;">
--0.328
+-0.250
 </td>
 <td style="text-align:right;">
-15.44
+12.29
 </td>
 <td style="text-align:right;">
-1.42262
+1.56461
 </td>
 <td style="text-align:right;">
-8.82
+12.88
 </td>
 <td style="text-align:right;">
 48.15
@@ -5085,7 +5265,7 @@ Bank - PSU
 </tr>
 <tr>
 <td style="text-align:right;">
-30
+28
 </td>
 <td style="text-align:left;">
 RPOWER
@@ -5094,7 +5274,7 @@ RPOWER
 Utilities
 </td>
 <td style="text-align:right;">
-30.85
+31.15
 </td>
 <td style="text-align:right;">
 34.85
@@ -5103,16 +5283,16 @@ Utilities
 2018-06-14
 </td>
 <td style="text-align:right;">
--0.021
+-0.197
 </td>
 <td style="text-align:right;">
-11.48
+10.62
 </td>
 <td style="text-align:right;">
-1.18250
+1.28450
 </td>
 <td style="text-align:right;">
-7.12
+8.16
 </td>
 <td style="text-align:right;">
 20.00
@@ -5120,42 +5300,7 @@ Utilities
 </tr>
 <tr>
 <td style="text-align:right;">
-31
-</td>
-<td style="text-align:left;">
-BANKBARODA
-</td>
-<td style="text-align:left;">
-Bank - PSU
-</td>
-<td style="text-align:right;">
-120.25
-</td>
-<td style="text-align:right;">
-131.55
-</td>
-<td style="text-align:left;">
-2018-06-04
-</td>
-<td style="text-align:right;">
-0.446
-</td>
-<td style="text-align:right;">
-8.59
-</td>
-<td style="text-align:right;">
-1.12164
-</td>
-<td style="text-align:right;">
-9.82
-</td>
-<td style="text-align:right;">
-62.96
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-32
+29
 </td>
 <td style="text-align:left;">
 BHEL
@@ -5164,7 +5309,7 @@ BHEL
 Industrial
 </td>
 <td style="text-align:right;">
-67.50
+69.50
 </td>
 <td style="text-align:right;">
 75.25
@@ -5173,24 +5318,24 @@ Industrial
 2018-06-04
 </td>
 <td style="text-align:right;">
--0.383
+-0.051
 </td>
 <td style="text-align:right;">
-10.30
+7.64
 </td>
 <td style="text-align:right;">
-0.99357
+0.99096
 </td>
 <td style="text-align:right;">
-4.73
+7.84
 </td>
 <td style="text-align:right;">
-6.28
+6.25
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-33
+30
 </td>
 <td style="text-align:left;">
 TATAPOWER
@@ -5199,7 +5344,7 @@ TATAPOWER
 Utilities
 </td>
 <td style="text-align:right;">
-67.85
+68.05
 </td>
 <td style="text-align:right;">
 79.60
@@ -5208,16 +5353,16 @@ Utilities
 2018-06-01
 </td>
 <td style="text-align:right;">
--0.539
+-0.711
 </td>
 <td style="text-align:right;">
-14.76
+14.51
 </td>
 <td style="text-align:right;">
-0.91209
+1.04371
 </td>
 <td style="text-align:right;">
-1.04
+2.25
 </td>
 <td style="text-align:right;">
 36.00
@@ -5225,7 +5370,7 @@ Utilities
 </tr>
 <tr>
 <td style="text-align:right;">
-34
+31
 </td>
 <td style="text-align:left;">
 OIL
@@ -5234,7 +5379,7 @@ OIL
 Energy
 </td>
 <td style="text-align:right;">
-207.05
+205.50
 </td>
 <td style="text-align:right;">
 220.15
@@ -5243,16 +5388,16 @@ Energy
 2018-05-28
 </td>
 <td style="text-align:right;">
-0.079
+0.006
 </td>
 <td style="text-align:right;">
-5.95
+6.65
 </td>
 <td style="text-align:right;">
-0.84438
+0.76707
 </td>
 <td style="text-align:right;">
-14.82
+13.96
 </td>
 <td style="text-align:right;">
 31.82
@@ -5260,7 +5405,7 @@ Energy
 </tr>
 <tr>
 <td style="text-align:right;">
-35
+32
 </td>
 <td style="text-align:left;">
 ONGC
@@ -5269,7 +5414,7 @@ ONGC
 Energy
 </td>
 <td style="text-align:right;">
-157.95
+156.55
 </td>
 <td style="text-align:right;">
 167.70
@@ -5278,16 +5423,16 @@ Energy
 2018-05-24
 </td>
 <td style="text-align:right;">
-0.173
+-0.041
 </td>
 <td style="text-align:right;">
-5.81
+6.65
 </td>
 <td style="text-align:right;">
-1.20836
+1.18183
 </td>
 <td style="text-align:right;">
-4.05
+3.13
 </td>
 <td style="text-align:right;">
 45.45
@@ -5295,7 +5440,7 @@ Energy
 </tr>
 <tr>
 <td style="text-align:right;">
-36
+33
 </td>
 <td style="text-align:left;">
 NTPC
@@ -5304,7 +5449,7 @@ NTPC
 Utilities
 </td>
 <td style="text-align:right;">
-155.65
+158.15
 </td>
 <td style="text-align:right;">
 166.60
@@ -5313,16 +5458,16 @@ Utilities
 2018-05-18
 </td>
 <td style="text-align:right;">
-0.364
+0.452
 </td>
 <td style="text-align:right;">
-6.57
+5.07
 </td>
 <td style="text-align:right;">
-0.44445
+0.54110
 </td>
 <td style="text-align:right;">
-4.11
+5.79
 </td>
 <td style="text-align:right;">
 56.00
@@ -5330,7 +5475,7 @@ Utilities
 </tr>
 <tr>
 <td style="text-align:right;">
-37
+34
 </td>
 <td style="text-align:left;">
 PTC
@@ -5339,7 +5484,7 @@ PTC
 Utilities
 </td>
 <td style="text-align:right;">
-69.15
+69.70
 </td>
 <td style="text-align:right;">
 83.55
@@ -5348,16 +5493,16 @@ Utilities
 2018-05-17
 </td>
 <td style="text-align:right;">
--0.710
+-0.685
 </td>
 <td style="text-align:right;">
-17.24
+16.58
 </td>
 <td style="text-align:right;">
-1.10044
+1.04717
 </td>
 <td style="text-align:right;">
-1.39
+2.80
 </td>
 <td style="text-align:right;">
 40.00
@@ -5365,7 +5510,7 @@ Utilities
 </tr>
 <tr>
 <td style="text-align:right;">
-38
+35
 </td>
 <td style="text-align:left;">
 IDFC
@@ -5374,7 +5519,7 @@ IDFC
 Bank - PSU
 </td>
 <td style="text-align:right;">
-44.20
+43.95
 </td>
 <td style="text-align:right;">
 51.75
@@ -5383,16 +5528,16 @@ Bank - PSU
 2018-05-17
 </td>
 <td style="text-align:right;">
--0.073
+-0.353
 </td>
 <td style="text-align:right;">
-14.59
+15.07
 </td>
 <td style="text-align:right;">
-0.66907
+0.62060
 </td>
 <td style="text-align:right;">
-2.79
+2.45
 </td>
 <td style="text-align:right;">
 66.67
@@ -5400,7 +5545,7 @@ Bank - PSU
 </tr>
 <tr>
 <td style="text-align:right;">
-39
+36
 </td>
 <td style="text-align:left;">
 DLF
@@ -5409,7 +5554,7 @@ DLF
 Real estate
 </td>
 <td style="text-align:right;">
-170.40
+177.65
 </td>
 <td style="text-align:right;">
 206.45
@@ -5418,16 +5563,16 @@ Real estate
 2018-05-14
 </td>
 <td style="text-align:right;">
--0.874
+-0.483
 </td>
 <td style="text-align:right;">
-17.46
+13.95
 </td>
 <td style="text-align:right;">
-1.18490
+1.39992
 </td>
 <td style="text-align:right;">
-11.37
+16.11
 </td>
 <td style="text-align:right;">
 48.00
@@ -5435,7 +5580,7 @@ Real estate
 </tr>
 <tr>
 <td style="text-align:right;">
-40
+37
 </td>
 <td style="text-align:left;">
 NBCC
@@ -5444,7 +5589,7 @@ NBCC
 Industrial
 </td>
 <td style="text-align:right;">
-63.45
+64.95
 </td>
 <td style="text-align:right;">
 99.70
@@ -5453,24 +5598,24 @@ Industrial
 2018-05-11
 </td>
 <td style="text-align:right;">
--0.632
+-0.654
 </td>
 <td style="text-align:right;">
-36.36
+34.85
 </td>
 <td style="text-align:right;">
-1.19586
+1.14233
 </td>
 <td style="text-align:right;">
-4.70
+7.18
 </td>
 <td style="text-align:right;">
-23.19
+23.56
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-41
+38
 </td>
 <td style="text-align:left;">
 JISLJALEQS
@@ -5479,7 +5624,7 @@ JISLJALEQS
 Industrial
 </td>
 <td style="text-align:right;">
-74.65
+73.90
 </td>
 <td style="text-align:right;">
 106.40
@@ -5488,24 +5633,24 @@ Industrial
 2018-05-10
 </td>
 <td style="text-align:right;">
--0.688
+-1.223
 </td>
 <td style="text-align:right;">
-29.84
+30.55
 </td>
 <td style="text-align:right;">
-1.97485
+1.88689
 </td>
 <td style="text-align:right;">
-2.97
+3.07
 </td>
 <td style="text-align:right;">
-23.67
+24.04
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-42
+39
 </td>
 <td style="text-align:left;">
 NMDC
@@ -5514,7 +5659,7 @@ NMDC
 Basic Materials
 </td>
 <td style="text-align:right;">
-96.25
+95.30
 </td>
 <td style="text-align:right;">
 120.60
@@ -5523,24 +5668,24 @@ Basic Materials
 2018-05-04
 </td>
 <td style="text-align:right;">
--0.683
+-0.820
 </td>
 <td style="text-align:right;">
-20.19
+20.98
 </td>
 <td style="text-align:right;">
-1.00772
+1.09684
 </td>
 <td style="text-align:right;">
-2.94
+1.93
 </td>
 <td style="text-align:right;">
-12.05
+10.98
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-43
+40
 </td>
 <td style="text-align:left;">
 UPL
@@ -5549,7 +5694,7 @@ UPL
 Basic Materials
 </td>
 <td style="text-align:right;">
-549.60
+632.10
 </td>
 <td style="text-align:right;">
 707.90
@@ -5558,23 +5703,23 @@ Basic Materials
 2018-05-03
 </td>
 <td style="text-align:right;">
--1.193
+0.269
 </td>
 <td style="text-align:right;">
-22.36
+10.71
 </td>
 <td style="text-align:right;">
-1.33331
+3.57317
 </td>
 <td style="text-align:right;">
-2.30
+17.65
 </td>
 <td style="text-align:right;">
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-44
+41
 </td>
 <td style="text-align:left;">
 VEDL
@@ -5583,7 +5728,7 @@ VEDL
 Commodities
 </td>
 <td style="text-align:right;">
-202.40
+211.60
 </td>
 <td style="text-align:right;">
 283.40
@@ -5592,23 +5737,23 @@ Commodities
 2018-05-02
 </td>
 <td style="text-align:right;">
--0.761
+-0.649
 </td>
 <td style="text-align:right;">
-28.58
+25.34
 </td>
 <td style="text-align:right;">
-0.61488
+0.67862
 </td>
 <td style="text-align:right;">
-0.87
+5.46
 </td>
 <td style="text-align:right;">
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-45
+42
 </td>
 <td style="text-align:left;">
 SUZLON
@@ -5617,7 +5762,7 @@ SUZLON
 Energy
 </td>
 <td style="text-align:right;">
-7.10
+7.45
 </td>
 <td style="text-align:right;">
 11.70
@@ -5626,16 +5771,16 @@ Energy
 2018-04-19
 </td>
 <td style="text-align:right;">
--0.527
+-0.034
 </td>
 <td style="text-align:right;">
-39.32
+36.32
 </td>
 <td style="text-align:right;">
-0.97699
+1.02567
 </td>
 <td style="text-align:right;">
-3.65
+8.76
 </td>
 <td style="text-align:right;">
 18.18
@@ -5643,41 +5788,7 @@ Energy
 </tr>
 <tr>
 <td style="text-align:right;">
-46
-</td>
-<td style="text-align:left;">
-MGL
-</td>
-<td style="text-align:left;">
-Utilities
-</td>
-<td style="text-align:right;">
-821.60
-</td>
-<td style="text-align:right;">
-976.85
-</td>
-<td style="text-align:left;">
-2018-03-19
-</td>
-<td style="text-align:right;">
-0.165
-</td>
-<td style="text-align:right;">
-15.89
-</td>
-<td style="text-align:right;">
-0.68225
-</td>
-<td style="text-align:right;">
-6.40
-</td>
-<td style="text-align:right;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-47
+43
 </td>
 <td style="text-align:left;">
 JETAIRWAYS
@@ -5686,7 +5797,7 @@ JETAIRWAYS
 Airlines
 </td>
 <td style="text-align:right;">
-303.10
+315.25
 </td>
 <td style="text-align:right;">
 708.00
@@ -5695,16 +5806,16 @@ Airlines
 2018-03-07
 </td>
 <td style="text-align:right;">
--1.239
+-0.864
 </td>
 <td style="text-align:right;">
-57.19
+55.47
 </td>
 <td style="text-align:right;">
-1.05268
+1.07818
 </td>
 <td style="text-align:right;">
-2.33
+6.43
 </td>
 <td style="text-align:right;">
 100.00
@@ -5712,7 +5823,7 @@ Airlines
 </tr>
 <tr>
 <td style="text-align:right;">
-48
+44
 </td>
 <td style="text-align:left;">
 IFCI
@@ -5721,7 +5832,7 @@ IFCI
 Financial
 </td>
 <td style="text-align:right;">
-15.65
+15.55
 </td>
 <td style="text-align:right;">
 23.00
@@ -5730,16 +5841,16 @@ Financial
 2018-02-06
 </td>
 <td style="text-align:right;">
-0.171
+0.075
 </td>
 <td style="text-align:right;">
-31.96
+32.39
 </td>
 <td style="text-align:right;">
-0.95157
+0.89990
 </td>
 <td style="text-align:right;">
-8.30
+7.61
 </td>
 <td style="text-align:right;">
 6.38
@@ -5747,7 +5858,7 @@ Financial
 </tr>
 <tr>
 <td style="text-align:right;">
-49
+45
 </td>
 <td style="text-align:left;">
 HCC
@@ -5756,7 +5867,7 @@ HCC
 Construction and Engineering
 </td>
 <td style="text-align:right;">
-9.90
+10.45
 </td>
 <td style="text-align:right;">
 36.10
@@ -5765,16 +5876,16 @@ Construction and Engineering
 2018-02-02
 </td>
 <td style="text-align:right;">
--1.393
+-1.274
 </td>
 <td style="text-align:right;">
-72.58
+71.05
 </td>
 <td style="text-align:right;">
-0.69781
+0.77672
 </td>
 <td style="text-align:right;">
-4.76
+10.58
 </td>
 <td style="text-align:right;">
 14.29
@@ -5782,7 +5893,7 @@ Construction and Engineering
 </tr>
 <tr>
 <td style="text-align:right;">
-50
+46
 </td>
 <td style="text-align:left;">
 RECLTD
@@ -5791,7 +5902,7 @@ RECLTD
 Financial
 </td>
 <td style="text-align:right;">
-91.60
+91.30
 </td>
 <td style="text-align:right;">
 153.45
@@ -5800,16 +5911,16 @@ Financial
 2018-02-01
 </td>
 <td style="text-align:right;">
--1.266
+-1.179
 </td>
 <td style="text-align:right;">
-40.31
+40.50
 </td>
 <td style="text-align:right;">
-1.37472
+1.42840
 </td>
 <td style="text-align:right;">
-1.72
+2.58
 </td>
 <td style="text-align:right;">
 17.02
@@ -5817,7 +5928,7 @@ Financial
 </tr>
 <tr>
 <td style="text-align:right;">
-51
+47
 </td>
 <td style="text-align:left;">
 RNAVAL
@@ -5826,7 +5937,7 @@ RNAVAL
 Industrial
 </td>
 <td style="text-align:right;">
-11.95
+12.10
 </td>
 <td style="text-align:right;">
 44.15
@@ -5835,23 +5946,23 @@ Industrial
 2018-02-01
 </td>
 <td style="text-align:right;">
-0.136
+-0.203
 </td>
 <td style="text-align:right;">
-72.93
+72.59
 </td>
 <td style="text-align:right;">
-0.73963
+0.65784
 </td>
 <td style="text-align:right;">
-4.82
+6.14
 </td>
 <td style="text-align:right;">
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-52
+48
 </td>
 <td style="text-align:left;">
 HDIL
@@ -5860,7 +5971,7 @@ HDIL
 Real estate
 </td>
 <td style="text-align:right;">
-17.95
+18.20
 </td>
 <td style="text-align:right;">
 57.85
@@ -5869,16 +5980,16 @@ Real estate
 2018-01-31
 </td>
 <td style="text-align:right;">
--1.031
+-0.892
 </td>
 <td style="text-align:right;">
-68.97
+68.54
 </td>
 <td style="text-align:right;">
-1.09260
+0.95407
 </td>
 <td style="text-align:right;">
-2.87
+4.30
 </td>
 <td style="text-align:right;">
 4.00
@@ -5911,13 +6022,13 @@ MomLevel
 1
 </td>
 <td style="text-align:left;">
-KAVVERITEL
+VSTIND
 </td>
 <td style="text-align:right;">
-8.65
+2829.00
 </td>
 <td style="text-align:right;">
-6.27705
+7.71192
 </td>
 </tr>
 <tr>
@@ -5928,10 +6039,10 @@ KAVVERITEL
 HTMEDIA
 </td>
 <td style="text-align:right;">
-53.70
+53.95
 </td>
 <td style="text-align:right;">
-6.22372
+5.60791
 </td>
 </tr>
 <tr>
@@ -5942,10 +6053,10 @@ HTMEDIA
 EXCELCROP
 </td>
 <td style="text-align:right;">
-3977.55
+4072.35
 </td>
 <td style="text-align:right;">
-5.06075
+5.20215
 </td>
 </tr>
 <tr>
@@ -5953,13 +6064,13 @@ EXCELCROP
 4
 </td>
 <td style="text-align:left;">
-3MINDIA
+KAVVERITEL
 </td>
 <td style="text-align:right;">
-23338.75
+8.75
 </td>
 <td style="text-align:right;">
-4.93168
+5.06402
 </td>
 </tr>
 <tr>
@@ -5967,13 +6078,13 @@ EXCELCROP
 5
 </td>
 <td style="text-align:left;">
-IVP
+KILITCH
 </td>
 <td style="text-align:right;">
-166.35
+96.05
 </td>
 <td style="text-align:right;">
-4.76211
+4.99796
 </td>
 </tr>
 <tr>
@@ -5981,13 +6092,13 @@ IVP
 6
 </td>
 <td style="text-align:left;">
-AKSHARCHEM
+3MINDIA
 </td>
 <td style="text-align:right;">
-482.40
+22816.95
 </td>
 <td style="text-align:right;">
-4.60421
+4.80165
 </td>
 </tr>
 <tr>
@@ -5995,13 +6106,13 @@ AKSHARCHEM
 7
 </td>
 <td style="text-align:left;">
-ASHOKLEY
+ORTEL
 </td>
 <td style="text-align:right;">
-107.45
+15.65
 </td>
 <td style="text-align:right;">
-4.58094
+4.66420
 </td>
 </tr>
 <tr>
@@ -6009,13 +6120,13 @@ ASHOKLEY
 8
 </td>
 <td style="text-align:left;">
-TVSSRICHAK
+ZEEMEDIA
 </td>
 <td style="text-align:right;">
-3046.45
+27.05
 </td>
 <td style="text-align:right;">
-4.57168
+4.54464
 </td>
 </tr>
 <tr>
@@ -6023,13 +6134,13 @@ TVSSRICHAK
 9
 </td>
 <td style="text-align:left;">
-SICAL
+SOUTHBANK
 </td>
 <td style="text-align:right;">
-164.85
+18.50
 </td>
 <td style="text-align:right;">
-4.23051
+4.48804
 </td>
 </tr>
 <tr>
@@ -6037,13 +6148,13 @@ SICAL
 10
 </td>
 <td style="text-align:left;">
-COSMOFILMS
+CORPBANK
 </td>
 <td style="text-align:right;">
-207.40
+26.15
 </td>
 <td style="text-align:right;">
-4.22370
+4.25863
 </td>
 </tr>
 <tr>
@@ -6051,13 +6162,13 @@ COSMOFILMS
 11
 </td>
 <td style="text-align:left;">
-RSSOFTWARE
+COSMOFILMS
 </td>
 <td style="text-align:right;">
-40.05
+208.10
 </td>
 <td style="text-align:right;">
-4.20287
+4.23431
 </td>
 </tr>
 <tr>
@@ -6065,13 +6176,13 @@ RSSOFTWARE
 12
 </td>
 <td style="text-align:left;">
-PVR
+TVSSRICHAK
 </td>
 <td style="text-align:right;">
-1151.05
+2937.30
 </td>
 <td style="text-align:right;">
-3.99080
+4.07506
 </td>
 </tr>
 <tr>
@@ -6079,13 +6190,13 @@ PVR
 13
 </td>
 <td style="text-align:left;">
-FEDERALBNK
+FORTUNEFIN
 </td>
 <td style="text-align:right;">
-85.75
+212.00
 </td>
 <td style="text-align:right;">
-3.98714
+4.01911
 </td>
 </tr>
 <tr>
@@ -6093,13 +6204,13 @@ FEDERALBNK
 14
 </td>
 <td style="text-align:left;">
-JTEKTINDIA
+ASHOKLEY
 </td>
 <td style="text-align:right;">
-99.50
+109.10
 </td>
 <td style="text-align:right;">
-3.92339
+3.98248
 </td>
 </tr>
 <tr>
@@ -6107,13 +6218,13 @@ JTEKTINDIA
 15
 </td>
 <td style="text-align:left;">
-MINDTREE
+BAJAJ-AUTO
 </td>
 <td style="text-align:right;">
-976.85
+2684.15
 </td>
 <td style="text-align:right;">
-3.82790
+3.95674
 </td>
 </tr>
 <tr>
@@ -6121,13 +6232,13 @@ MINDTREE
 16
 </td>
 <td style="text-align:left;">
-BAJFINANCE
+FEDERALBNK
 </td>
 <td style="text-align:right;">
-2721.35
+87.85
 </td>
 <td style="text-align:right;">
-3.57273
+3.94735
 </td>
 </tr>
 <tr>
@@ -6135,13 +6246,13 @@ BAJFINANCE
 17
 </td>
 <td style="text-align:left;">
-GNA
+ICICIGI
 </td>
 <td style="text-align:right;">
-398.55
+783.05
 </td>
 <td style="text-align:right;">
-3.52808
+3.83515
 </td>
 </tr>
 <tr>
@@ -6149,13 +6260,13 @@ GNA
 18
 </td>
 <td style="text-align:left;">
-ICICIGI
+DELTAMAGNT
 </td>
 <td style="text-align:right;">
-778.65
+52.80
 </td>
 <td style="text-align:right;">
-3.49230
+3.83070
 </td>
 </tr>
 <tr>
@@ -6163,13 +6274,13 @@ ICICIGI
 19
 </td>
 <td style="text-align:left;">
-FORTUNEFIN
+MINDTREE
 </td>
 <td style="text-align:right;">
-218.20
+959.70
 </td>
 <td style="text-align:right;">
-3.48209
+3.73087
 </td>
 </tr>
 <tr>
@@ -6177,13 +6288,13 @@ FORTUNEFIN
 20
 </td>
 <td style="text-align:left;">
-SRIPIPES
+BAJFINANCE
 </td>
 <td style="text-align:right;">
-193.85
+2755.80
 </td>
 <td style="text-align:right;">
-3.39706
+3.72352
 </td>
 </tr>
 <tr>
@@ -6191,13 +6302,13 @@ SRIPIPES
 21
 </td>
 <td style="text-align:left;">
-VSTIND
+UNIENTER
 </td>
 <td style="text-align:right;">
-2493.60
+82.95
 </td>
 <td style="text-align:right;">
-3.36621
+3.66463
 </td>
 </tr>
 <tr>
@@ -6205,13 +6316,13 @@ VSTIND
 22
 </td>
 <td style="text-align:left;">
-ZEEMEDIA
+UPL
 </td>
 <td style="text-align:right;">
-27.90
+632.10
 </td>
 <td style="text-align:right;">
-3.25209
+3.57317
 </td>
 </tr>
 <tr>
@@ -6219,13 +6330,13 @@ ZEEMEDIA
 23
 </td>
 <td style="text-align:left;">
-MOLDTKPAC
+HAVELLS
 </td>
 <td style="text-align:right;">
-284.80
+610.05
 </td>
 <td style="text-align:right;">
-3.17065
+3.51756
 </td>
 </tr>
 <tr>
@@ -6233,13 +6344,13 @@ MOLDTKPAC
 24
 </td>
 <td style="text-align:left;">
-JAYBARMARU
+AKSHARCHEM
 </td>
 <td style="text-align:right;">
-423.50
+496.80
 </td>
 <td style="text-align:right;">
-3.14349
+3.50254
 </td>
 </tr>
 <tr>
@@ -6247,13 +6358,13 @@ JAYBARMARU
 25
 </td>
 <td style="text-align:left;">
-BAJAJ-AUTO
+RSSOFTWARE
 </td>
 <td style="text-align:right;">
-2839.60
+47.45
 </td>
 <td style="text-align:right;">
-3.10336
+3.48048
 </td>
 </tr>
 <tr>
@@ -6261,13 +6372,13 @@ BAJAJ-AUTO
 26
 </td>
 <td style="text-align:left;">
-ORTEL
+GNA
 </td>
 <td style="text-align:right;">
-13.65
+394.55
 </td>
 <td style="text-align:right;">
-3.06064
+3.47037
 </td>
 </tr>
 <tr>
@@ -6275,13 +6386,13 @@ ORTEL
 27
 </td>
 <td style="text-align:left;">
-DELTAMAGNT
+BAJAJFINSV
 </td>
 <td style="text-align:right;">
-56.55
+6923.10
 </td>
 <td style="text-align:right;">
-3.00795
+3.31896
 </td>
 </tr>
 <tr>
@@ -6289,13 +6400,13 @@ DELTAMAGNT
 28
 </td>
 <td style="text-align:left;">
-DCBBANK
+BAJAJELEC
 </td>
 <td style="text-align:right;">
-160.50
+574.20
 </td>
 <td style="text-align:right;">
-3.00693
+3.31878
 </td>
 </tr>
 <tr>
@@ -6303,13 +6414,13 @@ DCBBANK
 29
 </td>
 <td style="text-align:left;">
-CORPBANK
+MOLDTKPAC
 </td>
 <td style="text-align:right;">
-26.00
+279.15
 </td>
 <td style="text-align:right;">
-3.00333
+3.21931
 </td>
 </tr>
 <tr>
@@ -6317,13 +6428,13 @@ CORPBANK
 30
 </td>
 <td style="text-align:left;">
-BHAGYANGR
+SRIPIPES
 </td>
 <td style="text-align:right;">
-39.25
+199.25
 </td>
 <td style="text-align:right;">
-2.96981
+3.18959
 </td>
 </tr>
 <tr>
@@ -6331,13 +6442,13 @@ BHAGYANGR
 31
 </td>
 <td style="text-align:left;">
-INOXLEISUR
+KIRLOSENG
 </td>
 <td style="text-align:right;">
-197.90
+237.30
 </td>
 <td style="text-align:right;">
-2.95890
+3.15492
 </td>
 </tr>
 <tr>
@@ -6345,13 +6456,13 @@ INOXLEISUR
 32
 </td>
 <td style="text-align:left;">
-GARDENSILK
+GODFRYPHLP
 </td>
 <td style="text-align:right;">
-25.00
+755.15
 </td>
 <td style="text-align:right;">
-2.83390
+3.12321
 </td>
 </tr>
 <tr>
@@ -6362,10 +6473,10 @@ GARDENSILK
 JSWHL
 </td>
 <td style="text-align:right;">
-1732.90
+1786.75
 </td>
 <td style="text-align:right;">
-2.81671
+2.95923
 </td>
 </tr>
 <tr>
@@ -6373,13 +6484,13 @@ JSWHL
 34
 </td>
 <td style="text-align:left;">
-KIRLOSENG
+L&amp;TFH
 </td>
 <td style="text-align:right;">
-230.35
+170.90
 </td>
 <td style="text-align:right;">
-2.80240
+2.94149
 </td>
 </tr>
 <tr>
@@ -6387,13 +6498,13 @@ KIRLOSENG
 35
 </td>
 <td style="text-align:left;">
-ATULAUTO
+ADANIPOWER
 </td>
 <td style="text-align:right;">
-402.10
+24.95
 </td>
 <td style="text-align:right;">
-2.78942
+2.89858
 </td>
 </tr>
 <tr>
@@ -6401,13 +6512,13 @@ ATULAUTO
 36
 </td>
 <td style="text-align:left;">
-ADANIPOWER
+KCP
 </td>
 <td style="text-align:right;">
-24.65
+110.50
 </td>
 <td style="text-align:right;">
-2.78904
+2.85348
 </td>
 </tr>
 <tr>
@@ -6415,13 +6526,13 @@ ADANIPOWER
 37
 </td>
 <td style="text-align:left;">
-RBLBANK
+PRABHAT
 </td>
 <td style="text-align:right;">
-577.80
+157.95
 </td>
 <td style="text-align:right;">
-2.71620
+2.77015
 </td>
 </tr>
 <tr>
@@ -6429,13 +6540,13 @@ RBLBANK
 38
 </td>
 <td style="text-align:left;">
-SJVN
+RBLBANK
 </td>
 <td style="text-align:right;">
-26.95
+569.80
 </td>
 <td style="text-align:right;">
-2.68143
+2.73975
 </td>
 </tr>
 <tr>
@@ -6443,13 +6554,13 @@ SJVN
 39
 </td>
 <td style="text-align:left;">
-BAJAJFINSV
+GARDENSILK
 </td>
 <td style="text-align:right;">
-6663.95
+25.30
 </td>
 <td style="text-align:right;">
-2.64124
+2.73573
 </td>
 </tr>
 <tr>
@@ -6457,13 +6568,13 @@ BAJAJFINSV
 40
 </td>
 <td style="text-align:left;">
-GOCLCORP
+SUPREMETEX
 </td>
 <td style="text-align:right;">
-330.20
+0.55
 </td>
 <td style="text-align:right;">
-2.63052
+2.71396
 </td>
 </tr>
 <tr>
@@ -6471,13 +6582,13 @@ GOCLCORP
 41
 </td>
 <td style="text-align:left;">
-JKTYRE
+ATULAUTO
 </td>
 <td style="text-align:right;">
-121.30
+403.45
 </td>
 <td style="text-align:right;">
-2.62842
+2.68856
 </td>
 </tr>
 <tr>
@@ -6485,13 +6596,13 @@ JKTYRE
 42
 </td>
 <td style="text-align:left;">
-RESPONIND
+HEROMOTOCO
 </td>
 <td style="text-align:right;">
-88.90
+3165.45
 </td>
 <td style="text-align:right;">
-2.55227
+2.67212
 </td>
 </tr>
 <tr>
@@ -6499,13 +6610,13 @@ RESPONIND
 43
 </td>
 <td style="text-align:left;">
-PRABHAT
+ADANIENT
 </td>
 <td style="text-align:right;">
-149.50
+171.20
 </td>
 <td style="text-align:right;">
-2.52621
+2.57603
 </td>
 </tr>
 <tr>
@@ -6513,13 +6624,13 @@ PRABHAT
 44
 </td>
 <td style="text-align:left;">
-ADANIENT
+EIMCOELECO
 </td>
 <td style="text-align:right;">
-162.95
+343.15
 </td>
 <td style="text-align:right;">
-2.46716
+2.56679
 </td>
 </tr>
 <tr>
@@ -6527,13 +6638,13 @@ ADANIENT
 45
 </td>
 <td style="text-align:left;">
-IOB
+SJVN
 </td>
 <td style="text-align:right;">
-13.75
+26.65
 </td>
 <td style="text-align:right;">
-2.45404
+2.56400
 </td>
 </tr>
 <tr>
@@ -6541,13 +6652,13 @@ IOB
 46
 </td>
 <td style="text-align:left;">
-HINDUNILVR
+CEATLTD
 </td>
 <td style="text-align:right;">
-1655.85
+1324.25
 </td>
 <td style="text-align:right;">
-2.43196
+2.52531
 </td>
 </tr>
 <tr>
@@ -6555,13 +6666,13 @@ HINDUNILVR
 47
 </td>
 <td style="text-align:left;">
-HMVL
+IOB
 </td>
 <td style="text-align:right;">
-160.40
+13.70
 </td>
 <td style="text-align:right;">
-2.40543
+2.47864
 </td>
 </tr>
 <tr>
@@ -6569,13 +6680,13 @@ HMVL
 48
 </td>
 <td style="text-align:left;">
-OILCOUNTUB
+JKTYRE
 </td>
 <td style="text-align:right;">
-18.30
+120.30
 </td>
 <td style="text-align:right;">
-2.39544
+2.46984
 </td>
 </tr>
 <tr>
@@ -6583,13 +6694,13 @@ OILCOUNTUB
 49
 </td>
 <td style="text-align:left;">
-IGPL
+NIACL
 </td>
 <td style="text-align:right;">
-412.60
+272.40
 </td>
 <td style="text-align:right;">
-2.35843
+2.42688
 </td>
 </tr>
 <tr>
@@ -6597,13 +6708,13 @@ IGPL
 50
 </td>
 <td style="text-align:left;">
-LTI
+GOCLCORP
 </td>
 <td style="text-align:right;">
-1750.95
+337.40
 </td>
 <td style="text-align:right;">
-2.32802
+2.41972
 </td>
 </tr>
 </tbody>
