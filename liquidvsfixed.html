@@ -71,9 +71,6 @@ h6 {
 
 <link rel="stylesheet" href="styles.css" type="text/css" />
 
-  
-
-  
 </head>
 
 <body>
@@ -198,6 +195,9 @@ $(document).ready(function () {
     <li>
       <a href="pebased.html">PE Based Investing</a>
     </li>
+    <li>
+      <a href="goldInvest.html">Investing in Gold</a>
+    </li>
   </ul>
 </li>
 <li>
@@ -226,6 +226,15 @@ $(document).ready(function () {
 </div>
 
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121309331-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121309331-1');
+</script>
 <style type="text/css">
 .main-container {
   max-width: 1200px;
@@ -492,7 +501,15 @@ $(document).ready(function () {
 
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 
-  
 </body>
 </html>
