@@ -239,14 +239,21 @@ $(document).ready(function () {
   max-width: 1200px;
   margin-left: 100px;
   margin-right: auto;
+  overflow: hidden;
 }
 
 #rcorners2 {
     border-radius: 25px;
     border: 3px solid #900;
     padding: 20px; 
-    width: 300px;
-    height: 220px;    
+    max-width: 300px;
+    max-height: 220px;    
+    overflow-y: auto;
+}
+
+#rcorners2::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
 }
 
 /* Create two equal columns that floats next to each other */
