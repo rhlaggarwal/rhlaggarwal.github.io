@@ -256,44 +256,44 @@ $(document).ready(function () {
     background: transparent; /* make scrollbar transparent */
 }
 
-/* Create two equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 350px; /* Should be removed. Only for demonstration */
+.grid-container {
+  display: grid;
+  grid-gap: 50px 100px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
 }
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.grid-item {
+  padding: 20px;
+  text-align: center;
 }
 
 </style>
-<div class="row">
-<div class="column">
+<div class="grid-container">
+<div class="grid-item">
 <div id="rcorners2" align="left">
 <h4 id="year-profit-growth-10-and-5-yr-stock-returns"><strong>5 year profit growth &gt; 10% and &gt; 5 yr stock returns</strong></h4>
 <p>For complete list of stocks….. <a href="YrGrowthvsProfit.html">Click Here</a></p>
 </div>
 </div>
-<div class="column">
+<div class="grid-item">
 <div id="rcorners2" align="left">
 <h4 id="top-stocks-based-on-returns"><strong>Top Stocks Based on Returns</strong></h4>
 <p>Performance based on 10 years, 5 years and 1 year returns. To find out top performing stocks…. <a href="topstocks.html">Click Here</a></p>
 </div>
 </div>
-</div>
-<div class="row">
-<div class="column">
+<div class="grid-item">
 <div id="rcorners2" align="left">
 <h4 id="big-daddys-portfolio"><strong>Big Daddy’s Portfolio</strong></h4>
 <p>For details…..<a href="bigDaddys.html">Click Here</a></p>
 </div>
 </div>
-<div class="column">
+<div class="grid-item">
+<div id="rcorners2" align="left">
+<h4 id="corporate-governance-issues"><strong>Corporate Governance Issues</strong></h4>
+<p>For details…..<a href="cgissues.html">Click Here</a></p>
+</div>
+</div>
+<div class="grid-item">
 <div id="rcorners2" align="left">
 <h4 id="more-to-come"><strong>More To Come</strong></h4>
 <p>Keep Watching….</p>
