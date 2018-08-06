@@ -241,30 +241,35 @@ $(document).ready(function () {
   margin-left: 100px;
   margin-right: auto;
 }
-.button {
-    background-color: #808080; /* Drak Gray */
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12pt;
-    margin: 2px 2px;
-    cursor: pointer;
+#subNav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #f8f8ff;
 }
 
-.button2 {
-    background-color: #D3D3D3;  /* Gray */
-    color: black;
-    border: none;
-    padding: 10px 20px;
+#subNav li {
+        float:left;
+}
+
+li p {
+    display: block;
+    color: #000;
     text-align: center;
+    padding: 14px 16px;
+    font-size: 14px;
     text-decoration: none;
-    display: inline-block;
-    font-size: 12pt;
-    margin: 2px 2px;
-    cursor: pointer;}  
+}
+
+li p:hover{
+    background-color: #e6e6ff;
+    cursor: pointer;
+}
+.active {
+    border-bottom: 4px solid red;
+}
 
 </style>
 <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.5/css/jquery.dataTables.min.css">
@@ -284,108 +289,122 @@ $(document).ready(function(){
     $('#All').click(function(){
          $(".trade").hide();
          $("#alltable").show();
-         $('#All').addClass("button2");
-         $('#RJ').removeClass("button2");
-         $('#SB').removeClass("button2");
-         $('#PV').removeClass("button2");
-         $('#VK').removeClass("button2");
-         $('#DK').removeClass("button2");
-         $('#AK').removeClass("button2");
+         $('#All').addClass("active");
+         $('#RJ').removeClass("active");
+         $('#SB').removeClass("active");
+         $('#PV').removeClass("active");
+         $('#VK').removeClass("active");
+         $('#DK').removeClass("active");
+         $('#AK').removeClass("active");
     });
     $('#RJ').click(function(){
          $(".trade").hide();
          $("#RJtable").show();
-         $('#RJ').addClass("button2");
-         $('#All').removeClass("button2");
-         $('#SB').removeClass("button2");
-         $('#PV').removeClass("button2");
-         $('#VK').removeClass("button2");
-         $('#DK').removeClass("button2");
-         $('#AK').removeClass("button2");
+         $('#RJ').addClass("active");
+         $('#All').removeClass("active");
+         $('#SB').removeClass("active");
+         $('#PV').removeClass("active");
+         $('#VK').removeClass("active");
+         $('#DK').removeClass("active");
+         $('#AK').removeClass("active");
     });
     $('#SB').click(function(){
          $(".trade").hide();
          $("#SBtable").show();
-         $('#SB').addClass("button2");
-         $('#RJ').removeClass("button2");
-         $('#PV').removeClass("button2");
-         $('#VK').removeClass("button2");
-         $('#AK').removeClass("button2");
-         $('#DK').removeClass("button2");
-         $('#All').removeClass("button2");
+         $('#SB').addClass("active");
+         $('#RJ').removeClass("active");
+         $('#PV').removeClass("active");
+         $('#VK').removeClass("active");
+         $('#AK').removeClass("active");
+         $('#DK').removeClass("active");
+         $('#All').removeClass("active");
     });
     $('#PV').click(function(){
          $(".trade").hide();
          $("#PVtable").show();
-         $('#PV').addClass("button2");
-         $('#SB').removeClass("button2");
-         $('#RJ').removeClass("button2");
-         $('#VK').removeClass("button2");
-         $('#AK').removeClass("button2");
-         $('#DK').removeClass("button2");
-         $('#All').removeClass("button2");
+         $('#PV').addClass("active");
+         $('#SB').removeClass("active");
+         $('#RJ').removeClass("active");
+         $('#VK').removeClass("active");
+         $('#AK').removeClass("active");
+         $('#DK').removeClass("active");
+         $('#All').removeClass("active");
     });
     $('#VK').click(function(){
          $(".trade").hide();
          $("#VKtable").show();
-         $('#VK').addClass("button2");
-         $('#SB').removeClass("button2");
-         $('#PV').removeClass("button2");
-         $('#RJ').removeClass("button2");
-         $('#AK').removeClass("button2");
-         $('#DK').removeClass("button2");
-         $('#All').removeClass("button2");
+         $('#VK').addClass("active");
+         $('#SB').removeClass("active");
+         $('#PV').removeClass("active");
+         $('#RJ').removeClass("active");
+         $('#AK').removeClass("active");
+         $('#DK').removeClass("active");
+         $('#All').removeClass("active");
     });
     $('#AK').click(function(){
          $(".trade").hide();
          $("#AKtable").show();
-         $('#AK').addClass("button2");
-         $('#SB').removeClass("button2");
-         $('#PV').removeClass("button2");
-         $('#RJ').removeClass("button2");
-         $('#VK').removeClass("button2");
-         $('#DK').removeClass("button2");
-         $('#All').removeClass("button2");
+         $('#AK').addClass("active");
+         $('#SB').removeClass("active");
+         $('#PV').removeClass("active");
+         $('#RJ').removeClass("active");
+         $('#VK').removeClass("active");
+         $('#DK').removeClass("active");
+         $('#All').removeClass("active");
     });
      $('#DK').click(function(){
          $(".trade").hide();
          $("#DKtable").show();
-         $('#DK').addClass("button2");
-         $('#SB').removeClass("button2");
-         $('#PV').removeClass("button2");
-         $('#RJ').removeClass("button2");
-         $('#VK').removeClass("button2");
-         $('#AK').removeClass("button2");
-         $('#All').removeClass("button2");
+         $('#DK').addClass("active");
+         $('#SB').removeClass("active");
+         $('#PV').removeClass("active");
+         $('#RJ').removeClass("active");
+         $('#VK').removeClass("active");
+         $('#AK').removeClass("active");
+         $('#All').removeClass("active");
     });
 });
 </script>
 <div id="information-on-fund-managers-holding-above-1" class="section level4">
 <h4>Information on Fund Managers holding above 1%</h4>
 <p>Click on Fund Managers to customise the list</p>
-<div class="btn-group">
-<button class="button button2" id="All">
+<ul id="subNav">
+<li>
+<p class="active" id="All">
 <strong>All Fund Managers</strong>
-</button>
-<button class="button" id="RJ">
+</p>
+</li>
+<li>
+<p id="RJ">
 <strong>Rakesh Jhunjhunwala</strong>
-</button>
-<button class="button" id="SB">
+</p>
+</li>
+<li>
+<p id="SB">
 <strong>Sanjay Bakshi</strong>
-</button>
-<button class="button" id="PV">
+</p>
+</li>
+<li>
+<p id="PV">
 <strong>Porinju</strong>
-</button>
-<button class="button" id="VK">
+</p>
+</li>
+<li>
+<p id="VK">
 <strong>Vijay Kedia</strong>
-</button>
-<button class="button" id="AK">
+</p>
+</li>
+<li>
+<p id="AK">
 <strong>Ashish Kacholia</strong>
-</button>
-<button class="button" id="DK">
+</p>
+</li>
+<li>
+<p id="DK">
 <strong>Dolly Khanna</strong>
-</button>
-</div>
+</p>
+</li>
+</ul>
 <br/> <br/>
 <div id="alltable" class="trade" style="display:table">
 <table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
