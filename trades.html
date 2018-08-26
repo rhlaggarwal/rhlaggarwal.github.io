@@ -294,6 +294,7 @@ $(document).ready(function(){
          $('#longsC').removeClass("active");
          $('#shorts').removeClass("active");
          $('#mom').removeClass("active");
+         $('#gloss').removeClass("active");
     });
     $('#longsC').click(function(){
          $(".trade").hide()
@@ -302,6 +303,7 @@ $(document).ready(function(){
          $('#longsC').addClass("active");
          $('#shorts').removeClass("active");
          $('#mom').removeClass("active");
+         $('#gloss').removeClass("active");
     });
     $('#shorts').click(function(){
          $(".trade").hide()
@@ -310,6 +312,7 @@ $(document).ready(function(){
          $('#longsC').removeClass("active");
          $('#shorts').addClass("active");
          $('#mom').removeClass("active");
+         $('#gloss').removeClass("active");
     });
     $('#mom').click(function(){
          $(".trade").hide()
@@ -318,12 +321,19 @@ $(document).ready(function(){
          $('#longsC').removeClass("active");
          $('#shorts').removeClass("active");
          $('#mom').addClass("active");
+         $('#gloss').removeClass("active");
      });
     $('#guide').click(function(){
          location.href = "guidelines.html"
     });
     $('#gloss').click(function(){
-         location.href = "glossary.html"
+         $(".trade").hide()
+         $("#keyterms").show();
+         $('#gloss').addClass("active");
+         $('#longsf').removeClass("active");
+         $('#longsC').removeClass("active");
+         $('#shorts').removeClass("active");
+         $('#mom').removeClass("active");
     });
 });
 </script>
@@ -6927,6 +6937,19 @@ PGHH
 </tr>
 </tbody>
 </table>
+</div>
+<div id="keyterms" class="trade" style="text-align:left">
+<ol style="list-style-type: decimal">
+<li><strong>Symbol</strong>: NSE symbol for stock</li>
+<li><strong>Close</strong> : Last closing price on NSE</li>
+<li><strong>EntryPrice</strong> : Entry price for trend strategy</li>
+<li><strong>EntryDate</strong> : Entry signal date</li>
+<li><strong>Avg10D(%)</strong> : Slope of returns of last 10 days</li>
+<li><strong>MTM(%)</strong> : Mark to market</li>
+<li><strong>MomLevel</strong> : Absolute Measure of momentum in a stock based on price movement and volumes</li>
+<li><strong>HLPercent</strong> : Distance from 52-wk high for longs, Distance from 52-wk lows for shorts</li>
+<li><strong>RankPercentile</strong> : Percentile rank within the sector</li>
+</ol>
 </div>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- q1 -->
