@@ -296,6 +296,7 @@ $(document).ready(function(){
          $('#PV').removeClass("active");
          $('#VK').removeClass("active");
          $('#DK').removeClass("active");
+         $('#RD').removeClass("active");
          $('#AK').removeClass("active");
     });
     $('#RJ').click(function(){
@@ -307,6 +308,7 @@ $(document).ready(function(){
          $('#PV').removeClass("active");
          $('#VK').removeClass("active");
          $('#DK').removeClass("active");
+         $('#RD').removeClass("active");
          $('#AK').removeClass("active");
     });
     $('#SB').click(function(){
@@ -318,6 +320,7 @@ $(document).ready(function(){
          $('#VK').removeClass("active");
          $('#AK').removeClass("active");
          $('#DK').removeClass("active");
+         $('#RD').removeClass("active");
          $('#All').removeClass("active");
     });
     $('#PV').click(function(){
@@ -329,6 +332,7 @@ $(document).ready(function(){
          $('#VK').removeClass("active");
          $('#AK').removeClass("active");
          $('#DK').removeClass("active");
+         $('#RD').removeClass("active");
          $('#All').removeClass("active");
     });
     $('#VK').click(function(){
@@ -340,6 +344,7 @@ $(document).ready(function(){
          $('#RJ').removeClass("active");
          $('#AK').removeClass("active");
          $('#DK').removeClass("active");
+         $('#RD').removeClass("active");
          $('#All').removeClass("active");
     });
     $('#AK').click(function(){
@@ -351,12 +356,26 @@ $(document).ready(function(){
          $('#RJ').removeClass("active");
          $('#VK').removeClass("active");
          $('#DK').removeClass("active");
+         $('#RD').removeClass("active");
          $('#All').removeClass("active");
     });
      $('#DK').click(function(){
          $(".trade").hide();
          $("#DKtable").show();
          $('#DK').addClass("active");
+         $('#SB').removeClass("active");
+         $('#PV').removeClass("active");
+         $('#RJ').removeClass("active");
+         $('#VK').removeClass("active");
+         $('#AK').removeClass("active");
+         $('#RD').removeClass("active");
+         $('#All').removeClass("active");
+    });
+    $('#RD').click(function(){
+         $(".trade").hide();
+         $("#RDtable").show();
+         $('#RD').addClass("active");
+         $('#DK').removeClass("active");
          $('#SB').removeClass("active");
          $('#PV').removeClass("active");
          $('#RJ').removeClass("active");
@@ -405,6 +424,11 @@ $(document).ready(function(){
 <strong>Dolly Khanna</strong>
 </p>
 </li>
+<li>
+<p id="RD">
+<strong>Radhakishan Damani</strong>
+</p>
+</li>
 </ul>
 <br/> <br/>
 <div id="alltable" class="trade" style="display:table">
@@ -437,10 +461,10 @@ FM
 Titan
 </td>
 <td style="text-align:right;">
-6470
+5390
 </td>
 <td style="text-align:right;">
-49
+48
 </td>
 <td style="text-align:left;">
 RJ
@@ -454,10 +478,10 @@ RJ
 Escorts
 </td>
 <td style="text-align:right;">
-910
+848
 </td>
 <td style="text-align:right;">
-7
+8
 </td>
 <td style="text-align:left;">
 RJ
@@ -471,7 +495,7 @@ RJ
 Lupin
 </td>
 <td style="text-align:right;">
-797
+705
 </td>
 <td style="text-align:right;">
 6
@@ -488,7 +512,7 @@ RJ
 Crisil
 </td>
 <td style="text-align:right;">
-776
+704
 </td>
 <td style="text-align:right;">
 6
@@ -502,10 +526,10 @@ RJ
 5
 </td>
 <td style="text-align:left;">
-NCC Ltd
+Dewan Housing
 </td>
 <td style="text-align:right;">
-774
+614
 </td>
 <td style="text-align:right;">
 6
@@ -522,41 +546,7 @@ RJ
 Delta corp
 </td>
 <td style="text-align:right;">
-721
-</td>
-<td style="text-align:right;">
-5
-</td>
-<td style="text-align:left;">
-RJ
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-7
-</td>
-<td style="text-align:left;">
-Dewan Housing
-</td>
-<td style="text-align:right;">
-613
-</td>
-<td style="text-align:right;">
-5
-</td>
-<td style="text-align:left;">
-RJ
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-8
-</td>
-<td style="text-align:left;">
-Rallis
-</td>
-<td style="text-align:right;">
-500
+425
 </td>
 <td style="text-align:right;">
 4
@@ -567,24 +557,7 @@ RJ
 </tr>
 <tr>
 <td style="text-align:right;">
-9
-</td>
-<td style="text-align:left;">
-Federal Bank
-</td>
-<td style="text-align:right;">
-407
-</td>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:left;">
-RJ
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-10
+7
 </td>
 <td style="text-align:left;">
 Karur Vysya
@@ -601,13 +574,64 @@ RJ
 </tr>
 <tr>
 <td style="text-align:right;">
-11
+8
+</td>
+<td style="text-align:left;">
+Rallis
+</td>
+<td style="text-align:right;">
+350
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+RJ
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+Federal Bank
+</td>
+<td style="text-align:right;">
+303
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+RJ
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
 </td>
 <td style="text-align:left;">
 Edelweiss
 </td>
 <td style="text-align:right;">
-270
+281
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+RJ
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:left;">
+VIP
+</td>
+<td style="text-align:right;">
+224
 </td>
 <td style="text-align:right;">
 2
@@ -621,10 +645,10 @@ RJ
 12
 </td>
 <td style="text-align:left;">
-Geojit
+TV18BRDCST
 </td>
 <td style="text-align:right;">
-213
+200
 </td>
 <td style="text-align:right;">
 2
@@ -638,10 +662,10 @@ RJ
 13
 </td>
 <td style="text-align:left;">
-VIP
+MCX
 </td>
 <td style="text-align:right;">
-192
+160
 </td>
 <td style="text-align:right;">
 1
@@ -655,10 +679,10 @@ RJ
 14
 </td>
 <td style="text-align:left;">
-MCX
+Jubilant Lifescience
 </td>
 <td style="text-align:right;">
-188
+149
 </td>
 <td style="text-align:right;">
 1
@@ -672,10 +696,60 @@ RJ
 15
 </td>
 <td style="text-align:left;">
-Bilcare
+FirstSource Solutions
 </td>
 <td style="text-align:right;">
+142
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:left;">
+Geojit
+</td>
+<td style="text-align:right;">
+140
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+RJ
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
 17
+</td>
+<td style="text-align:left;">
+AgroTech Foods
+</td>
+<td style="text-align:right;">
+110
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+RJ
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+Prakash Industries
+</td>
+<td style="text-align:right;">
+30
 </td>
 <td style="text-align:right;">
 0
@@ -686,59 +760,16 @@ RJ
 </tr>
 <tr>
 <td style="text-align:right;">
-16
-</td>
-<td style="text-align:left;">
-Prakash Industries
-</td>
-<td style="text-align:right;">
-</td>
-<td style="text-align:right;">
-</td>
-<td style="text-align:left;">
-RJ
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-17
-</td>
-<td style="text-align:left;">
-FirstSource Solutions
-</td>
-<td style="text-align:right;">
-</td>
-<td style="text-align:right;">
-</td>
-<td style="text-align:left;">
-RJ
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-18
+19
 </td>
 <td style="text-align:left;">
 ION Exchange
 </td>
 <td style="text-align:right;">
+30
 </td>
 <td style="text-align:right;">
-</td>
-<td style="text-align:left;">
-RJ
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-19
-</td>
-<td style="text-align:left;">
-AgroTech Foods
-</td>
-<td style="text-align:right;">
-</td>
-<td style="text-align:right;">
+0
 </td>
 <td style="text-align:left;">
 RJ
@@ -749,13 +780,13 @@ RJ
 20
 </td>
 <td style="text-align:left;">
-Narayana Hrudalaya
+CCL Products
 </td>
 <td style="text-align:right;">
-66
+67
 </td>
 <td style="text-align:right;">
-18
+21
 </td>
 <td style="text-align:left;">
 SB
@@ -766,13 +797,13 @@ SB
 21
 </td>
 <td style="text-align:left;">
-Accelya Kale
+Narayana Hrudalaya
 </td>
 <td style="text-align:right;">
 63
 </td>
 <td style="text-align:right;">
-17
+19
 </td>
 <td style="text-align:left;">
 SB
@@ -783,10 +814,10 @@ SB
 22
 </td>
 <td style="text-align:left;">
-CCL Products
+Accelya Kale
 </td>
 <td style="text-align:right;">
-57
+50
 </td>
 <td style="text-align:right;">
 15
@@ -803,10 +834,10 @@ SB
 TVS Srichakra
 </td>
 <td style="text-align:right;">
-56
+46
 </td>
 <td style="text-align:right;">
-15
+14
 </td>
 <td style="text-align:left;">
 SB
@@ -820,7 +851,7 @@ SB
 Wonderla Holidays
 </td>
 <td style="text-align:right;">
-41
+37
 </td>
 <td style="text-align:right;">
 11
@@ -834,10 +865,10 @@ SB
 25
 </td>
 <td style="text-align:left;">
-Kitex Garments
+Ambika Cotton mills
 </td>
 <td style="text-align:right;">
-35
+32
 </td>
 <td style="text-align:right;">
 10
@@ -851,13 +882,13 @@ SB
 26
 </td>
 <td style="text-align:left;">
-Ambika Cotton mills
+Wimplast
 </td>
 <td style="text-align:right;">
-35
+14
 </td>
 <td style="text-align:right;">
-9
+4
 </td>
 <td style="text-align:left;">
 SB
@@ -868,13 +899,13 @@ SB
 27
 </td>
 <td style="text-align:left;">
-Wimplast
+Kitex Garments
 </td>
 <td style="text-align:right;">
-17
+14
 </td>
 <td style="text-align:right;">
-5
+4
 </td>
 <td style="text-align:left;">
 SB
@@ -888,10 +919,10 @@ SB
 LEEL Electricals
 </td>
 <td style="text-align:right;">
-76
+28
 </td>
 <td style="text-align:right;">
-62
+30
 </td>
 <td style="text-align:left;">
 PV
@@ -902,13 +933,13 @@ PV
 29
 </td>
 <td style="text-align:left;">
-Confidence Petroleum
+Kaya Ltd
 </td>
 <td style="text-align:right;">
-13
+16
 </td>
 <td style="text-align:right;">
-11
+18
 </td>
 <td style="text-align:left;">
 PV
@@ -919,13 +950,13 @@ PV
 30
 </td>
 <td style="text-align:left;">
-BCL Industries and Infrastructure
+AgroTech Foods
 </td>
 <td style="text-align:right;">
-8
+16
 </td>
 <td style="text-align:right;">
-7
+17
 </td>
 <td style="text-align:left;">
 PV
@@ -936,13 +967,13 @@ PV
 31
 </td>
 <td style="text-align:left;">
-Ion Exchange
+Confidence Petroleum
 </td>
 <td style="text-align:right;">
-8
+13
 </td>
 <td style="text-align:right;">
-6
+14
 </td>
 <td style="text-align:left;">
 PV
@@ -953,13 +984,13 @@ PV
 32
 </td>
 <td style="text-align:left;">
-Emkay Global
+Ion Exchange
 </td>
 <td style="text-align:right;">
 6
 </td>
 <td style="text-align:right;">
-5
+7
 </td>
 <td style="text-align:left;">
 PV
@@ -970,10 +1001,10 @@ PV
 33
 </td>
 <td style="text-align:left;">
-Liberty Shoes
+BCL Industries and Infrastructure
 </td>
 <td style="text-align:right;">
-5
+4
 </td>
 <td style="text-align:right;">
 4
@@ -990,10 +1021,10 @@ PV
 Emkay Global
 </td>
 <td style="text-align:right;">
-4
+3
 </td>
 <td style="text-align:right;">
-3
+4
 </td>
 <td style="text-align:left;">
 PV
@@ -1004,13 +1035,13 @@ PV
 35
 </td>
 <td style="text-align:left;">
-Sarda Plywood
+Liberty Shoes
 </td>
 <td style="text-align:right;">
 3
 </td>
 <td style="text-align:right;">
-2
+4
 </td>
 <td style="text-align:left;">
 PV
@@ -1021,11 +1052,13 @@ PV
 36
 </td>
 <td style="text-align:left;">
-Tata Global
+Archies
 </td>
 <td style="text-align:right;">
+2
 </td>
 <td style="text-align:right;">
+2
 </td>
 <td style="text-align:left;">
 PV
@@ -1036,11 +1069,13 @@ PV
 37
 </td>
 <td style="text-align:left;">
-Tata Coffee
+Sarda Plywood
 </td>
 <td style="text-align:right;">
+1
 </td>
 <td style="text-align:right;">
+1
 </td>
 <td style="text-align:left;">
 PV
@@ -1051,14 +1086,16 @@ PV
 38
 </td>
 <td style="text-align:left;">
-CIMMCo LTD
+Rain Industries
 </td>
 <td style="text-align:right;">
+152
 </td>
 <td style="text-align:right;">
+28
 </td>
 <td style="text-align:left;">
-PV
+DK
 </td>
 </tr>
 <tr>
@@ -1066,13 +1103,13 @@ PV
 39
 </td>
 <td style="text-align:left;">
-Rain Industries
+Manapuram
 </td>
 <td style="text-align:right;">
-292
+97
 </td>
 <td style="text-align:right;">
-33
+18
 </td>
 <td style="text-align:left;">
 DK
@@ -1083,13 +1120,13 @@ DK
 40
 </td>
 <td style="text-align:left;">
-Manapuram
+NOCIL
 </td>
 <td style="text-align:right;">
-120
+53
 </td>
 <td style="text-align:right;">
-13
+10
 </td>
 <td style="text-align:left;">
 DK
@@ -1100,13 +1137,13 @@ DK
 41
 </td>
 <td style="text-align:left;">
-Gujarat Narmada Valley Fe
+Radico Khaitan
 </td>
 <td style="text-align:right;">
-72
+50
 </td>
 <td style="text-align:right;">
-8
+9
 </td>
 <td style="text-align:left;">
 DK
@@ -1117,10 +1154,10 @@ DK
 42
 </td>
 <td style="text-align:left;">
-NOCIL
+Nilkamal
 </td>
 <td style="text-align:right;">
-70
+41
 </td>
 <td style="text-align:right;">
 8
@@ -1134,13 +1171,13 @@ DK
 43
 </td>
 <td style="text-align:left;">
-Radico Khaitan
+Tata Metaliks
 </td>
 <td style="text-align:right;">
-60
+19
 </td>
 <td style="text-align:right;">
-7
+4
 </td>
 <td style="text-align:left;">
 DK
@@ -1151,13 +1188,13 @@ DK
 44
 </td>
 <td style="text-align:left;">
-Nilkamal
+LT Foods
 </td>
 <td style="text-align:right;">
-38
+18
 </td>
 <td style="text-align:right;">
-4
+3
 </td>
 <td style="text-align:left;">
 DK
@@ -1168,13 +1205,13 @@ DK
 45
 </td>
 <td style="text-align:left;">
-Thirumalai Chemicals
+Muthoot Capital
 </td>
 <td style="text-align:right;">
-33
+17
 </td>
 <td style="text-align:right;">
-4
+3
 </td>
 <td style="text-align:left;">
 DK
@@ -1185,13 +1222,13 @@ DK
 46
 </td>
 <td style="text-align:left;">
-LT Foods
+Thirumalai Chemicals
 </td>
 <td style="text-align:right;">
-32
+17
 </td>
 <td style="text-align:right;">
-4
+3
 </td>
 <td style="text-align:left;">
 DK
@@ -1205,10 +1242,10 @@ DK
 Srikalahasthi pipes
 </td>
 <td style="text-align:right;">
-26
+12
 </td>
 <td style="text-align:right;">
-3
+2
 </td>
 <td style="text-align:left;">
 DK
@@ -1219,13 +1256,13 @@ DK
 48
 </td>
 <td style="text-align:left;">
-Tata Metaliks
+RSWM
 </td>
 <td style="text-align:right;">
-25
+9
 </td>
 <td style="text-align:right;">
-3
+2
 </td>
 <td style="text-align:left;">
 DK
@@ -1239,7 +1276,7 @@ DK
 Asian Granito
 </td>
 <td style="text-align:right;">
-18
+9
 </td>
 <td style="text-align:right;">
 2
@@ -1251,74 +1288,6 @@ DK
 <tr>
 <td style="text-align:right;">
 50
-</td>
-<td style="text-align:left;">
-Sterling Tools
-</td>
-<td style="text-align:right;">
-17
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:left;">
-DK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-51
-</td>
-<td style="text-align:left;">
-RSWM
-</td>
-<td style="text-align:right;">
-14
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:left;">
-DK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-52
-</td>
-<td style="text-align:left;">
-Butterfly Gandhimati
-</td>
-<td style="text-align:right;">
-14
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:left;">
-DK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-53
-</td>
-<td style="text-align:left;">
-IFB Agro
-</td>
-<td style="text-align:right;">
-9
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:left;">
-DK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-54
 </td>
 <td style="text-align:left;">
 PPAP Automotive
@@ -1335,13 +1304,81 @@ DK
 </tr>
 <tr>
 <td style="text-align:right;">
-55
+51
 </td>
 <td style="text-align:left;">
 Som distelleries
 </td>
 <td style="text-align:right;">
-8
+7
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+DK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+52
+</td>
+<td style="text-align:left;">
+IFB Agro
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+DK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+53
+</td>
+<td style="text-align:left;">
+Butterfly Gandhimati
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+DK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+54
+</td>
+<td style="text-align:left;">
+Selan Exploration
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+DK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+55
+</td>
+<td style="text-align:left;">
+Associated Alcohols
+</td>
+<td style="text-align:right;">
+5
 </td>
 <td style="text-align:right;">
 1
@@ -1355,10 +1392,10 @@ DK
 56
 </td>
 <td style="text-align:left;">
-Associated Alcohols
+Nitin Spinners
 </td>
 <td style="text-align:right;">
-7
+5
 </td>
 <td style="text-align:right;">
 1
@@ -1372,10 +1409,10 @@ DK
 57
 </td>
 <td style="text-align:left;">
-Nitin Spinners
+Ruchira Papers
 </td>
 <td style="text-align:right;">
-6
+4
 </td>
 <td style="text-align:right;">
 1
@@ -1389,16 +1426,16 @@ DK
 58
 </td>
 <td style="text-align:left;">
-Ruchira Papers
+Sudarshan Chemicals
 </td>
 <td style="text-align:right;">
-6
+100
 </td>
 <td style="text-align:right;">
-1
+27
 </td>
 <td style="text-align:left;">
-DK
+VK
 </td>
 </tr>
 <tr>
@@ -1406,16 +1443,16 @@ DK
 59
 </td>
 <td style="text-align:left;">
-Emkay Global
+Repro
 </td>
 <td style="text-align:right;">
-6
+50
 </td>
 <td style="text-align:right;">
-1
+13
 </td>
 <td style="text-align:left;">
-DK
+VK
 </td>
 </tr>
 <tr>
@@ -1423,16 +1460,16 @@ DK
 60
 </td>
 <td style="text-align:left;">
-Dwarikesh Sugar
+Cera Sanitaryware
 </td>
 <td style="text-align:right;">
-5
+37
 </td>
 <td style="text-align:right;">
-1
+10
 </td>
 <td style="text-align:left;">
-DK
+VK
 </td>
 </tr>
 <tr>
@@ -1440,78 +1477,10 @@ DK
 61
 </td>
 <td style="text-align:left;">
-Shreyans
+Everest Ind
 </td>
 <td style="text-align:right;">
-3
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:left;">
-DK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-62
-</td>
-<td style="text-align:left;">
-Sudarshan Chemicals
-</td>
-<td style="text-align:right;">
-134
-</td>
-<td style="text-align:right;">
-28
-</td>
-<td style="text-align:left;">
-VK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-63
-</td>
-<td style="text-align:left;">
-Repro
-</td>
-<td style="text-align:right;">
-51
-</td>
-<td style="text-align:right;">
-11
-</td>
-<td style="text-align:left;">
-VK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-64
-</td>
-<td style="text-align:left;">
-Cera Sanitaryware
-</td>
-<td style="text-align:right;">
-45
-</td>
-<td style="text-align:right;">
-9
-</td>
-<td style="text-align:left;">
-VK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-65
-</td>
-<td style="text-align:left;">
-Karnataka
-</td>
-<td style="text-align:right;">
-40
+32
 </td>
 <td style="text-align:right;">
 8
@@ -1522,64 +1491,64 @@ VK
 </tr>
 <tr>
 <td style="text-align:right;">
-66
-</td>
-<td style="text-align:left;">
-Heritage foods
-</td>
-<td style="text-align:right;">
-33
-</td>
-<td style="text-align:right;">
-7
-</td>
-<td style="text-align:left;">
-VK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-67
-</td>
-<td style="text-align:left;">
-Apar Industries
-</td>
-<td style="text-align:right;">
-33
-</td>
-<td style="text-align:right;">
-7
-</td>
-<td style="text-align:left;">
-VK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-68
-</td>
-<td style="text-align:left;">
-Everest Ind
-</td>
-<td style="text-align:right;">
-30
-</td>
-<td style="text-align:right;">
-6
-</td>
-<td style="text-align:left;">
-VK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-69
+62
 </td>
 <td style="text-align:left;">
 Vaibhav Global
 </td>
 <td style="text-align:right;">
-25
+28
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+VK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+63
+</td>
+<td style="text-align:left;">
+Heritage foods
+</td>
+<td style="text-align:right;">
+26
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+VK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+64
+</td>
+<td style="text-align:left;">
+Apar Industries
+</td>
+<td style="text-align:right;">
+26
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+VK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+65
+</td>
+<td style="text-align:left;">
+ABC Bearings
+</td>
+<td style="text-align:right;">
+20
 </td>
 <td style="text-align:right;">
 5
@@ -1590,61 +1559,10 @@ VK
 </tr>
 <tr>
 <td style="text-align:right;">
-70
-</td>
-<td style="text-align:left;">
-ABC Bearings
-</td>
-<td style="text-align:right;">
-20
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:left;">
-VK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-71
-</td>
-<td style="text-align:left;">
-Aries Agro
-</td>
-<td style="text-align:right;">
-14
-</td>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:left;">
-VK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-72
+66
 </td>
 <td style="text-align:left;">
 ASTEC Lifesciences
-</td>
-<td style="text-align:right;">
-14
-</td>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:left;">
-VK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-73
-</td>
-<td style="text-align:left;">
-Apcotex Industries
 </td>
 <td style="text-align:right;">
 13
@@ -1658,19 +1576,138 @@ VK
 </tr>
 <tr>
 <td style="text-align:right;">
-74
+67
+</td>
+<td style="text-align:left;">
+Apcotex Industries
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+VK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+68
 </td>
 <td style="text-align:left;">
 Atul Auto
 </td>
 <td style="text-align:right;">
-11
+10
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+VK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+69
+</td>
+<td style="text-align:left;">
+Kokuyo Camlin
+</td>
+<td style="text-align:right;">
+9
 </td>
 <td style="text-align:right;">
 2
 </td>
 <td style="text-align:left;">
 VK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+70
+</td>
+<td style="text-align:left;">
+Cheviot Co
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+VK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+71
+</td>
+<td style="text-align:left;">
+Aries Agro
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+VK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+72
+</td>
+<td style="text-align:left;">
+Panasonic Energy
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+VK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+73
+</td>
+<td style="text-align:left;">
+NOCIL
+</td>
+<td style="text-align:right;">
+112
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:left;">
+AK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+74
+</td>
+<td style="text-align:left;">
+KEI
+</td>
+<td style="text-align:right;">
+104
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:left;">
+AK
 </td>
 </tr>
 <tr>
@@ -1678,16 +1715,16 @@ VK
 75
 </td>
 <td style="text-align:left;">
-Cheviot Co
+KPIT
 </td>
 <td style="text-align:right;">
-10
+102
 </td>
 <td style="text-align:right;">
-2
+12
 </td>
 <td style="text-align:left;">
-VK
+AK
 </td>
 </tr>
 <tr>
@@ -1695,78 +1732,10 @@ VK
 76
 </td>
 <td style="text-align:left;">
-TCPL Package
+Shaily Engg
 </td>
 <td style="text-align:right;">
-8
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:left;">
-VK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-77
-</td>
-<td style="text-align:left;">
-NOCIL
-</td>
-<td style="text-align:right;">
-144
-</td>
-<td style="text-align:right;">
-16
-</td>
-<td style="text-align:left;">
-AK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-78
-</td>
-<td style="text-align:left;">
-KEI
-</td>
-<td style="text-align:right;">
-102
-</td>
-<td style="text-align:right;">
-11
-</td>
-<td style="text-align:left;">
-AK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-79
-</td>
-<td style="text-align:left;">
-APL Apollo
-</td>
-<td style="text-align:right;">
-88
-</td>
-<td style="text-align:right;">
-10
-</td>
-<td style="text-align:left;">
-AK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-80
-</td>
-<td style="text-align:left;">
-KPIT
-</td>
-<td style="text-align:right;">
-87
+75
 </td>
 <td style="text-align:right;">
 9
@@ -1777,13 +1746,13 @@ AK
 </tr>
 <tr>
 <td style="text-align:right;">
-81
+77
 </td>
 <td style="text-align:left;">
-Shaily Engg
+APL Apollo
 </td>
 <td style="text-align:right;">
-65
+56
 </td>
 <td style="text-align:right;">
 7
@@ -1794,115 +1763,13 @@ AK
 </tr>
 <tr>
 <td style="text-align:right;">
-82
-</td>
-<td style="text-align:left;">
-Pokarna
-</td>
-<td style="text-align:right;">
-44
-</td>
-<td style="text-align:right;">
-5
-</td>
-<td style="text-align:left;">
-AK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-83
-</td>
-<td style="text-align:left;">
-Time technoplast
-</td>
-<td style="text-align:right;">
-38
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:left;">
-AK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-84
-</td>
-<td style="text-align:left;">
-Vadilal
-</td>
-<td style="text-align:right;">
-46
-</td>
-<td style="text-align:right;">
-5
-</td>
-<td style="text-align:left;">
-AK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-85
-</td>
-<td style="text-align:left;">
-GHCL
-</td>
-<td style="text-align:right;">
-41
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:left;">
-AK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-86
-</td>
-<td style="text-align:left;">
-MIRC Electronics
-</td>
-<td style="text-align:right;">
-38
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:left;">
-AK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-87
-</td>
-<td style="text-align:left;">
-Vaibhav Global
-</td>
-<td style="text-align:right;">
-35
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:left;">
-AK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-88
+78
 </td>
 <td style="text-align:left;">
 Parag Milk Foods
 </td>
 <td style="text-align:right;">
-45
+40
 </td>
 <td style="text-align:right;">
 5
@@ -1913,7 +1780,58 @@ AK
 </tr>
 <tr>
 <td style="text-align:right;">
-89
+79
+</td>
+<td style="text-align:left;">
+GHCL
+</td>
+<td style="text-align:right;">
+40
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+AK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+80
+</td>
+<td style="text-align:left;">
+NIIT
+</td>
+<td style="text-align:right;">
+39
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+AK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+81
+</td>
+<td style="text-align:left;">
+Vadilal
+</td>
+<td style="text-align:right;">
+34
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+AK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+82
 </td>
 <td style="text-align:left;">
 Aptech
@@ -1930,13 +1848,47 @@ AK
 </tr>
 <tr>
 <td style="text-align:right;">
-90
+83
 </td>
 <td style="text-align:left;">
-Mold Tek Packaging
+Vaibhav Global
 </td>
 <td style="text-align:right;">
-29
+31
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+AK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+84
+</td>
+<td style="text-align:left;">
+Time technoplast
+</td>
+<td style="text-align:right;">
+30
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+AK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+85
+</td>
+<td style="text-align:left;">
+Pokarna
+</td>
+<td style="text-align:right;">
+28
 </td>
 <td style="text-align:right;">
 3
@@ -1947,16 +1899,101 @@ AK
 </tr>
 <tr>
 <td style="text-align:right;">
-91
+86
+</td>
+<td style="text-align:left;">
+MIRC Electronics
+</td>
+<td style="text-align:right;">
+27
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+AK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+87
 </td>
 <td style="text-align:left;">
 Poly Medicure
 </td>
 <td style="text-align:right;">
-33
+27
 </td>
 <td style="text-align:right;">
-4
+3
+</td>
+<td style="text-align:left;">
+AK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+88
+</td>
+<td style="text-align:left;">
+Mold Tek Packaging
+</td>
+<td style="text-align:right;">
+24
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+AK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+89
+</td>
+<td style="text-align:left;">
+Shreyas Shipping
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+AK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+90
+</td>
+<td style="text-align:left;">
+V2 Retail
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+AK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+91
+</td>
+<td style="text-align:left;">
+Vishnu Chemicals
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+2
 </td>
 <td style="text-align:left;">
 AK
@@ -1970,10 +2007,10 @@ AK
 Butterfly Gandhimati
 </td>
 <td style="text-align:right;">
-25
+14
 </td>
 <td style="text-align:right;">
-3
+2
 </td>
 <td style="text-align:left;">
 AK
@@ -1984,16 +2021,135 @@ AK
 93
 </td>
 <td style="text-align:left;">
-Shreyas Shipping
+Acrysil
 </td>
 <td style="text-align:right;">
-23
+10
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+AK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+94
+</td>
+<td style="text-align:left;">
+VSTIND
+</td>
+<td style="text-align:right;">
+1000
+</td>
+<td style="text-align:right;">
+44
+</td>
+<td style="text-align:left;">
+RD
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+95
+</td>
+<td style="text-align:left;">
+SUNDARMFIN
+</td>
+<td style="text-align:right;">
+435
+</td>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:left;">
+RD
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+96
+</td>
+<td style="text-align:left;">
+3MINDIA
+</td>
+<td style="text-align:right;">
+387
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:left;">
+RD
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+97
+</td>
+<td style="text-align:left;">
+BLUEDART
+</td>
+<td style="text-align:right;">
+282
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:left;">
+RD
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+98
+</td>
+<td style="text-align:left;">
+CENTURYTEX
+</td>
+<td style="text-align:right;">
+105
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+RD
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+99
+</td>
+<td style="text-align:left;">
+TV18BRDCST
+</td>
+<td style="text-align:right;">
+79
 </td>
 <td style="text-align:right;">
 3
 </td>
 <td style="text-align:left;">
-AK
+RD
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:left;">
+ADVANIHOTR
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+RD
 </td>
 </tr>
 </tbody>
@@ -2029,10 +2185,10 @@ FM
 Titan
 </td>
 <td style="text-align:right;">
-6470
+5390
 </td>
 <td style="text-align:right;">
-49
+48
 </td>
 <td style="text-align:left;">
 RJ
@@ -2046,10 +2202,10 @@ RJ
 Escorts
 </td>
 <td style="text-align:right;">
-910
+848
 </td>
 <td style="text-align:right;">
-7
+8
 </td>
 <td style="text-align:left;">
 RJ
@@ -2063,7 +2219,7 @@ RJ
 Lupin
 </td>
 <td style="text-align:right;">
-797
+705
 </td>
 <td style="text-align:right;">
 6
@@ -2080,7 +2236,7 @@ RJ
 Crisil
 </td>
 <td style="text-align:right;">
-776
+704
 </td>
 <td style="text-align:right;">
 6
@@ -2094,10 +2250,10 @@ RJ
 5
 </td>
 <td style="text-align:left;">
-NCC Ltd
+Dewan Housing
 </td>
 <td style="text-align:right;">
-774
+614
 </td>
 <td style="text-align:right;">
 6
@@ -2114,41 +2270,7 @@ RJ
 Delta corp
 </td>
 <td style="text-align:right;">
-721
-</td>
-<td style="text-align:right;">
-5
-</td>
-<td style="text-align:left;">
-RJ
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-7
-</td>
-<td style="text-align:left;">
-Dewan Housing
-</td>
-<td style="text-align:right;">
-613
-</td>
-<td style="text-align:right;">
-5
-</td>
-<td style="text-align:left;">
-RJ
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-8
-</td>
-<td style="text-align:left;">
-Rallis
-</td>
-<td style="text-align:right;">
-500
+425
 </td>
 <td style="text-align:right;">
 4
@@ -2159,24 +2281,7 @@ RJ
 </tr>
 <tr>
 <td style="text-align:right;">
-9
-</td>
-<td style="text-align:left;">
-Federal Bank
-</td>
-<td style="text-align:right;">
-407
-</td>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:left;">
-RJ
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-10
+7
 </td>
 <td style="text-align:left;">
 Karur Vysya
@@ -2193,13 +2298,64 @@ RJ
 </tr>
 <tr>
 <td style="text-align:right;">
-11
+8
+</td>
+<td style="text-align:left;">
+Rallis
+</td>
+<td style="text-align:right;">
+350
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+RJ
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+Federal Bank
+</td>
+<td style="text-align:right;">
+303
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+RJ
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
 </td>
 <td style="text-align:left;">
 Edelweiss
 </td>
 <td style="text-align:right;">
-270
+281
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+RJ
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:left;">
+VIP
+</td>
+<td style="text-align:right;">
+224
 </td>
 <td style="text-align:right;">
 2
@@ -2213,10 +2369,10 @@ RJ
 12
 </td>
 <td style="text-align:left;">
-Geojit
+TV18BRDCST
 </td>
 <td style="text-align:right;">
-213
+200
 </td>
 <td style="text-align:right;">
 2
@@ -2230,10 +2386,10 @@ RJ
 13
 </td>
 <td style="text-align:left;">
-VIP
+MCX
 </td>
 <td style="text-align:right;">
-192
+160
 </td>
 <td style="text-align:right;">
 1
@@ -2247,10 +2403,10 @@ RJ
 14
 </td>
 <td style="text-align:left;">
-MCX
+Jubilant Lifescience
 </td>
 <td style="text-align:right;">
-188
+149
 </td>
 <td style="text-align:right;">
 1
@@ -2264,13 +2420,13 @@ RJ
 15
 </td>
 <td style="text-align:left;">
-Bilcare
+Geojit
 </td>
 <td style="text-align:right;">
-17
+140
 </td>
 <td style="text-align:right;">
-0
+1
 </td>
 <td style="text-align:left;">
 RJ
@@ -2281,11 +2437,13 @@ RJ
 16
 </td>
 <td style="text-align:left;">
-Prakash Industries
+AgroTech Foods
 </td>
 <td style="text-align:right;">
+110
 </td>
 <td style="text-align:right;">
+1
 </td>
 <td style="text-align:left;">
 RJ
@@ -2296,11 +2454,13 @@ RJ
 17
 </td>
 <td style="text-align:left;">
-FirstSource Solutions
+Prakash Industries
 </td>
 <td style="text-align:right;">
+30
 </td>
 <td style="text-align:right;">
+0
 </td>
 <td style="text-align:left;">
 RJ
@@ -2314,23 +2474,10 @@ RJ
 ION Exchange
 </td>
 <td style="text-align:right;">
+30
 </td>
 <td style="text-align:right;">
-</td>
-<td style="text-align:left;">
-RJ
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-19
-</td>
-<td style="text-align:left;">
-AgroTech Foods
-</td>
-<td style="text-align:right;">
-</td>
-<td style="text-align:right;">
+0
 </td>
 <td style="text-align:left;">
 RJ
@@ -2366,13 +2513,13 @@ FM
 1
 </td>
 <td style="text-align:left;">
-Narayana Hrudalaya
+CCL Products
 </td>
 <td style="text-align:right;">
-66
+67
 </td>
 <td style="text-align:right;">
-18
+21
 </td>
 <td style="text-align:left;">
 SB
@@ -2383,13 +2530,13 @@ SB
 2
 </td>
 <td style="text-align:left;">
-Accelya Kale
+Narayana Hrudalaya
 </td>
 <td style="text-align:right;">
 63
 </td>
 <td style="text-align:right;">
-17
+19
 </td>
 <td style="text-align:left;">
 SB
@@ -2400,10 +2547,10 @@ SB
 3
 </td>
 <td style="text-align:left;">
-CCL Products
+Accelya Kale
 </td>
 <td style="text-align:right;">
-57
+50
 </td>
 <td style="text-align:right;">
 15
@@ -2420,10 +2567,10 @@ SB
 TVS Srichakra
 </td>
 <td style="text-align:right;">
-56
+46
 </td>
 <td style="text-align:right;">
-15
+14
 </td>
 <td style="text-align:left;">
 SB
@@ -2437,7 +2584,7 @@ SB
 Wonderla Holidays
 </td>
 <td style="text-align:right;">
-41
+37
 </td>
 <td style="text-align:right;">
 11
@@ -2451,10 +2598,10 @@ SB
 6
 </td>
 <td style="text-align:left;">
-Kitex Garments
+Ambika Cotton mills
 </td>
 <td style="text-align:right;">
-35
+32
 </td>
 <td style="text-align:right;">
 10
@@ -2468,13 +2615,13 @@ SB
 7
 </td>
 <td style="text-align:left;">
-Ambika Cotton mills
+Wimplast
 </td>
 <td style="text-align:right;">
-35
+14
 </td>
 <td style="text-align:right;">
-9
+4
 </td>
 <td style="text-align:left;">
 SB
@@ -2485,13 +2632,13 @@ SB
 8
 </td>
 <td style="text-align:left;">
-Wimplast
+Kitex Garments
 </td>
 <td style="text-align:right;">
-17
+14
 </td>
 <td style="text-align:right;">
-5
+4
 </td>
 <td style="text-align:left;">
 SB
@@ -2530,10 +2677,10 @@ FM
 LEEL Electricals
 </td>
 <td style="text-align:right;">
-76
+28
 </td>
 <td style="text-align:right;">
-62
+30
 </td>
 <td style="text-align:left;">
 PV
@@ -2542,6 +2689,40 @@ PV
 <tr>
 <td style="text-align:right;">
 2
+</td>
+<td style="text-align:left;">
+Kaya Ltd
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+PV
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+AgroTech Foods
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:left;">
+PV
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
 </td>
 <td style="text-align:left;">
 Confidence Petroleum
@@ -2550,7 +2731,7 @@ Confidence Petroleum
 13
 </td>
 <td style="text-align:right;">
-11
+14
 </td>
 <td style="text-align:left;">
 PV
@@ -2558,50 +2739,16 @@ PV
 </tr>
 <tr>
 <td style="text-align:right;">
-3
-</td>
-<td style="text-align:left;">
-BCL Industries and Infrastructure
-</td>
-<td style="text-align:right;">
-8
-</td>
-<td style="text-align:right;">
-7
-</td>
-<td style="text-align:left;">
-PV
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-4
+5
 </td>
 <td style="text-align:left;">
 Ion Exchange
 </td>
 <td style="text-align:right;">
-8
-</td>
-<td style="text-align:right;">
-6
-</td>
-<td style="text-align:left;">
-PV
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-5
-</td>
-<td style="text-align:left;">
-Emkay Global
-</td>
-<td style="text-align:right;">
 6
 </td>
 <td style="text-align:right;">
-5
+7
 </td>
 <td style="text-align:left;">
 PV
@@ -2612,10 +2759,10 @@ PV
 6
 </td>
 <td style="text-align:left;">
-Liberty Shoes
+BCL Industries and Infrastructure
 </td>
 <td style="text-align:right;">
-5
+4
 </td>
 <td style="text-align:right;">
 4
@@ -2632,10 +2779,10 @@ PV
 Emkay Global
 </td>
 <td style="text-align:right;">
-4
+3
 </td>
 <td style="text-align:right;">
-3
+4
 </td>
 <td style="text-align:left;">
 PV
@@ -2646,13 +2793,13 @@ PV
 8
 </td>
 <td style="text-align:left;">
-Sarda Plywood
+Liberty Shoes
 </td>
 <td style="text-align:right;">
 3
 </td>
 <td style="text-align:right;">
-2
+4
 </td>
 <td style="text-align:left;">
 PV
@@ -2663,11 +2810,13 @@ PV
 9
 </td>
 <td style="text-align:left;">
-Tata Global
+Archies
 </td>
 <td style="text-align:right;">
+2
 </td>
 <td style="text-align:right;">
+2
 </td>
 <td style="text-align:left;">
 PV
@@ -2678,26 +2827,13 @@ PV
 10
 </td>
 <td style="text-align:left;">
-Tata Coffee
+Sarda Plywood
 </td>
 <td style="text-align:right;">
+1
 </td>
 <td style="text-align:right;">
-</td>
-<td style="text-align:left;">
-PV
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-11
-</td>
-<td style="text-align:left;">
-CIMMCo LTD
-</td>
-<td style="text-align:right;">
-</td>
-<td style="text-align:right;">
+1
 </td>
 <td style="text-align:left;">
 PV
@@ -2736,10 +2872,10 @@ FM
 Sudarshan Chemicals
 </td>
 <td style="text-align:right;">
-134
+100
 </td>
 <td style="text-align:right;">
-28
+27
 </td>
 <td style="text-align:left;">
 VK
@@ -2753,10 +2889,10 @@ VK
 Repro
 </td>
 <td style="text-align:right;">
-51
+50
 </td>
 <td style="text-align:right;">
-11
+13
 </td>
 <td style="text-align:left;">
 VK
@@ -2770,10 +2906,10 @@ VK
 Cera Sanitaryware
 </td>
 <td style="text-align:right;">
-45
+37
 </td>
 <td style="text-align:right;">
-9
+10
 </td>
 <td style="text-align:left;">
 VK
@@ -2784,10 +2920,10 @@ VK
 4
 </td>
 <td style="text-align:left;">
-Karnataka
+Everest Ind
 </td>
 <td style="text-align:right;">
-40
+32
 </td>
 <td style="text-align:right;">
 8
@@ -2799,66 +2935,15 @@ VK
 <tr>
 <td style="text-align:right;">
 5
-</td>
-<td style="text-align:left;">
-Heritage foods
-</td>
-<td style="text-align:right;">
-33
-</td>
-<td style="text-align:right;">
-7
-</td>
-<td style="text-align:left;">
-VK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-6
-</td>
-<td style="text-align:left;">
-Apar Industries
-</td>
-<td style="text-align:right;">
-33
-</td>
-<td style="text-align:right;">
-7
-</td>
-<td style="text-align:left;">
-VK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-7
-</td>
-<td style="text-align:left;">
-Everest Ind
-</td>
-<td style="text-align:right;">
-30
-</td>
-<td style="text-align:right;">
-6
-</td>
-<td style="text-align:left;">
-VK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-8
 </td>
 <td style="text-align:left;">
 Vaibhav Global
 </td>
 <td style="text-align:right;">
-25
+28
 </td>
 <td style="text-align:right;">
-5
+7
 </td>
 <td style="text-align:left;">
 VK
@@ -2866,7 +2951,41 @@ VK
 </tr>
 <tr>
 <td style="text-align:right;">
-9
+6
+</td>
+<td style="text-align:left;">
+Heritage foods
+</td>
+<td style="text-align:right;">
+26
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+VK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+Apar Industries
+</td>
+<td style="text-align:right;">
+26
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+VK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+8
 </td>
 <td style="text-align:left;">
 ABC Bearings
@@ -2875,7 +2994,24 @@ ABC Bearings
 20
 </td>
 <td style="text-align:right;">
-4
+5
+</td>
+<td style="text-align:left;">
+VK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+ASTEC Lifesciences
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+3
 </td>
 <td style="text-align:left;">
 VK
@@ -2886,10 +3022,10 @@ VK
 10
 </td>
 <td style="text-align:left;">
-Aries Agro
+Apcotex Industries
 </td>
 <td style="text-align:right;">
-14
+12
 </td>
 <td style="text-align:right;">
 3
@@ -2903,10 +3039,10 @@ VK
 11
 </td>
 <td style="text-align:left;">
-ASTEC Lifesciences
+Atul Auto
 </td>
 <td style="text-align:right;">
-14
+10
 </td>
 <td style="text-align:right;">
 3
@@ -2920,13 +3056,13 @@ VK
 12
 </td>
 <td style="text-align:left;">
-Apcotex Industries
+Kokuyo Camlin
 </td>
 <td style="text-align:right;">
-13
+9
 </td>
 <td style="text-align:right;">
-3
+2
 </td>
 <td style="text-align:left;">
 VK
@@ -2937,10 +3073,10 @@ VK
 13
 </td>
 <td style="text-align:left;">
-Atul Auto
+Cheviot Co
 </td>
 <td style="text-align:right;">
-11
+9
 </td>
 <td style="text-align:right;">
 2
@@ -2954,13 +3090,13 @@ VK
 14
 </td>
 <td style="text-align:left;">
-Cheviot Co
+Aries Agro
 </td>
 <td style="text-align:right;">
-10
+4
 </td>
 <td style="text-align:right;">
-2
+1
 </td>
 <td style="text-align:left;">
 VK
@@ -2971,13 +3107,13 @@ VK
 15
 </td>
 <td style="text-align:left;">
-TCPL Package
+Panasonic Energy
 </td>
 <td style="text-align:right;">
-8
+3
 </td>
 <td style="text-align:right;">
-2
+1
 </td>
 <td style="text-align:left;">
 VK
@@ -3016,10 +3152,10 @@ FM
 NOCIL
 </td>
 <td style="text-align:right;">
-144
+112
 </td>
 <td style="text-align:right;">
-16
+13
 </td>
 <td style="text-align:left;">
 AK
@@ -3033,10 +3169,10 @@ AK
 KEI
 </td>
 <td style="text-align:right;">
-102
+104
 </td>
 <td style="text-align:right;">
-11
+12
 </td>
 <td style="text-align:left;">
 AK
@@ -3047,13 +3183,13 @@ AK
 3
 </td>
 <td style="text-align:left;">
-APL Apollo
+KPIT
 </td>
 <td style="text-align:right;">
-88
+102
 </td>
 <td style="text-align:right;">
-10
+12
 </td>
 <td style="text-align:left;">
 AK
@@ -3064,10 +3200,10 @@ AK
 4
 </td>
 <td style="text-align:left;">
-KPIT
+Shaily Engg
 </td>
 <td style="text-align:right;">
-87
+75
 </td>
 <td style="text-align:right;">
 9
@@ -3081,10 +3217,10 @@ AK
 5
 </td>
 <td style="text-align:left;">
-Shaily Engg
+APL Apollo
 </td>
 <td style="text-align:right;">
-65
+56
 </td>
 <td style="text-align:right;">
 7
@@ -3098,10 +3234,10 @@ AK
 6
 </td>
 <td style="text-align:left;">
-Pokarna
+Parag Milk Foods
 </td>
 <td style="text-align:right;">
-44
+40
 </td>
 <td style="text-align:right;">
 5
@@ -3115,13 +3251,13 @@ AK
 7
 </td>
 <td style="text-align:left;">
-Time technoplast
+GHCL
 </td>
 <td style="text-align:right;">
-38
+40
 </td>
 <td style="text-align:right;">
-4
+5
 </td>
 <td style="text-align:left;">
 AK
@@ -3132,10 +3268,10 @@ AK
 8
 </td>
 <td style="text-align:left;">
-Vadilal
+NIIT
 </td>
 <td style="text-align:right;">
-46
+39
 </td>
 <td style="text-align:right;">
 5
@@ -3149,10 +3285,10 @@ AK
 9
 </td>
 <td style="text-align:left;">
-GHCL
+Vadilal
 </td>
 <td style="text-align:right;">
-41
+34
 </td>
 <td style="text-align:right;">
 4
@@ -3164,57 +3300,6 @@ AK
 <tr>
 <td style="text-align:right;">
 10
-</td>
-<td style="text-align:left;">
-MIRC Electronics
-</td>
-<td style="text-align:right;">
-38
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:left;">
-AK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-11
-</td>
-<td style="text-align:left;">
-Vaibhav Global
-</td>
-<td style="text-align:right;">
-35
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:left;">
-AK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-12
-</td>
-<td style="text-align:left;">
-Parag Milk Foods
-</td>
-<td style="text-align:right;">
-45
-</td>
-<td style="text-align:right;">
-5
-</td>
-<td style="text-align:left;">
-AK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-13
 </td>
 <td style="text-align:left;">
 Aptech
@@ -3231,13 +3316,64 @@ AK
 </tr>
 <tr>
 <td style="text-align:right;">
+11
+</td>
+<td style="text-align:left;">
+Vaibhav Global
+</td>
+<td style="text-align:right;">
+31
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+AK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:left;">
+Time technoplast
+</td>
+<td style="text-align:right;">
+30
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+AK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:left;">
+Pokarna
+</td>
+<td style="text-align:right;">
+28
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+AK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
 14
 </td>
 <td style="text-align:left;">
-Mold Tek Packaging
+MIRC Electronics
 </td>
 <td style="text-align:right;">
-29
+27
 </td>
 <td style="text-align:right;">
 3
@@ -3254,10 +3390,10 @@ AK
 Poly Medicure
 </td>
 <td style="text-align:right;">
-33
+27
 </td>
 <td style="text-align:right;">
-4
+3
 </td>
 <td style="text-align:left;">
 AK
@@ -3268,10 +3404,10 @@ AK
 16
 </td>
 <td style="text-align:left;">
-Butterfly Gandhimati
+Mold Tek Packaging
 </td>
 <td style="text-align:right;">
-25
+24
 </td>
 <td style="text-align:right;">
 3
@@ -3288,10 +3424,78 @@ AK
 Shreyas Shipping
 </td>
 <td style="text-align:right;">
-23
+18
 </td>
 <td style="text-align:right;">
-3
+2
+</td>
+<td style="text-align:left;">
+AK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+V2 Retail
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+AK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:left;">
+Vishnu Chemicals
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+AK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:left;">
+Butterfly Gandhimati
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+AK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+21
+</td>
+<td style="text-align:left;">
+Acrysil
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+1
 </td>
 <td style="text-align:left;">
 AK
@@ -3330,10 +3534,10 @@ FM
 Rain Industries
 </td>
 <td style="text-align:right;">
-292
+152
 </td>
 <td style="text-align:right;">
-33
+28
 </td>
 <td style="text-align:left;">
 DK
@@ -3347,10 +3551,10 @@ DK
 Manapuram
 </td>
 <td style="text-align:right;">
-120
+97
 </td>
 <td style="text-align:right;">
-13
+18
 </td>
 <td style="text-align:left;">
 DK
@@ -3361,13 +3565,13 @@ DK
 3
 </td>
 <td style="text-align:left;">
-Gujarat Narmada Valley Fe
+NOCIL
 </td>
 <td style="text-align:right;">
-72
+53
 </td>
 <td style="text-align:right;">
-8
+10
 </td>
 <td style="text-align:left;">
 DK
@@ -3378,13 +3582,13 @@ DK
 4
 </td>
 <td style="text-align:left;">
-NOCIL
+Radico Khaitan
 </td>
 <td style="text-align:right;">
-70
+50
 </td>
 <td style="text-align:right;">
-8
+9
 </td>
 <td style="text-align:left;">
 DK
@@ -3395,13 +3599,13 @@ DK
 5
 </td>
 <td style="text-align:left;">
-Radico Khaitan
+Nilkamal
 </td>
 <td style="text-align:right;">
-60
+41
 </td>
 <td style="text-align:right;">
-7
+8
 </td>
 <td style="text-align:left;">
 DK
@@ -3412,10 +3616,10 @@ DK
 6
 </td>
 <td style="text-align:left;">
-Nilkamal
+Tata Metaliks
 </td>
 <td style="text-align:right;">
-38
+19
 </td>
 <td style="text-align:right;">
 4
@@ -3429,13 +3633,13 @@ DK
 7
 </td>
 <td style="text-align:left;">
-Thirumalai Chemicals
+LT Foods
 </td>
 <td style="text-align:right;">
-33
+18
 </td>
 <td style="text-align:right;">
-4
+3
 </td>
 <td style="text-align:left;">
 DK
@@ -3446,13 +3650,13 @@ DK
 8
 </td>
 <td style="text-align:left;">
-LT Foods
+Muthoot Capital
 </td>
 <td style="text-align:right;">
-32
+17
 </td>
 <td style="text-align:right;">
-4
+3
 </td>
 <td style="text-align:left;">
 DK
@@ -3463,10 +3667,10 @@ DK
 9
 </td>
 <td style="text-align:left;">
-Srikalahasthi pipes
+Thirumalai Chemicals
 </td>
 <td style="text-align:right;">
-26
+17
 </td>
 <td style="text-align:right;">
 3
@@ -3480,13 +3684,13 @@ DK
 10
 </td>
 <td style="text-align:left;">
-Tata Metaliks
+Srikalahasthi pipes
 </td>
 <td style="text-align:right;">
-25
+12
 </td>
 <td style="text-align:right;">
-3
+2
 </td>
 <td style="text-align:left;">
 DK
@@ -3497,10 +3701,10 @@ DK
 11
 </td>
 <td style="text-align:left;">
-Asian Granito
+RSWM
 </td>
 <td style="text-align:right;">
-18
+9
 </td>
 <td style="text-align:right;">
 2
@@ -3514,10 +3718,10 @@ DK
 12
 </td>
 <td style="text-align:left;">
-Sterling Tools
+Asian Granito
 </td>
 <td style="text-align:right;">
-17
+9
 </td>
 <td style="text-align:right;">
 2
@@ -3529,57 +3733,6 @@ DK
 <tr>
 <td style="text-align:right;">
 13
-</td>
-<td style="text-align:left;">
-RSWM
-</td>
-<td style="text-align:right;">
-14
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:left;">
-DK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-14
-</td>
-<td style="text-align:left;">
-Butterfly Gandhimati
-</td>
-<td style="text-align:right;">
-14
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:left;">
-DK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-15
-</td>
-<td style="text-align:left;">
-IFB Agro
-</td>
-<td style="text-align:right;">
-9
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:left;">
-DK
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-16
 </td>
 <td style="text-align:left;">
 PPAP Automotive
@@ -3596,13 +3749,64 @@ DK
 </tr>
 <tr>
 <td style="text-align:right;">
-17
+14
 </td>
 <td style="text-align:left;">
 Som distelleries
 </td>
 <td style="text-align:right;">
-8
+7
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+DK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:left;">
+IFB Agro
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+DK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:left;">
+Butterfly Gandhimati
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+DK
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:left;">
+Selan Exploration
+</td>
+<td style="text-align:right;">
+5
 </td>
 <td style="text-align:right;">
 1
@@ -3619,7 +3823,7 @@ DK
 Associated Alcohols
 </td>
 <td style="text-align:right;">
-7
+5
 </td>
 <td style="text-align:right;">
 1
@@ -3636,7 +3840,7 @@ DK
 Nitin Spinners
 </td>
 <td style="text-align:right;">
-6
+5
 </td>
 <td style="text-align:right;">
 1
@@ -3653,7 +3857,7 @@ DK
 Ruchira Papers
 </td>
 <td style="text-align:right;">
-6
+4
 </td>
 <td style="text-align:right;">
 1
@@ -3662,55 +3866,148 @@ Ruchira Papers
 DK
 </td>
 </tr>
+</tbody>
+</table>
+</div>
+<div id="RDtable" class="trade" style="display:table">
+<table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
+<thead>
 <tr>
-<td style="text-align:right;">
-21
-</td>
-<td style="text-align:left;">
-Emkay Global
-</td>
-<td style="text-align:right;">
-6
-</td>
+<th style="text-align:right;font-weight: bold;">
+S.No.
+</th>
+<th style="text-align:left;font-weight: bold;">
+Stock
+</th>
+<th style="text-align:right;font-weight: bold;">
+Holding(Cr)
+</th>
+<th style="text-align:right;font-weight: bold;">
+Holding(%)
+</th>
+<th style="text-align:left;font-weight: bold;">
+FM
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
 <td style="text-align:right;">
 1
 </td>
 <td style="text-align:left;">
-DK
+VSTIND
+</td>
+<td style="text-align:right;">
+1000
+</td>
+<td style="text-align:right;">
+44
+</td>
+<td style="text-align:left;">
+RD
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-22
+2
 </td>
 <td style="text-align:left;">
-Dwarikesh Sugar
+SUNDARMFIN
+</td>
+<td style="text-align:right;">
+435
+</td>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:left;">
+RD
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+3MINDIA
+</td>
+<td style="text-align:right;">
+387
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:left;">
+RD
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+BLUEDART
+</td>
+<td style="text-align:right;">
+282
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:left;">
+RD
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+CENTURYTEX
+</td>
+<td style="text-align:right;">
+105
 </td>
 <td style="text-align:right;">
 5
 </td>
-<td style="text-align:right;">
-1
-</td>
 <td style="text-align:left;">
-DK
+RD
 </td>
 </tr>
 <tr>
 <td style="text-align:right;">
-23
+6
 </td>
 <td style="text-align:left;">
-Shreyans
+TV18BRDCST
+</td>
+<td style="text-align:right;">
+79
 </td>
 <td style="text-align:right;">
 3
+</td>
+<td style="text-align:left;">
+RD
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+ADVANIHOTR
+</td>
+<td style="text-align:right;">
+8
 </td>
 <td style="text-align:right;">
 0
 </td>
 <td style="text-align:left;">
-DK
+RD
 </td>
 </tr>
 </tbody>
