@@ -297,6 +297,7 @@ $(document).ready(function(){
          $('#shorts').removeClass("active");
          $('#mom').removeClass("active");
          $('#gloss').removeClass("active");
+         $('#guide').removeClass("active");
     });
     $('#longsC').click(function(){
          $(".trade").hide()
@@ -306,6 +307,7 @@ $(document).ready(function(){
          $('#shorts').removeClass("active");
          $('#mom').removeClass("active");
          $('#gloss').removeClass("active");
+         $('#guide').removeClass("active");
     });
     $('#shorts').click(function(){
          $(".trade").hide()
@@ -315,6 +317,7 @@ $(document).ready(function(){
          $('#shorts').addClass("active");
          $('#mom').removeClass("active");
          $('#gloss').removeClass("active");
+         $('#guide').removeClass("active");
     });
     $('#mom').click(function(){
          $(".trade").hide()
@@ -324,9 +327,17 @@ $(document).ready(function(){
          $('#shorts').removeClass("active");
          $('#mom').addClass("active");
          $('#gloss').removeClass("active");
+         $('#guide').removeClass("active");
      });
     $('#guide').click(function(){
-         location.href = "guidelines.html"
+         $(".trade").hide()
+         $("#guidelines").show();
+         $('#guide').addClass("active");
+         $('#gloss').removeClass("active");
+         $('#longsf').removeClass("active");
+         $('#longsC').removeClass("active");
+         $('#shorts').removeClass("active");
+         $('#mom').removeClass("active");
     });
     $('#gloss').click(function(){
          $(".trade").hide()
@@ -336,6 +347,7 @@ $(document).ready(function(){
          $('#longsC').removeClass("active");
          $('#shorts').removeClass("active");
          $('#mom').removeClass("active");
+         $('#guide').removeClass("active");
     });
 });
 </script>
@@ -2658,6 +2670,9 @@ PREMEXPLN
 <li><strong>HLPercent</strong> : Distance from 52-wk high for longs, Distance from 52-wk lows for shorts</li>
 <li><strong>RankPercentile</strong> : Percentile rank within the sector</li>
 </ol>
+</div>
+<div id="guidelines" class="trade" style="text-align:left">
+<p>The idea is to create a learning system to screen stocks for longs, shorts and momentum </br> 1.<strong>Technicals</strong>: The screening is done based on past return performance, trend(exponential moving averages), momentum, ATR (average true range) and how close a stock is to its 52-week high for longs and 52-week low for shorts. </br> 2. <strong>Trend strategy, no mean reversion</strong>: Since the signals are based on trend and momentum, we are generally not looking at contrarian calls ie profit booking and short covering. Also we are not playing for mean reversion. </br> 3. <strong>Fundamental filters</strong>: We try and filter stocks fundamentally based on their financial performance and balance sheet status. An example would be to avoid low debt coverage ratios for longs and high growth or ROE companies for shorts. </br> 4. <strong>Momentum</strong>: Based on both price and volume. A huge movement in price coupled with spike in volume will result in a stock passing our filters. </br> 5. <strong>User Choice</strong>: The feature of sorting the list using HLpercent can help screen for stocks closer to their 52-week highs/lows for longs/shorts respectively. The other options are by momentum and Rank percentile. The latter assigns a percentile to stock within its sector based on past return performance. </br> 6. <strong>Timeframe</strong>: We publish signals daily. Technicals are applied using a timeframe of a few days or weeks. And hence the signals generally last for a few days or few weeks. In some cases where the trend continues it will last longer.</p>
 </div>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- q1 -->
