@@ -11,7 +11,7 @@
 
 
 
-<title></title>
+<title>Investing</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,6 +22,7 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -208,7 +209,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore"><h2 id="topshots"><strong>TopShots</strong></h2></h1>
+<h1 class="title toc-ignore">Investing</h1>
 
 </div>
 
@@ -222,116 +223,181 @@ $(document).ready(function () {
 
   gtag('config', 'UA-121309331-1');
 </script>
-<style type="text/css">
+<style>
 .main-container {
-  max-width: 90%;
-  margin-left: 7%;
+  max-width: 95%;
+  margin-left: 5%;
   margin-right: auto;
 }
 
-.main-container::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
-}
-/* Create two equal columns that floats next to each other */
-.column {
-    float: left;
-    padding: 10px;
-    height: 350px; /* Should be removed. Only for demonstration */
-}
-
-.left {
-  align: justify;
-  width: 75%;
+#subNav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 55px;
+    background-color: #f8f8ff;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
-.right {
-  align: center;
-  width: 25%;
+#subNav li {
+        display: inline-block;
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+li p {
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    padding: 15px 17px;
+    font-size: 14px;
+    text-decoration: none;
 }
 
-</style>
-<style type="text/css">
-  body {
-    background-color: #fff1e5;
-  }
-  h2{
-  color: #900;
-  }
-  hr.flare {
-    background:black;
-    height:1px;
+li p:hover{
+    background-color: #e6e6ff;
+    cursor: pointer;
+}
+.active {
+    border-bottom: 4px solid red;
 }
 </style>
-<hr class="flare">
-<div class="row">
-<div class="column left" align="justify">
-<h4 id="peter-lynch---one-up-on-the-wall-street"><strong>1. Peter Lynch - One up on the wall street</strong></h4>
-<p>Lynch was the former star manager of Fidelity’s multibillion-dollar Magellan Fund. He says that average investors can choose winning stocks as competently as Wall Street experts, only if they do a bit of their research. Our video (blog section) on investing in stock of companies whose products/services we regularly use was an idea picked up from his book. The idea is even more important in the Indian context as we are consumer driven economy. Stocks like Page Industries and Bata are classic examples that one would be able to relate to after reading the book.</p>
+<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.5/css/jquery.dataTables.min.css">
+<script src="http://code.jquery.com/jquery-2.1.2.min.js"></script>
+<script src="http://cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.trade').hide();
+    $("#pebased").show();
+    $('#pe').click(function(){
+         $(".trade").hide()
+         $("#pebased").show();
+         $('#pe').addClass("active");
+         $('#gold').removeClass("active");
+    });
+    $('#gold').click(function(){
+         $(".trade").hide()
+         $("#goldbased").show();
+         $('#pe').removeClass("active");
+         $('#gold').addClass("active");
+    });
+});
+</script>
+<!--<div class="btn-group">
+<button class="button" id = "longsf">**Long-Futures**</button>
+<button class="button" id = "longsC" >**Long-Cash**</button>
+<button class="button" id = "shorts" >**Shorts-Futures**</button>
+<button class="button" id = "mom" >**Momentum**</button>
+<button class="button" id = "guide" >**Guidelines**</button>
+</div>-->
+<ul id="subNav">
+<li>
+<p class="active" id="pe">
+<strong>PE-Based Investing</strong>
+</p>
+</li>
+<li>
+<p id="gold">
+<strong>Gold-Based Investing</strong>
+</p>
+</li>
+</ul>
+<br/> <br/>
+<div id="pebased" class="trade" style="text-align:left">
+<p>Below chart compares performance of SIPs in 1)Fixed deposit 2)Nifty ETFs and 3) Price to Earning(PE) based asset allocation strategy. The strategy decides whether to invest in Nifty ETFs or Fixed deposits based on how expensive Nifty is. The decision is taken on a monthly basis. You either stay in fixed deposit or equity at a particular time.</p>
+<p>The numbers in the graph is calculated using starting monthly savings of Rs 10,000 from 1999, adjusted for inflation(6%) since then. The strategy exited equities whenever price to earnings level was very high end compared to historical averages.</p>
+<p>Nifty currently trades at expensive PE levels(26+) as of September 2018. Hence, strategy advises to stay in Fixed deposits and stay away from Nifty ETFs. We will update signals at the end of October.</p>
+<p><img src="PEbased.png" width="100%" style="display: block; margin: auto;" /></p>
 </div>
-<div class="column right" align="center">
-<strong>The Book</strong>
-<div data-wrid="WRID-153522187029743783" data-widgettype="productBanner" data-class="affiliateAdsByFlipkart" height="240px" width="120px">
-
-</div>
-<script async src="//affiliate.flipkart.com/affiliate/widgets/FKAffiliateWidgets.js"></script>
-<p></br></p>
-</div>
-</div>
-<hr class="flare">
-<div class="row">
-<div class="column left" align="justify">
-<h4 id="sir-john-templeton"><strong>2. Sir John Templeton </strong></h4>
-<p>“To buy when others are despondently selling and to sell when others are avidly buying requires the greatest fortitude and pays the greatest ultimate rewards.”-Sir John Templeton. “Rely on quantitative versus qualitative reasoning when it comes to selecting stocks”. This is precisely the idea behind QuantifyIndia, to help bring discipline, logic and restraint in our user’s approach.</p>
-</div>
-<div class="column right" align="center">
-<strong>The Book</strong>
-<div data-wrid="WRID-153522349768154839" data-widgettype="productBanner" data-class="affiliateAdsByFlipkart" height="240px" width="120px">
-
-</div>
-<script async src="//affiliate.flipkart.com/affiliate/widgets/FKAffiliateWidgets.js"></script>
-</div>
-</div>
-</br>
-<hr class="flare">
-<div class="row">
-<div class="column left" align="justify">
-<h4 id="quant-geniuses"><strong>3. Quant Geniuses</strong></h4>
-<p>If you are a budding quant and haven’t read this book yet, our suggestion is DO NOT miss out. Ken Griffin, Edward Thorpe, Jamie Simmons, Cliff Asyness are geeks you want to know about. And by the way if you thought mathematics cannot be used in the markets to make money this book will prove you wrong. They may not be the most celebrated people on CNBC but they are “DUDES” of financial markets.</p>
-</div>
-<div class="column right" align="center">
-<strong>The Book</strong>
-<div data-wrid="WRID-153556529215237810" data-widgettype="productBanner" data-class="affiliateAdsByFlipkart" height="240px" width="120px">
-
-</div>
-<script async src="//affiliate.flipkart.com/affiliate/widgets/FKAffiliateWidgets.js"></script>
-</div>
-</div>
-<p></br></p>
-<hr class="flare">
-<div class="row">
-<div class="column left" align="justify">
-<h4 id="jesse-livermore"><strong>4. Jesse Livermore</strong></h4>
-<p>“The game of speculation is the most uniformly fascinating game in the world. But it is not a game for the stupid, the mentally lazy, the person of inferior emotional balance, or the get-rich-quick adventurer. They will die poor.” Jesse Livermore’s life unfortunately ended on a similar note. Trading is by no means an easy game to sustain. QuantifyIndia suggests our users to read this book to understand technical analysis and emotions behind trading. Since Jesse operated in late 19th century and early 20th century, readers will find initial phases boring and outdated but if you can keep your patience through the book this is a gem and must for people passionate about trading. It will take you through emotions one goes through in stock markets (even applicable in today’s world). It’s our top favourite.</p>
-</div>
-<div class="column right" align="center">
-<strong>The Book</strong>
-<div data-wrid="WRID-153556461749616907" data-widgettype="productBanner" data-class="affiliateAdsByFlipkart" height="240px" width="120px">
-
-</div>
-<script async src="//affiliate.flipkart.com/affiliate/widgets/FKAffiliateWidgets.js"></script>
-</div>
+<div id="goldbased" class="trade" style="text-align:left">
+<p>Quantify India in its effort to mathematically explain concepts has something on gold investing too. Below graph assumes a monthly investment of Rs 1000 from 1980 onwards (increased by 6% annually). The current SIP amount in 2018 would be Rs 9500 and total investment outlay Rs 17L (till June 2018).</p>
+<p>The current market value (June 2018) of total gold holdings would be whopping Rs 80L. That’s an annual return of 9.38%. No extra charges or costs are considered.</p>
+<p>Here’s the chart</p>
+<p><img src="goldIn.png" width="80%" /> </br> </br></p>
+<h4 id="cagr-returns-gold-inr-sip"><strong>CAGR returns Gold INR (SIP)</strong></h4>
+<table class="table table-striped" style="width: auto !important; ">
+<thead>
+<tr>
+<th style="text-align:left;font-weight: bold;">
+Periods
+</th>
+<th style="text-align:right;font-weight: bold;">
+Returns(%)
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+1980Sep-85
+</td>
+<td style="text-align:right;">
+0.3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+1986-90
+</td>
+<td style="text-align:right;">
+8.7
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+1990-95
+</td>
+<td style="text-align:right;">
+11.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+1996-00
+</td>
+<td style="text-align:right;">
+1.2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2001-05
+</td>
+<td style="text-align:right;">
+15.1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2006-10
+</td>
+<td style="text-align:right;">
+22.7
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2011-15
+</td>
+<td style="text-align:right;">
+-4.7
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2016-2018Jun
+</td>
+<td style="text-align:right;">
+2.4
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- q2 -->
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9733904877572746" data-ad-slot="4018644367" data-ad-format="auto" data-full-width-responsive="true">
+<!-- q1 -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9733904877572746" data-ad-slot="8912907699" data-ad-format="auto">
 </ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
