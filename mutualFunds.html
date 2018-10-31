@@ -11,7 +11,7 @@
 
 
 
-<title>Investing</title>
+<title></title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,7 +22,6 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -209,7 +208,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Investing</h1>
+<h1 class="title toc-ignore"><h2 id="checklist-for-mutual-funds"><strong>Checklist for mutual funds</strong></h2></h1>
 
 </div>
 
@@ -223,185 +222,27 @@ $(document).ready(function () {
 
   gtag('config', 'UA-121309331-1');
 </script>
-<style>
+<style type="text/css">
 .main-container {
-  max-width: 95%;
-  margin-left: 5%;
+  max-width: 90%;
+  margin-left: 7%;
   margin-right: auto;
 }
-
-#subNav{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 55px;
-    background-color: #f8f8ff;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-
-#subNav li {
-        display: inline-block;
-}
-
-li p {
-    display: inline-block;
-    color: #000;
-    text-align: center;
-    padding: 15px 17px;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-li p:hover{
-    background-color: #e6e6ff;
-    cursor: pointer;
-}
-.active {
-    border-bottom: 4px solid red;
-}
 </style>
-<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.5/css/jquery.dataTables.min.css">
-<script src="http://code.jquery.com/jquery-2.1.2.min.js"></script>
-<script src="http://cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
-<script>
-$(document).ready(function(){
-    $('.trade').hide();
-    $("#pebased").show();
-    $('#pe').click(function(){
-         $(".trade").hide()
-         $("#pebased").show();
-         $('#pe').addClass("active");
-         $('#gold').removeClass("active");
-    });
-    $('#gold').click(function(){
-         $(".trade").hide()
-         $("#goldbased").show();
-         $('#pe').removeClass("active");
-         $('#gold').addClass("active");
-    });
-});
-</script>
-<!--<div class="btn-group">
-<button class="button" id = "longsf">**Long-Futures**</button>
-<button class="button" id = "longsC" >**Long-Cash**</button>
-<button class="button" id = "shorts" >**Shorts-Futures**</button>
-<button class="button" id = "mom" >**Momentum**</button>
-<button class="button" id = "guide" >**Guidelines**</button>
-</div>-->
-<ul id="subNav">
-<li>
-<p class="active" id="pe">
-<strong>PE-Based Investing</strong>
-</p>
-</li>
-<li>
-<p id="gold">
-<strong>Gold-Based Investing</strong>
-</p>
-</li>
-</ul>
-<br/> <br/>
-<div id="pebased" class="trade" style="text-align:left">
-<p>Below chart compares performance of SIPs in 1)Fixed deposit 2)Nifty ETFs and 3) Price to Earning(PE) based asset allocation strategy. The strategy decides whether to invest in Nifty ETFs or Fixed deposits based on how expensive Nifty is. The decision is taken on a monthly basis. You either stay in fixed deposit or equity at a particular time.</p>
-<p>The numbers in the graph is calculated using starting monthly savings of Rs 10,000 from 1999, adjusted for inflation(6%) since then. The strategy exited equities whenever price to earnings level was very high end compared to historical averages.</p>
-<p>Nifty trades now at a PE level of 25 as of Oct 2018. Strategy advises to stay in fixed deposits but triggers are close to re-enter equities now. People may use dips to buy now. However strictly going by strategy one should wait. We will update signals now by Nov end.</p>
-<p><img src="PEbased.png" width="100%" style="display: block; margin: auto;" /></p>
-</div>
-<div id="goldbased" class="trade" style="text-align:left">
-<p>Quantify India in its effort to mathematically explain concepts has something on gold investing too. Below graph assumes a monthly investment of Rs 1000 from 1980 onwards (increased by 6% annually). The current SIP amount in 2018 would be Rs 9500 and total investment outlay Rs 17L (till June 2018).</p>
-<p>The current market value (June 2018) of total gold holdings would be whopping Rs 80L. That’s an annual return of 9.38%. No extra charges or costs are considered.</p>
-<p>Here’s the chart</p>
-<p><img src="goldIn.png" width="80%" /> </br> </br></p>
-<h4 id="cagr-returns-gold-inr-sip"><strong>CAGR returns Gold INR (SIP)</strong></h4>
-<table class="table table-striped" style="width: auto !important; ">
-<thead>
-<tr>
-<th style="text-align:left;font-weight: bold;">
-Periods
-</th>
-<th style="text-align:right;font-weight: bold;">
-Returns(%)
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-1980Sep-85
-</td>
-<td style="text-align:right;">
-0.3
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-1986-90
-</td>
-<td style="text-align:right;">
-8.7
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-1990-95
-</td>
-<td style="text-align:right;">
-11.0
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-1996-00
-</td>
-<td style="text-align:right;">
-1.2
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-2001-05
-</td>
-<td style="text-align:right;">
-15.1
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-2006-10
-</td>
-<td style="text-align:right;">
-22.7
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-2011-15
-</td>
-<td style="text-align:right;">
--4.7
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-2016-2018 Oct
-</td>
-<td style="text-align:right;">
-5.2
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- q1 -->
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9733904877572746" data-ad-slot="8912907699" data-ad-format="auto">
-</ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<style>
+body {
+text-align: justify;
+font-size: 12pt;
+line-height: 1.6;}
+</style>
+<p>There is no doubt that mutual funds serve an important purpose in the world of investing. They give the common man a way to participate in different asset classes and simultaneously let an expert manage their portfolio for them. However a lot of good work of fund managers can be lost if common man does not understand a few intricacies. We try to help people through a checklist here:</p>
+<p><strong>1. Direct vs Regular plans:</strong> Direct means lesser costs compared to regular. Regular involves a cut for the agent/broker through which you invest in a fund. With online channels like mycams and karvy having their own platform which are free for mutual fund investors, there is no need to invest in regular plans anymore. If your investments are in regular shift them to direct immediately. You can save up to 1-2% of your investments every year just by this simple trick.</p>
+<p><strong>2. Dividend vs Growth:</strong> Dividends are paid out in dividend funds. Growth re-invest all your profits. Although dividends earned are tax free at the hands of investor, debt funds have to pay dividend distribution tax and hence may lower your returns. Also re-investment of dividend income may also have to be planned.</p>
+<p><strong>3. Expense ratio:</strong> Check out the expense ratio of the fund you are investing in. Even in direct fund the operations and salaries of the fund house have to be paid for. If the AUM of the fund is large the percentage cost might be lower and vice-versa. Funds with higher expense ratio should have extra return offerings to justify higher charges.</p>
+<p><strong>4. Higher AUM:</strong> The more the merrier. Funds with larger AUM generally have a lower percentage cost. Also in case of redemptions (investors pulling out money) they may be more stable compared to small size funds. Liquidity wise they might be better. Also higher fund size may also reflect superior performance. One should definitely check for it.</p>
+<p><strong>5. Return performance:</strong> The returns should be compared with the benchmark. For example, a small cap should be compared with its peers and small cap index. Also point-to-point bias should be checked. For example in 2013-2018 market has been a big bull market. Hence high beta funds (who take higher risk) have been rewarded. Hence a deeper dive into their return performance over other periods should be evaluated.</p>
+<p><strong>6. Sector funds:</strong> When a user gets into particular sector it may require more sophistication and knowledge. In general its better to be diversified. It keeps the cost lower. Also empirical research will suggest keeping things simple is much better.</p>
+<p><strong>7. Passive investing through Nifty/Index ETF funds:</strong> We strongly advise people who are outside world of finance to look for these funds. They are lowest in cost and mirror the broad indices. They save you from a lot of risk highlighted above. Globally they have become very popular because of their low cost nature and safety.</p>
 
 
 
