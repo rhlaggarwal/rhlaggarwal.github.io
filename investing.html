@@ -276,6 +276,7 @@ $(document).ready(function(){
          $('#pe').addClass("active");
          $('#gold').removeClass("active");
          $('#return').removeClass("active");
+         $('#freturn').removeClass("active");
     });
     $('#gold').click(function(){
          $(".trade").hide()
@@ -283,6 +284,7 @@ $(document).ready(function(){
          $('#pe').removeClass("active");
          $('#gold').addClass("active");
          $('#return').removeClass("active");
+         $('#freturn').removeClass("active");
     });
     $('#return').click(function(){
          $(".trade").hide()
@@ -290,6 +292,15 @@ $(document).ready(function(){
          $('#pe').removeClass("active");
          $('#gold').removeClass("active");
          $('#return').addClass("active");
+         $('#freturn').removeClass("active");
+    });
+     $('#freturn').click(function(){
+         $(".trade").hide()
+         $("#futurereturns").show();
+         $('#pe').removeClass("active");
+         $('#gold').removeClass("active");
+         $('#return').removeClass("active");
+         $('#freturn').addClass("active");
     });
 });
 </script>
@@ -313,7 +324,12 @@ $(document).ready(function(){
 </li>
 <li>
 <p id="return">
-<strong>Returns</strong>
+<strong>Historical Returns</strong>
+</p>
+</li>
+<li>
+<p id="freturn">
+<strong>Projected Returns</strong>
 </p>
 </li>
 </ul>
@@ -565,13 +581,382 @@ Nifty
 <h4 id="key-points-to-note"><strong>Key points to note</strong></h4>
 <ul>
 <li>The table above displays the annual return details of Gold and Nifty</li>
-<li>For example - if you invest in Nifty the range of returns you can earn in 10years are from 6% to 20% with an average of 13% and a standard deviation of 2% (quite low)</li>
-<li>Notice how standard deviations reduce with longer term of investments</li>
-<li>Also since the range in even 10 years is so varied - its always advisable to time diversify your investments using SIP<br />
-</li>
-<li>Lump sum investments at high valuations should be strictly avoided<br />
-</li>
-<li>Equities give better returns than gold over longer run but with higher volatility</li>
+<li>For instance - investment in Nifty for 10y has yielded returns from 6% to 20% with an average of 13% and a standard deviation of 2%</li>
+<li>Notice how standard deviation reduces with increasing term of investments</li>
+<li>The range of returns in 10 years can vary quite a lot if investments are made in one shot</li>
+<li>Lump sum investment at high valuations is not advisable. SIPs are recommended</li>
+<li>Equities returns are higher than gold in general albeit with higher volatility</li>
+</ul>
+</div>
+<div id="futurereturns" class="trade" style="text-align:justify">
+<table class="table table-striped" style>
+<thead>
+<tr>
+<th style="border-bottom:hidden" colspan="1">
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px;">
+Pre tax returns
+</div>
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="9">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px;">
+After tax returns
+</div>
+</th>
+</tr>
+<tr>
+<th style="border-bottom:hidden" colspan="1">
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px;">
+Projected
+</div>
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px;">
+10%-Bracket
+</div>
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px;">
+20%-Bracket
+</div>
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px;">
+30%-Bracket
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:left;font-weight: bold;">
+Instruments
+</th>
+<th style="text-align:left;font-weight: bold;">
+1y
+</th>
+<th style="text-align:left;font-weight: bold;">
+5y
+</th>
+<th style="text-align:left;font-weight: bold;">
+10y
+</th>
+<th style="text-align:left;font-weight: bold;">
+1y
+</th>
+<th style="text-align:left;font-weight: bold;">
+5y
+</th>
+<th style="text-align:left;font-weight: bold;">
+10y
+</th>
+<th style="text-align:left;font-weight: bold;">
+1y
+</th>
+<th style="text-align:left;font-weight: bold;">
+5y
+</th>
+<th style="text-align:left;font-weight: bold;">
+10y
+</th>
+<th style="text-align:left;font-weight: bold;">
+1y
+</th>
+<th style="text-align:left;font-weight: bold;">
+5y
+</th>
+<th style="text-align:left;font-weight: bold;">
+10y
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Cash
+</td>
+<td style="text-align:left;background-color: #D6DCE4;">
+4%
+</td>
+<td style="text-align:left;background-color: #D6DCE4;">
+4%
+</td>
+<td style="text-align:left;background-color: #D6DCE4;">
+4%
+</td>
+<td style="text-align:left;background-color: #F8CBAD;">
+4%
+</td>
+<td style="text-align:left;background-color: #F8CBAD;">
+4%
+</td>
+<td style="text-align:left;background-color: #F8CBAD;">
+4%
+</td>
+<td style="text-align:left;background-color: #FFF2CC;">
+3%
+</td>
+<td style="text-align:left;background-color: #FFF2CC;">
+3%
+</td>
+<td style="text-align:left;background-color: #FFF2CC;">
+3%
+</td>
+<td style="text-align:left;background-color: #C6E0B4;">
+3%
+</td>
+<td style="text-align:left;background-color: #C6E0B4;">
+3%
+</td>
+<td style="text-align:left;background-color: #C6E0B4;">
+3%
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fixed deposits
+</td>
+<td style="text-align:left;background-color: #D6DCE4;">
+7%
+</td>
+<td style="text-align:left;background-color: #D6DCE4;">
+7%
+</td>
+<td style="text-align:left;background-color: #D6DCE4;">
+7%
+</td>
+<td style="text-align:left;background-color: #F8CBAD;">
+6%
+</td>
+<td style="text-align:left;background-color: #F8CBAD;">
+6%
+</td>
+<td style="text-align:left;background-color: #F8CBAD;">
+6%
+</td>
+<td style="text-align:left;background-color: #FFF2CC;">
+6%
+</td>
+<td style="text-align:left;background-color: #FFF2CC;">
+6%
+</td>
+<td style="text-align:left;background-color: #FFF2CC;">
+6%
+</td>
+<td style="text-align:left;background-color: #C6E0B4;">
+5%
+</td>
+<td style="text-align:left;background-color: #C6E0B4;">
+5%
+</td>
+<td style="text-align:left;background-color: #C6E0B4;">
+5%
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Liquid funds
+</td>
+<td style="text-align:left;background-color: #D6DCE4;">
+7%
+</td>
+<td style="text-align:left;background-color: #D6DCE4;">
+7%
+</td>
+<td style="text-align:left;background-color: #D6DCE4;">
+7%
+</td>
+<td style="text-align:left;background-color: #F8CBAD;">
+6%
+</td>
+<td style="text-align:left;background-color: #F8CBAD;">
+7%
+</td>
+<td style="text-align:left;background-color: #F8CBAD;">
+7%
+</td>
+<td style="text-align:left;background-color: #FFF2CC;">
+6%
+</td>
+<td style="text-align:left;background-color: #FFF2CC;">
+7%
+</td>
+<td style="text-align:left;background-color: #FFF2CC;">
+7%
+</td>
+<td style="text-align:left;background-color: #C6E0B4;">
+5%
+</td>
+<td style="text-align:left;background-color: #C6E0B4;">
+7%
+</td>
+<td style="text-align:left;background-color: #C6E0B4;">
+7%
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PPF
+</td>
+<td style="text-align:left;background-color: #D6DCE4;">
+8%
+</td>
+<td style="text-align:left;background-color: #D6DCE4;">
+8%
+</td>
+<td style="text-align:left;background-color: #D6DCE4;">
+8%
+</td>
+<td style="text-align:left;background-color: #F8CBAD;">
+8%
+</td>
+<td style="text-align:left;background-color: #F8CBAD;">
+8%
+</td>
+<td style="text-align:left;background-color: #F8CBAD;">
+8%
+</td>
+<td style="text-align:left;background-color: #FFF2CC;">
+8%
+</td>
+<td style="text-align:left;background-color: #FFF2CC;">
+8%
+</td>
+<td style="text-align:left;background-color: #FFF2CC;">
+8%
+</td>
+<td style="text-align:left;background-color: #C6E0B4;">
+8%
+</td>
+<td style="text-align:left;background-color: #C6E0B4;">
+8%
+</td>
+<td style="text-align:left;background-color: #C6E0B4;">
+8%
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Gold ETF
+</td>
+<td style="text-align:left;background-color: #D6DCE4;">
+11%
+</td>
+<td style="text-align:left;background-color: #D6DCE4;">
+12%
+</td>
+<td style="text-align:left;background-color: #D6DCE4;">
+12%
+</td>
+<td style="text-align:left;background-color: #F8CBAD;">
+10%
+</td>
+<td style="text-align:left;background-color: #F8CBAD;">
+11%
+</td>
+<td style="text-align:left;background-color: #F8CBAD;">
+11%
+</td>
+<td style="text-align:left;background-color: #FFF2CC;">
+9%
+</td>
+<td style="text-align:left;background-color: #FFF2CC;">
+11%
+</td>
+<td style="text-align:left;background-color: #FFF2CC;">
+11%
+</td>
+<td style="text-align:left;background-color: #C6E0B4;">
+8%
+</td>
+<td style="text-align:left;background-color: #C6E0B4;">
+11%
+</td>
+<td style="text-align:left;background-color: #C6E0B4;">
+11%
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Equity Index ETF
+</td>
+<td style="text-align:left;background-color: #D6DCE4;">
+-2%
+</td>
+<td style="text-align:left;background-color: #D6DCE4;">
+6%
+</td>
+<td style="text-align:left;background-color: #D6DCE4;">
+13%
+</td>
+<td style="text-align:left;background-color: #F8CBAD;">
+-2%
+</td>
+<td style="text-align:left;background-color: #F8CBAD;">
+5%
+</td>
+<td style="text-align:left;background-color: #F8CBAD;">
+12%
+</td>
+<td style="text-align:left;background-color: #FFF2CC;">
+-2%
+</td>
+<td style="text-align:left;background-color: #FFF2CC;">
+5%
+</td>
+<td style="text-align:left;background-color: #FFF2CC;">
+12%
+</td>
+<td style="text-align:left;background-color: #C6E0B4;">
+-2%
+</td>
+<td style="text-align:left;background-color: #C6E0B4;">
+5%
+</td>
+<td style="text-align:left;background-color: #C6E0B4;">
+12%
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Inflation
+</td>
+<td style="text-align:left;background-color: #D6DCE4;">
+5%
+</td>
+<td style="text-align:left;background-color: #D6DCE4;">
+5%
+</td>
+<td style="text-align:left;background-color: #D6DCE4;">
+5%
+</td>
+<td style="text-align:left;background-color: #F8CBAD;">
+</td>
+<td style="text-align:left;background-color: #F8CBAD;">
+</td>
+<td style="text-align:left;background-color: #F8CBAD;">
+</td>
+<td style="text-align:left;background-color: #FFF2CC;">
+</td>
+<td style="text-align:left;background-color: #FFF2CC;">
+</td>
+<td style="text-align:left;background-color: #FFF2CC;">
+</td>
+<td style="text-align:left;background-color: #C6E0B4;">
+</td>
+<td style="text-align:left;background-color: #C6E0B4;">
+</td>
+<td style="text-align:left;background-color: #C6E0B4;">
+</td>
+</tr>
+</tbody>
+</table>
+<p></br> </br></p>
+<h4 id="methodology"><strong>Methodology</strong></h4>
+<ul>
+<li>Nifty –&gt; Based on current PE multiple, calculate the most probable look ahead returns for next 1y,5y,10y</li>
+<li>Gold –&gt; Based on current 1y,5y,10y returns calculate the most probable look ahead returns for next 1y,5y,10y</li>
 </ul>
 </div>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
