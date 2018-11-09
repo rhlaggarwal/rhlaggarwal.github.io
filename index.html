@@ -230,6 +230,35 @@ $(document).ready(function () {
   margin-right: auto;
 }
 
+.main-container::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 2%;
+    /*height: 350px; Should be removed. Only for demonstration */
+}
+
+.left {
+  align: justify;
+  width: 15%;
+  font-size: 14pt;
+}
+
+.right {
+  align: left;
+  width: 55%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 </style>
 <style type="text/css">
   body {
@@ -269,31 +298,28 @@ a:visited {
 
 </style>
 <p>Quant signals/screeners for Indian stock markets. The website is currently for educational purposes only. For feedback/questions mail <a href="mailto:quantifyindia@gmail.com">quantifyindia@gmail.com</a>.</p>
-<hr class="flare">
+<div class="row">
+<div class="column left" align="justify">
 <p>
-<b><a href="trades.html"> Section 1: Trades </a></b>
+<b><a href="trades.html"> Trades </a></b>
 </p>
-<p>For traders/fund houses - long-shorts signals based on trend and momentum. We run codes on NSE day end prices and publish results.</p>
-<hr class="flare">
 <p>
-<b><a href="investing.html"> Section 2: Investing </a></b>
+<b><a href="investing.html"> Investing </a></b>
 </p>
-<p>Investing strategies to create long term wealth. We publish results of an asset allocation strategy which channelizes funds in Nifty ETFs and Fixed deposits.</p>
-<hr class="flare">
 <p>
-<b><a href="analytics.html"> Section 3: Analytics </a></b>
+<b><a href="analytics.html"> Analytics </a></b>
 </p>
-<p>Mathematical results and intelligence on the Indian stock markets. We will share interesting facts here.</p>
-<hr class="flare">
 <p>
-<b><a href="blog.html"> Section 4: Blog </a></b>
+<b><a href="blog.html"> Blog </a></b>
 </p>
-<p>Articles on Investing and Markets.</p>
-<hr class="flare">
 <p>
-<b><a href="topshots.html"> Section 5: Topshots </a></b>
+<b><a href="topshots.html"> Topshots </a></b>
 </p>
-<p>Best buys to undersand Trading</p>
+</div>
+<div class="column right">
+<p><a href = "https://www.youtube.com/watch?v=07VSLuh4Wqw" target="_blank"> <img src="quantify.png" width="90%" style="display: block; margin: auto auto auto 0;" /> </a></p>
+</div>
+</div>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- q1 -->
 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9733904877572746" data-ad-slot="8912907699" data-ad-format="auto">
