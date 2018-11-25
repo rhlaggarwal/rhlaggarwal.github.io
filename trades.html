@@ -370,7 +370,7 @@ $(document).ready(function(){
 </li>
 <li>
 <p id="guide">
-<strong>Guidelines</strong>
+<strong>FAQs</strong>
 </p>
 </li>
 <li>
@@ -5545,8 +5545,31 @@ GDL
 <li><strong>RankPercentile</strong> : Percentile rank within the sector</li>
 </ol>
 </div>
-<div id="guidelines" class="trade" style="text-align:left">
-<p>The idea is to create a learning system to screen stocks for longs, shorts and momentum </br> 1.<strong>Technicals</strong>: The screening is done based on past return performance, trend(exponential moving averages), momentum, ATR (average true range) and how close a stock is to its 52-week high for longs and 52-week low for shorts. </br> 2. <strong>Trend strategy, no mean reversion</strong>: Since the signals are based on trend and momentum, we are generally not looking at contrarian calls ie profit booking and short covering. Also we are not playing for mean reversion. </br> 3. <strong>Fundamental filters</strong>: We try and filter stocks fundamentally based on their financial performance and balance sheet status. An example would be to avoid low debt coverage ratios for longs and high growth or ROE companies for shorts. </br> 4. <strong>Momentum</strong>: Based on both price and volume. A huge movement in price coupled with spike in volume will result in a stock passing our filters. </br> 5. <strong>User Choice</strong>: The feature of sorting the list using HLpercent can help screen for stocks closer to their 52-week highs/lows for longs/shorts respectively. The other options are by momentum and Rank percentile. The latter assigns a percentile to stock within its sector based on past return performance. </br> 6. <strong>Timeframe</strong>: We publish signals daily. Technicals are applied using a timeframe of a few days or weeks. And hence the signals generally last for a few days or few weeks. In some cases where the trend continues it will last longer.</p>
+<div id="guidelines" class="trade" style="text-align:justify">
+<p><strong>Why are number of trades so high?</strong></p>
+<p>The idea behind screening for trades through code is to breeze through chart patterns and get down to fewer names. Our aim is to cater to trend and momentum traders who are looking for breakout stocks. We can tighten our levers but that would mean no action for longer intervals. We believe current signals are optimized to give enough options to users.</p>
+<p><strong>Is this a strategy?</strong></p>
+<p>No - we would rather call it a framework. We believe if you can filter down through automated rules and chose trades out of this set, your probability of finding winning trades go higher. Some traders like to run fewer positions with bigger sizes. Some prefer to hold for longer. The framework increases your chances to find stocks in trend quickly and accurately. It will also help to stay on top of all stocks at one single place.</p>
+<p><strong>How about rules behind the framework of longs-shorts?</strong></p>
+<p>We consider the following metrics to screen stocks</p>
+<p><strong>Technical parameters:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Past return performance</li>
+<li>Exponential moving averages</li>
+<li>Momentum</li>
+<li>ATR (average true range)</li>
+<li>Proximity to 52-week highs for longs and 52-week lows for shorts</li>
+</ol>
+<p><strong>Fundamental filters:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Debt-equity ratios</li>
+<li>Return on Equity</li>
+</ol>
+<p><strong>Why do we give user choices?</strong></p>
+<p>We believe every trader has unique style. Some watch out for momentum (price and volume breakouts), some trade based on 52-wk high lows, some on last few days returns while others choose based on sector leaders. We give user choices to suit their requirements.</p>
+<p><strong>Do we use the signals ourselves?</strong></p>
+<p>Yes - we do not put up anything on the website which we have not used in the past or use currently. We have found the framework useful when the markets are trending on either side. ADAG companies have worked well on the short side for us. Also a few IT companies like FSL gave us good returns on the long side. Overall it has helped us to make money.</p>
+<p><strong>Final Note:</strong> We do not take every trade in the framework unless it fits our style. But yes, we no longer spend hours screening through technical charts anymore.</p>
 </div>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- q1 -->
