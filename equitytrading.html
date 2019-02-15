@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Equity trading and investing buckets</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Quantify-India</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="trades.html">Trades</a>
+</li>
+<li>
+  <a href="investing.html">Investing</a>
+</li>
+<li>
+  <a href="analytics.html">Analytics</a>
+</li>
+<li>
+  <a href="blog.html">Blog</a>
+</li>
+<li>
+  <a href="topshots.html">TopShots</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Equity trading and investing buckets</h1>
+
+</div>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121309331-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121309331-1');
+</script>
+<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.5/css/jquery.dataTables.min.css">
+<script src="http://code.jquery.com/jquery-2.1.2.min.js"></script>
+<script src="http://cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
+<style type="text/css">
+.main-container {
+  max-width: 90%;
+  margin-left: 7%;
+  margin-right: auto;
+}
+</style>
+<style>
+body {
+text-align: justify;
+font-size: 12pt;
+line-height: 1.6;}
+</style>
+<p>People operate in Indian markets in multiple ways- fundamental investing, technical analysis, news and price action-based trading. But how does one decide how to operate in the market? Here’s our take</p>
+<p>A person entering in any transaction in the market should categorize it into one of the following five buckets based on the time horizon. Over a period or after sizeable number of transactions one should list down his or her strengths and focus on them.</p>
+<p><strong>a) High frequency trading:</strong></p>
+<p>Prerequisites: High IQ, coding skills, quantitative strategies (arbitrage, market making etc.), co-location server and other technology infrastructure required. Dealing with large amount of data and superior infrastructure is your edge in this kind of trading. There are relatively small firms operating in the Indian markets who eke out gains in a few Crores, with team/firm size employing less than 50 employees in general who do this. A certain avoid for retail traders operating from their homes, it requires a professional setup to begin with.</p>
+<p><strong>b) Intraday trading: </strong></p>
+<p>News flow-based trading, chart-based momentum trading or simply trading based on price action falls under this category. The time horizon is intraday, and you break down your performance into good and bad days. The idea here is look for emotional stability, manage risk in terms of winning trade percentages (being right often), not getting sentimental about one trade, cutting stop losses early and booking profits early too. People looking to scalp, ride short term information-based trades and look to play the markets as a video game fall under this category. A good fast broker-based infrastructure is still required. Event days like budget, elections etc. are especially important for this bucket.</p>
+<p><strong>c) Short term speculative trading: </strong></p>
+<p>The extension of intraday trading to a few days or few weeks fall under this category. The basis of your trades is similar, news flow, earnings expectations. Contra-bets where prices have fallen quickly and betting on a turnaround, option selling to eat time value, chart patterns to ride momentum or play mean reversion etc. fall under this category. The risk-reward is higher compared to intraday but again the motivation of this group is to also eke out gains in the short term. This category is more experienced form of intraday trading and requires higher conviction.</p>
+<p><strong>d) Medium term situation specific trades:</strong></p>
+<p>The trades held for a few months and have stronger basis than short term speculative trading fall under this category. The zone transitions one from trader to an investor. Special situation trades (betting on merges-acquisitions for example) and other kind of strategic trades will fall under this. There would be deeper research (either fundamental or technical) required here. A chartist using weekly charts should also belong here. The traders in this category take lesser trades, but the winning percentage is expected to be higher. Most of the momentum traders/investors belong here.</p>
+<p><strong>e) Long term investing:</strong></p>
+<p>All the Buffett type value investors, mutual fund players, stock pickers belong here. 99% research, 1% execution is the motto here. All the passive investors also belong here. This category has the lowest taxes and transaction costs among all traders/investors but requires maximum amount of patience and perseverance.</p>
+<p></br></p>
+<div id="conclusion" class="section level4">
+<h4><strong>Conclusion</strong></h4>
+<p>Once you decide and define the category of your transactions, it makes for easier analysis. Bucketing helps understand the “kind of player” you are. Just like in cricket every nation has different players for T20, ODI and Test cricket, similarly one should identify their edge in the stock markets. The market rewards best players from each category. Market may go through phases that are conducive at times for a category, but over the long-haul best players in each category make money. By the way, it is possible for players to be good across categories. Focus on where you think have better chances to succeed and work on those areas. There are enough success stories for each area so let no one tell you that there is one right way to play the game of stock markets.</p>
+<iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fquantifyindia.in%2Fequitytrading.html&amp;layout=button&amp;size=small&amp;mobile_iframe=false&amp;appId=242531879979143&amp;width=59&amp;height=20" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media">
+</iframe>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="The three dimensions(3D) of Investing process" data-url="http://quantifyindia.in/equitytrading.html" data-hashtags="quantifyindia" data-lang="en" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
