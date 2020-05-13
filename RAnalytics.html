@@ -211,7 +211,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore"><h2 id="checklist-for-mutual-funds"><strong>Checklist for mutual funds</strong></h2></h1>
+<h1 class="title toc-ignore"><h2 id="r-analytics"><strong>R Analytics</strong></h2></h1>
 
 </div>
 
@@ -230,22 +230,95 @@ $(document).ready(function () {
   max-width: 90%;
   margin-left: 7%;
   margin-right: auto;
+  overflow: hidden;
+}
+
+#rcorners2 {
+    border-radius: 25px;
+    border: 3px solid #900;
+    padding: 20px; 
+    max-width: 300px;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+#rcorners2::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 580px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 </style>
-<style>
-body {
-text-align: justify;
-font-size: 12pt;
-line-height: 1.6;}
+<style type="text/css">
+  body {
+    background-color: #fff1e5;
+  }
+  h2{
+  color: #900;
+  }
+  hr.flare {
+    background:black;
+    height:1px;
+}
+
+.codediv {
+  width: 500px;
+  padding: 2px;
+  border: 2px solid black;
+  margin: 0;
+  font-family: "Courier New"
+}
+.column {
+    float: left;
+    padding: 5%;
+    height: 5000 px;
+    
+}
+
+.left {
+  align: justify;
+  width: 35%;
+  font-size: 14pt;
+}
+
+.right {
+  align: left;
+  width: 65%;
+}
+
 </style>
-<p>There is no doubt that mutual funds serve an important purpose in the world of investing. They give the common man a way to participate in different asset classes and simultaneously let an expert manage their portfolio for them. However a lot of good work of fund managers can be lost if common man does not understand a few intricacies. We try to help people through a checklist here:</p>
-<p><strong>1. Direct vs Regular plans:</strong> Direct means lesser costs compared to regular. Regular involves a cut for the agent/broker through which you invest in a fund. With online channels like mycams and karvy having their own platform which are free for mutual fund investors, there is no need to invest in regular plans anymore. If your investments are in regular shift them to direct immediately. You can save up to 1-2% of your investments every year just by this simple trick.</p>
-<p><strong>2. Dividend vs Growth:</strong> Dividends are paid out in dividend funds. Growth re-invest all your profits. Although dividends earned are tax free at the hands of investor, debt funds have to pay dividend distribution tax and hence may lower your returns. Also re-investment of dividend income may also have to be planned.</p>
-<p><strong>3. Expense ratio:</strong> Check out the expense ratio of the fund you are investing in. Even in direct fund the operations and salaries of the fund house have to be paid for. If the AUM of the fund is large the percentage cost might be lower and vice-versa. Funds with higher expense ratio should have extra return offerings to justify higher charges.</p>
-<p><strong>4. Higher AUM:</strong> The more the merrier. Funds with larger AUM generally have a lower percentage cost. Also in case of redemptions (investors pulling out money) they may be more stable compared to small size funds. Liquidity wise they might be better. Also higher fund size may also reflect superior performance. One should definitely check for it.</p>
-<p><strong>5. Return performance:</strong> The returns should be compared with the benchmark. For example, a small cap should be compared with its peers and small cap index. Also point-to-point bias should be checked. For example in 2013-2018 market has been a big bull market. Hence high beta funds (who take higher risk) have been rewarded. Hence a deeper dive into their return performance over other periods should be evaluated.</p>
-<p><strong>6. Sector funds:</strong> When a user gets into particular sector it may require more sophistication and knowledge. In general its better to be diversified. It keeps the cost lower. Also empirical research will suggest keeping things simple is much better.</p>
-<p><strong>7. Passive investing through Nifty/Index ETF funds:</strong> We strongly advise people who are outside world of finance to look for these funds. They are lowest in cost and mirror the broad indices. They save you from a lot of risk highlighted above. Globally they have become very popular because of their low cost nature and safety.</p>
+<hr class="flare">
+<div id="how-to-extract-multiple-bhavcopies-in-r" class="section level4">
+<h4><strong>1. How to Extract Multiple Bhavcopies in R</strong></h4>
+<div class="row">
+<div class="column left" align="justify">
+<p>Watch…. <a href = " https://www.youtube.com/watch?v=uUVf85BFMns" target="_blank"> <img src="nseLogo.png" width="90%" /> </a></p>
+</div>
+<div class="column right codediv">
+<p>//Set Working Directory: example –&gt; Bhavcopies for Feb 2019 setwd(‘C:/Users/monik/Desktop/Trades/Derivatives Bhavcopy/FO bhavcopies/2019/Feb’)</p>
+<p>//Define start and end dates startDate = as.Date(“2019-02-01”, order=“ymd”) endDate = as.Date(“2019-02-28”, order=“ymd”)</p>
+<p>//Define date and filename variables myDate = startDate zippedFile &lt;- tempfile()</p>
+<p>//Start the loop for all dates while (myDate &lt;= endDate){ filenameDate = paste(as.character(myDate, “%y%m%d”), “.csv”, sep = “”) downloadfilename=paste(“fo”, toupper(as.character(myDate, “%d%b%Y”)), “bhav.csv”, sep = “”) temp =“”</p>
+<p>//Define the url from where the file is to be extracted myURL = paste(“<a href="https://www1.nseindia.com/content/historical/DERIVATIVES/" class="uri">https://www1.nseindia.com/content/historical/DERIVATIVES/</a>”, as.character(myDate, “%Y”), “/”, toupper(as.character(myDate, “%b”)), “/”, downloadfilename, “.zip”, sep = “”)</p>
+<p>//For missing dates, do a error catch check before you download the file tryCatch({download.file(myURL,zippedFile, method =“auto”, quiet=FALSE) //Unzip file and save it in temp temp &lt;- read.csv(unzip(zippedFile), sep = “,”) }, error=function(err){} ) //Move to the next date<br />
+myDate &lt;- myDate+1 }</p>
+</div>
+</div>
+</div>
 
 
 
