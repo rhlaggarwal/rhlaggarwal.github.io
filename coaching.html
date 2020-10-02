@@ -214,11 +214,12 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore"><h2 id="r-analytics"><strong>R Analytics</strong></h2></h1>
+<h1 class="title toc-ignore"><h2 id="coaching"><strong>Coaching</strong></h2></h1>
 
 </div>
 
 
+<hr />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121309331-1"></script>
 <script>
@@ -304,25 +305,42 @@ $(document).ready(function () {
 }
 
 </style>
-<hr class="flare">
-<div id="how-to-extract-multiple-bhavcopies-in-r" class="section level4">
-<h4><strong>1. How to Extract Multiple Bhavcopies in R</strong></h4>
-<div class="row">
-<div class="column left" align="justify">
-<p>To understand how the code works….watch</p>
-<p><a href = " https://www.youtube.com/watch?v=uUVf85BFMns" target="_blank"> <img src="nseLogo.png" width="50%" /> </a></p>
-</div>
-<div class="column right codediv">
-<h4 id="sample-code"><strong>SAMPLE CODE</strong></h4>
-<p>//Set Working Directory: example –&gt; Bhavcopies for Feb 2019 setwd(‘C:/Users/monik/Desktop/Trades/Derivatives Bhavcopy/FO bhavcopies/2019/Feb’)</p>
-<p>//Define start and end dates startDate = as.Date(“2019-02-01”, order=“ymd”) endDate = as.Date(“2019-02-28”, order=“ymd”)</p>
-<p>//Define date and filename variables myDate = startDate zippedFile &lt;- tempfile()</p>
-<p>//Start the loop for all dates while (myDate &lt;= endDate){ filenameDate = paste(as.character(myDate, “%y%m%d”), “.csv”, sep = “”) downloadfilename=paste(“fo”, toupper(as.character(myDate, “%d%b%Y”)), “bhav.csv”, sep = “”) temp =“”</p>
-<p>//Define the url from where the file is to be extracted myURL = paste(“<a href="https://www1.nseindia.com/content/historical/DERIVATIVES/" class="uri">https://www1.nseindia.com/content/historical/DERIVATIVES/</a>”, as.character(myDate, “%Y”), “/”, toupper(as.character(myDate, “%b”)), “/”, downloadfilename, “.zip”, sep = “”)</p>
-<p>//For missing dates, do a error catch check before you download the file tryCatch({download.file(myURL,zippedFile, method =“auto”, quiet=FALSE) //Unzip file and save it in temp temp &lt;- read.csv(unzip(zippedFile), sep = “,”) }, error=function(err){} ) //Move to the next date<br />
-myDate &lt;- myDate+1 }</p>
-</div>
-</div>
+<div id="learning-cum-coaching-classes-on-financial-markets" class="section level4">
+<h4><b>Learning cum Coaching classes on Financial markets</b></h4>
+<p></br> <b><i>'If you want to, you can make all the mistakes by trying to learn everything yourself, or you can sit at the feet of the masters, which I have chosen to do, and shortcut that.'</b></i></p>
+<p>Time is very critical to a person's life. By trading and investing successfully our aim has been to buy our time back from doing job for someone else. In the pursuit for self-reliance, over the last decade or so, we have worked extra hard to gain some financial wisdom. To pass it on, we consider it only fair to NOT provide it for free. Our intention is always getting into dealings which are beneficial to both parties including ourselves. Hence, we believe our personal time is not for free.</p>
+<p><b>What can we offer?</b></p>
+<ol style="list-style-type: decimal">
+<li><p>Momentum Investing framework - how to generate alpha in the long run</p></li>
+<li><p>Options trading - Basics, Greeks, type of trades, option strategies</p></li>
+<li><p>Historical perspective of Indian markets by studying data</p></li>
+<li><p>Value and Quality explained and covered over last 10-12 years (Indian markets)</p></li>
+<li><p>Asset allocation - how to buy low/sell high &amp; switch between equities and fixed deposits</p></li>
+</ol>
+<p><b>What's in it for us?</b></p>
+<ol style="list-style-type: decimal">
+<li><p>Money - it helps moving towards our financial freedom goal</p></li>
+<li><p>Satisfaction - if our students/clients gain from our insights</p></li>
+</ol>
+<p><b>Why not manage money?</b></p>
+<ol style="list-style-type: decimal">
+<li><p>Regulation - India's money management business is regulation intensive</p></li>
+<li><p>Costs - time/team and costs to manage operations and interact with clients high</p></li>
+<li><p>Customization ??? not everyone has same amount of money, requirements or risk appetite</p></li>
+</ol>
+<p><b>What's in it for you?</b></p>
+<ol style="list-style-type: decimal">
+<li><p>Time - you can leverage our work to jump ahead in your trading/investing journey.</p></li>
+<li><p>Money - our frameworks will help you get richer over time. The fees will be miniscule compared to value added.</p></li>
+<li><p>Knowledge - Especially if you are new to financial markets, a lot of knowledge is to be gained.</p></li>
+</ol>
+<p><b>Fees (non-negotiable)</b></p>
+<ol style="list-style-type: decimal">
+<li><p>Institutions: INR 3000/- per hour</p></li>
+<li><p>Individuals: INR 1000/- per hour (min batch size 5)</p></li>
+<li><p>OR INR 20K for the full weekend (max 8 hours)</p></li>
+</ol>
+<p><b>Please feel free to contact us at <a href="mailto:quantifyindia@gmail.com">quantifyindia@gmail.com</a> if interested.</b></p>
 </div>
 
 
