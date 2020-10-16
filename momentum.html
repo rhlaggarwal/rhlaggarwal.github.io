@@ -214,7 +214,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore"><h2 id="analytics"><strong>Analytics</strong></h2></h1>
+<h1 class="title toc-ignore"><h2 id="momentum-investing"><strong>Momentum Investing</strong></h2></h1>
 
 </div>
 
@@ -233,21 +233,15 @@ $(document).ready(function () {
   max-width: 90%;
   margin-left: 7%;
   margin-right: auto;
-  overflow: auto;
-}
-
-.main-container::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
+  overflow: hidden;
 }
 
 #rcorners2 {
     border-radius: 25px;
-    background-color: #f8f8ff;
     border: 3px solid #900;
     padding: 20px; 
     max-width: 300px;
-    max-height: 220px;    
+    max-height: 220px;
     overflow-y: auto;
 }
 
@@ -256,20 +250,20 @@ $(document).ready(function () {
     background: transparent; /* make scrollbar transparent */
 }
 
-#rcorners2:hover{
-    background-color: #e6e6ff;
-    cursor: pointer;
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 580px; /* Should be removed. Only for demonstration */
 }
 
-.grid-container {
-  display: grid;
-  grid-gap: 50px 100px;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-}
-.grid-item {
-  padding: 20px;
-  text-align: center;
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 </style>
 <style type="text/css">
@@ -283,38 +277,69 @@ $(document).ready(function () {
     background:black;
     height:1px;
 }
+
+.codediv {
+  width: 500px;
+  padding: 2px;
+  border: 2px solid black;
+  margin: 0;
+  font-family: "Courier New"
+}
+.column {
+    float: left;
+    padding: 5%;
+    height: 5000 px;
+    
+}
+
+.left {
+  align: justify;
+  width: 35%;
+  font-size: 14pt;
+}
+
+.right {
+  align: left;
+  width: 65%;
+}
+
 </style>
-<hr class="flare">
-<div id="top-stocks" class="section level4">
-<h4><strong>1. Top Stocks</strong></h4>
-<p>Stocks which have grown fastest in last 1, 5, 10 yrs …..<a href="topstocks.html">Click Here</a></p>
-<hr class="flare">
+<div id="what-is-momentum-investing" class="section level4">
+<h4><b>What is momentum investing?</b></h4>
+<p>Momentum investing is betting on high probability of recent outperformers continuing to do so in the coming timeframe.</p>
+<p></br></p>
 </div>
-<div id="top-sectors" class="section level4">
-<h4><strong>2. Top Sectors</strong></h4>
-<p>Sectors which have grown fastest in last 1, 5, 10 yrs …..<a href="sectorAnalytics.html">Click Here</a></p>
-<hr class="flare">
+<div id="what-is-the-algorithm" class="section level4">
+<h4><b>What is the algorithm?</b></h4>
+<p>Select <i>n</i> top performers, decide portfolio weights to give more size to top ranking stocks, rebalance monthly. Chuck out losers and add top winners. The stocks are screened and weights are allocated through model algorithm.</p>
+<p></br></p>
 </div>
-<div id="corporate-governance-issues" class="section level4">
-<h4><strong>3. Corporate Governance Issues</strong></h4>
-<p>Companies which have been reported in media for governance isssues…<a href="cgissues.html">read</a></p>
-<hr class="flare">
+<div id="how-are-the-returns-like-in-back-testing" class="section level4">
+<h4><b>How are the returns like in back testing?</b></h4>
+<p><b>US markets monthly returns</b></p>
+<p><img src="usmoment.png" width="80%" /> </br> </br></p>
+<p><b>Indian markets monthly returns</b></p>
+<p><img src="indiamoment.png" width="80%" /></p>
+<p>*The actual returns might be different from back tested returns due to impact costs, taxes and effect of brokerages included but the edge is huge, so in absolute terms returns will easily beat the benchmarks</p>
 </div>
-<div id="retirement-40-calculator" class="section level4">
-<h4><strong>4. Retirement <span class="citation">@40</span> Calculator</strong></h4>
-<p>After 40, the savings convert to assets which generate income to take care of your expenses…. to know <a href="retirement.html">Click Here</a></p>
-<hr class="flare">
+<div id="frequency-of-signalsrebalance" class="section level4">
+<h4><b>Frequency of signals/rebalance</b></h4>
+<p>Monthly</p>
+<p></br></p>
 </div>
-<div id="more-to-come" class="section level4">
-<h4><strong>More To Come</strong></h4>
-<p>Keep Watching….</p>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- q1 -->
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9733904877572746" data-ad-slot="8912907699" data-ad-format="auto">
-</ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<div id="do-you-have-skin-in-the-game" class="section level4">
+<h4><b>Do you have skin in the game?</b></h4>
+<p>Yes, we run both momentum in US and India and it is fair to assume that signals shared will mirror our actual allocation in these markets</p>
+<p></br></p>
+</div>
+<div id="how-does-model-portfolio-look-like-sep-2020-example-100000-portfolio-below" class="section level4">
+<h4><b>How does model portfolio look like (Sep-2020)? Example: $100,000 portfolio below</b></h4>
+<p><img src="tablemoment.png" width="50%" /></p>
+<p></br></p>
+</div>
+<div id="fees-based-model" class="section level4">
+<h4><b>Fees based model</b></h4>
+<p>Contact us at <a href="mailto:quantifyindia@gmail.com">quantifyindia@gmail.com</a> for details</p>
 </div>
 
 
