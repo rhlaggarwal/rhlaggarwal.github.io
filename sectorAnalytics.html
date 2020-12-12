@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-<title></title>
+<title>##Sector-wise Average Returns##</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,7 +22,19 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -71,9 +83,7 @@ h6 {
 
 <link rel="stylesheet" href="styles.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -87,7 +97,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -97,6 +106,9 @@ img {
 }
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -112,7 +124,6 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
-
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -132,6 +143,43 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -153,19 +201,74 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -215,7 +318,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore"><h2 id="sector-wise-average-returns"><strong>Sector-wise Average Returns</strong></h2></h1>
+<h1 class="title toc-ignore">##<strong>Sector-wise Average Returns</strong>##</h1>
 
 </div>
 
@@ -320,7 +423,7 @@ $(document).ready(function(){
 </li>
 </ul>
 <p><br/> <br/></p>
-<div id="top10Ytable" class="topStock" style="display:table">
+<div class = "topStock" id = "top10Ytable" style="display:table">
 <table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -403,7 +506,7 @@ Bank - Private
 Bank - PSU
 </td>
 <td style="text-align:center;width: 13em; ">
-18
+17
 </td>
 <td style="text-align:right;">
 -17
@@ -417,10 +520,10 @@ Bank - PSU
 Basic Materials
 </td>
 <td style="text-align:center;width: 13em; ">
-50
+49
 </td>
 <td style="text-align:right;">
-7
+8
 </td>
 </tr>
 <tr>
@@ -585,7 +688,7 @@ Financial
 FMCG
 </td>
 <td style="text-align:center;width: 13em; ">
-13
+14
 </td>
 <td style="text-align:right;">
 14
@@ -697,7 +800,7 @@ Housing Fin
 Industrial
 </td>
 <td style="text-align:center;width: 13em; ">
-126
+123
 </td>
 <td style="text-align:right;">
 3
@@ -851,7 +954,7 @@ Sugar
 Technology
 </td>
 <td style="text-align:center;width: 13em; ">
-36
+34
 </td>
 <td style="text-align:right;">
 8
@@ -930,7 +1033,7 @@ Utilities
 </tbody>
 </table>
 </div>
-<div id="top5Ytable" class="topStock" style="display:table">
+<div class = "topStock" id = "top5Ytable" style="display:table">
 <table class="table table-striped table-hover table" style="margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -1013,7 +1116,7 @@ Bank - Private
 Bank - PSU
 </td>
 <td style="text-align:center;width: 13em; ">
-19
+18
 </td>
 <td style="text-align:right;">
 -21
@@ -1027,10 +1130,10 @@ Bank - PSU
 Basic Materials
 </td>
 <td style="text-align:center;width: 13em; ">
-60
+59
 </td>
 <td style="text-align:right;">
-12
+13
 </td>
 </tr>
 <tr>
@@ -1209,10 +1312,10 @@ Financial
 FMCG
 </td>
 <td style="text-align:center;width: 13em; ">
-13
+14
 </td>
 <td style="text-align:right;">
-7
+9
 </td>
 </tr>
 <tr>
@@ -1321,7 +1424,7 @@ Housing Fin
 Industrial
 </td>
 <td style="text-align:center;width: 13em; ">
-166
+163
 </td>
 <td style="text-align:right;">
 -3
@@ -1419,10 +1522,10 @@ Pharma
 Real estate
 </td>
 <td style="text-align:center;width: 13em; ">
-23
+22
 </td>
 <td style="text-align:right;">
--1
+-3
 </td>
 </tr>
 <tr>
@@ -1475,7 +1578,7 @@ Sugar
 Technology
 </td>
 <td style="text-align:center;width: 13em; ">
-49
+47
 </td>
 <td style="text-align:right;">
 7
@@ -1554,7 +1657,7 @@ Utilities
 </tbody>
 </table>
 </div>
-<div id="top1Ytable" class="topStock" style="display:table">
+<div class = "topStock" id = "top1Ytable" style="display:table">
 <table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -1584,7 +1687,7 @@ Agri Products
 25
 </td>
 <td style="text-align:right;">
-27
+51
 </td>
 </tr>
 <tr>
@@ -1598,7 +1701,7 @@ Airlines
 2
 </td>
 <td style="text-align:right;">
--43
+16
 </td>
 </tr>
 <tr>
@@ -1612,7 +1715,7 @@ Auto Ancilliaries
 32
 </td>
 <td style="text-align:right;">
-0
+19
 </td>
 </tr>
 <tr>
@@ -1626,7 +1729,7 @@ Autos
 17
 </td>
 <td style="text-align:right;">
-0
+18
 </td>
 </tr>
 <tr>
@@ -1640,7 +1743,7 @@ Bank - Private
 14
 </td>
 <td style="text-align:right;">
--36
+-18
 </td>
 </tr>
 <tr>
@@ -1651,10 +1754,10 @@ Bank - Private
 Bank - PSU
 </td>
 <td style="text-align:center;width: 13em; ">
-19
+18
 </td>
 <td style="text-align:right;">
--28
+-13
 </td>
 </tr>
 <tr>
@@ -1665,10 +1768,10 @@ Bank - PSU
 Basic Materials
 </td>
 <td style="text-align:center;width: 13em; ">
-61
+60
 </td>
 <td style="text-align:right;">
-33
+53
 </td>
 </tr>
 <tr>
@@ -1682,7 +1785,7 @@ Cement
 26
 </td>
 <td style="text-align:right;">
-16
+43
 </td>
 </tr>
 <tr>
@@ -1696,7 +1799,7 @@ Chemicals
 55
 </td>
 <td style="text-align:right;">
-34
+66
 </td>
 </tr>
 <tr>
@@ -1707,10 +1810,10 @@ Chemicals
 Commodities
 </td>
 <td style="text-align:center;width: 13em; ">
-57
+55
 </td>
 <td style="text-align:right;">
-26
+43
 </td>
 </tr>
 <tr>
@@ -1724,7 +1827,7 @@ Communications
 17
 </td>
 <td style="text-align:right;">
-25
+48
 </td>
 </tr>
 <tr>
@@ -1738,7 +1841,7 @@ Construction and Engineering
 14
 </td>
 <td style="text-align:right;">
-1
+30
 </td>
 </tr>
 <tr>
@@ -1752,7 +1855,7 @@ Consumer, Cyclical
 62
 </td>
 <td style="text-align:right;">
--1
+23
 </td>
 </tr>
 <tr>
@@ -1766,7 +1869,7 @@ Consumer, Non-cyclical
 51
 </td>
 <td style="text-align:right;">
-25
+40
 </td>
 </tr>
 <tr>
@@ -1780,7 +1883,7 @@ Diversified
 8
 </td>
 <td style="text-align:right;">
-5
+50
 </td>
 </tr>
 <tr>
@@ -1794,7 +1897,7 @@ Education
 6
 </td>
 <td style="text-align:right;">
-2
+-7
 </td>
 </tr>
 <tr>
@@ -1808,7 +1911,7 @@ Energy
 30
 </td>
 <td style="text-align:right;">
-20
+40
 </td>
 </tr>
 <tr>
@@ -1822,7 +1925,7 @@ Entertainment
 8
 </td>
 <td style="text-align:right;">
--16
+2
 </td>
 </tr>
 <tr>
@@ -1836,7 +1939,7 @@ Financial
 72
 </td>
 <td style="text-align:right;">
-1
+22
 </td>
 </tr>
 <tr>
@@ -1850,7 +1953,7 @@ FMCG
 15
 </td>
 <td style="text-align:right;">
-188
+257
 </td>
 </tr>
 <tr>
@@ -1864,7 +1967,7 @@ Foods
 21
 </td>
 <td style="text-align:right;">
-31
+42
 </td>
 </tr>
 <tr>
@@ -1878,7 +1981,7 @@ Footwear
 6
 </td>
 <td style="text-align:right;">
--2
+11
 </td>
 </tr>
 <tr>
@@ -1892,7 +1995,7 @@ Gems and Jewellery
 7
 </td>
 <td style="text-align:right;">
--8
+21
 </td>
 </tr>
 <tr>
@@ -1906,7 +2009,7 @@ Healthcare
 21
 </td>
 <td style="text-align:right;">
-22
+44
 </td>
 </tr>
 <tr>
@@ -1920,7 +2023,7 @@ Holding
 10
 </td>
 <td style="text-align:right;">
--15
+12
 </td>
 </tr>
 <tr>
@@ -1934,7 +2037,7 @@ Hotels
 16
 </td>
 <td style="text-align:right;">
--30
+-4
 </td>
 </tr>
 <tr>
@@ -1948,7 +2051,7 @@ Housing Fin
 11
 </td>
 <td style="text-align:right;">
--10
+22
 </td>
 </tr>
 <tr>
@@ -1959,10 +2062,10 @@ Housing Fin
 Industrial
 </td>
 <td style="text-align:center;width: 13em; ">
-213
+210
 </td>
 <td style="text-align:right;">
--5
+25
 </td>
 </tr>
 <tr>
@@ -1973,10 +2076,10 @@ Industrial
 Infrastructure
 </td>
 <td style="text-align:center;width: 13em; ">
-30
+29
 </td>
 <td style="text-align:right;">
-2
+21
 </td>
 </tr>
 <tr>
@@ -1990,7 +2093,7 @@ Insurance
 6
 </td>
 <td style="text-align:right;">
--9
+-4
 </td>
 </tr>
 <tr>
@@ -2004,7 +2107,7 @@ Logistics
 14
 </td>
 <td style="text-align:right;">
--11
+18
 </td>
 </tr>
 <tr>
@@ -2018,7 +2121,7 @@ Media
 20
 </td>
 <td style="text-align:right;">
--3
+4
 </td>
 </tr>
 <tr>
@@ -2032,7 +2135,7 @@ NBFC
 16
 </td>
 <td style="text-align:right;">
--12
+6
 </td>
 </tr>
 <tr>
@@ -2046,7 +2149,7 @@ Paper
 14
 </td>
 <td style="text-align:right;">
--28
+-6
 </td>
 </tr>
 <tr>
@@ -2060,7 +2163,7 @@ Pharma
 47
 </td>
 <td style="text-align:right;">
-78
+83
 </td>
 </tr>
 <tr>
@@ -2071,10 +2174,10 @@ Pharma
 Real estate
 </td>
 <td style="text-align:center;width: 13em; ">
-32
+30
 </td>
 <td style="text-align:right;">
--13
+19
 </td>
 </tr>
 <tr>
@@ -2088,7 +2191,7 @@ Retail
 16
 </td>
 <td style="text-align:right;">
--14
+4
 </td>
 </tr>
 <tr>
@@ -2102,7 +2205,7 @@ Shipping
 3
 </td>
 <td style="text-align:right;">
--4
+12
 </td>
 </tr>
 <tr>
@@ -2116,7 +2219,7 @@ Sugar
 18
 </td>
 <td style="text-align:right;">
-7
+24
 </td>
 </tr>
 <tr>
@@ -2127,10 +2230,10 @@ Sugar
 Technology
 </td>
 <td style="text-align:center;width: 13em; ">
-70
+68
 </td>
 <td style="text-align:right;">
-56
+77
 </td>
 </tr>
 <tr>
@@ -2144,7 +2247,7 @@ Telecom
 16
 </td>
 <td style="text-align:right;">
-46
+85
 </td>
 </tr>
 <tr>
@@ -2158,7 +2261,7 @@ Textiles
 49
 </td>
 <td style="text-align:right;">
--2
+19
 </td>
 </tr>
 <tr>
@@ -2172,7 +2275,7 @@ Travel and Tourism
 2
 </td>
 <td style="text-align:right;">
--43
+11
 </td>
 </tr>
 <tr>
@@ -2186,7 +2289,7 @@ Tyres
 7
 </td>
 <td style="text-align:right;">
-1
+30
 </td>
 </tr>
 <tr>
@@ -2200,7 +2303,7 @@ Utilities
 30
 </td>
 <td style="text-align:right;">
-5
+26
 </td>
 </tr>
 </tbody>
@@ -2223,7 +2326,7 @@ Utilities
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -2231,6 +2334,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

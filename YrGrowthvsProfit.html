@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-<title></title>
+<title>##5 Yr Profit Growth &gt;10% and &gt;5 yr Stock Returns##</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,7 +22,19 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -71,9 +83,7 @@ h6 {
 
 <link rel="stylesheet" href="styles.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -87,7 +97,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -97,6 +106,9 @@ img {
 }
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -112,7 +124,6 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
-
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -132,6 +143,43 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -153,19 +201,74 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -215,7 +318,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore"><h2 id="yr-profit-growth-10-and-5-yr-stock-returns"><strong>5 Yr Profit Growth &gt;10% and &gt;5 yr Stock Returns</strong></h2></h1>
+<h1 class="title toc-ignore">##<strong>5 Yr Profit Growth &gt;10% and &gt;5 yr Stock Returns</strong>##</h1>
 
 </div>
 
@@ -1037,17 +1140,6 @@ JK CEMENT LTD
 71
 </td>
 <td style="text-align:left;">
-HEXAWARE
-</td>
-<td style="text-align:left;">
-HEXAWARE TECHNOLOGIES LTD
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-72
-</td>
-<td style="text-align:left;">
 CUB
 </td>
 <td style="text-align:left;">
@@ -1056,7 +1148,7 @@ CITY UNION BANK LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-73
+72
 </td>
 <td style="text-align:left;">
 PHOENIXLTD
@@ -1067,7 +1159,7 @@ PHOENIX MILLS LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-74
+73
 </td>
 <td style="text-align:left;">
 SOLARINDS
@@ -1078,7 +1170,7 @@ SOLAR INDUSTRIES INDIA LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-75
+74
 </td>
 <td style="text-align:left;">
 IBULHSGFIN
@@ -1089,7 +1181,7 @@ INDIABULLS HOUSING FINANCE L
 </tr>
 <tr>
 <td style="text-align:right;">
-76
+75
 </td>
 <td style="text-align:left;">
 AKZOINDIA
@@ -1100,7 +1192,7 @@ AKZO NOBEL INDIA LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-77
+76
 </td>
 <td style="text-align:left;">
 ASTRAZEN
@@ -1111,7 +1203,7 @@ ASTRAZENECA PHARMA INDIA LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-78
+77
 </td>
 <td style="text-align:left;">
 SKFINDIA
@@ -1122,7 +1214,7 @@ SKF INDIA LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-79
+78
 </td>
 <td style="text-align:left;">
 TATACHEM
@@ -1133,7 +1225,7 @@ TATA CHEMICALS LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-80
+79
 </td>
 <td style="text-align:left;">
 CESC
@@ -1144,7 +1236,7 @@ CESC LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-81
+80
 </td>
 <td style="text-align:left;">
 MOTILALOFS
@@ -1155,7 +1247,7 @@ MOTILAL OSWAL FINANCIAL SERV
 </tr>
 <tr>
 <td style="text-align:right;">
-82
+81
 </td>
 <td style="text-align:left;">
 SUNDRMFAST
@@ -1166,7 +1258,7 @@ SUNDRAM FASTENERS LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-83
+82
 </td>
 <td style="text-align:left;">
 AARTIIND
@@ -1177,7 +1269,7 @@ AARTI INDUSTRIES LIMITED
 </tr>
 <tr>
 <td style="text-align:right;">
-84
+83
 </td>
 <td style="text-align:left;">
 RELAXO
@@ -1188,7 +1280,7 @@ RELAXO FOOTWEARS LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-85
+84
 </td>
 <td style="text-align:left;">
 SYNGENE
@@ -1199,7 +1291,7 @@ SYNGENE INTERNATIONAL
 </tr>
 <tr>
 <td style="text-align:right;">
-86
+85
 </td>
 <td style="text-align:left;">
 BBTC
@@ -1210,7 +1302,7 @@ BOMBAY BURMAH TRADING CORP
 </tr>
 <tr>
 <td style="text-align:right;">
-87
+86
 </td>
 <td style="text-align:left;">
 MINDAIND
@@ -1221,7 +1313,7 @@ MINDA Industries
 </tr>
 <tr>
 <td style="text-align:right;">
-88
+87
 </td>
 <td style="text-align:left;">
 VGUARD
@@ -1232,7 +1324,7 @@ V-GUARD INDUSTRIES LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-89
+88
 </td>
 <td style="text-align:left;">
 TIMKEN
@@ -1243,7 +1335,7 @@ TIMKEN INDIA LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-90
+89
 </td>
 <td style="text-align:left;">
 AVANTIFEED
@@ -1254,7 +1346,7 @@ AVANTI FEEDS LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-91
+90
 </td>
 <td style="text-align:left;">
 SYMPHONY
@@ -1265,7 +1357,7 @@ SYMPHONY LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-92
+91
 </td>
 <td style="text-align:left;">
 KEC
@@ -1276,7 +1368,7 @@ KEC INTERNATIONAL LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-93
+92
 </td>
 <td style="text-align:left;">
 AEGISCHEM
@@ -1287,7 +1379,7 @@ AEGIS LOGISTICS LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-94
+93
 </td>
 <td style="text-align:left;">
 CHAMBLFERT
@@ -1298,7 +1390,7 @@ CHAMBAL FERTILISERS &amp; CHEM
 </tr>
 <tr>
 <td style="text-align:right;">
-95
+94
 </td>
 <td style="text-align:left;">
 KAJARIACER
@@ -1309,7 +1401,7 @@ KAJARIA CERAMICS LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-96
+95
 </td>
 <td style="text-align:left;">
 KRBL
@@ -1320,7 +1412,7 @@ KRBL LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-97
+96
 </td>
 <td style="text-align:left;">
 NATIONALUM
@@ -1331,7 +1423,7 @@ NATIONAL ALUMINIUM CO LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-98
+97
 </td>
 <td style="text-align:left;">
 GRINDWELL
@@ -1342,7 +1434,7 @@ GRINDWELL NORTON LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-99
+98
 </td>
 <td style="text-align:left;">
 TATAELXSI
@@ -1353,7 +1445,7 @@ TATA ELXSI LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-100
+99
 </td>
 <td style="text-align:left;">
 GRANULES
@@ -1364,7 +1456,7 @@ GRANULES INDIA LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-101
+100
 </td>
 <td style="text-align:left;">
 VINATIORGA
@@ -1375,7 +1467,7 @@ VINATI ORGANICS LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-102
+101
 </td>
 <td style="text-align:left;">
 CARBORUNIV
@@ -1386,7 +1478,7 @@ CARBORUNDUM UNIVERSAL LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-103
+102
 </td>
 <td style="text-align:left;">
 BLUESTARCO
@@ -1397,7 +1489,7 @@ BLUE STAR LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-104
+103
 </td>
 <td style="text-align:left;">
 DCMSHRIRAM
@@ -1408,7 +1500,7 @@ DCM SHRIRAM LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-105
+104
 </td>
 <td style="text-align:left;">
 CANFINHOME
@@ -1419,7 +1511,7 @@ CAN FIN HOMES Limited
 </tr>
 <tr>
 <td style="text-align:right;">
-106
+105
 </td>
 <td style="text-align:left;">
 PVR
@@ -1430,7 +1522,7 @@ PVR LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-107
+106
 </td>
 <td style="text-align:left;">
 EIDPARRY
@@ -1441,7 +1533,7 @@ EID PARRY INDIA LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-108
+107
 </td>
 <td style="text-align:left;">
 SHRIRAMCIT
@@ -1452,7 +1544,7 @@ SHRIRAM CITY UNION FINANCE
 </tr>
 <tr>
 <td style="text-align:right;">
-109
+108
 </td>
 <td style="text-align:left;">
 BIRLACORPN
@@ -1463,7 +1555,7 @@ BIRLA CORP LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-110
+109
 </td>
 <td style="text-align:left;">
 EDELWEISS
@@ -1474,7 +1566,7 @@ EDELWEISS FINANCIAL SERVICES
 </tr>
 <tr>
 <td style="text-align:right;">
-111
+110
 </td>
 <td style="text-align:left;">
 BAJAJELEC
@@ -1485,7 +1577,7 @@ BAJAJ ELECTRICALS LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-112
+111
 </td>
 <td style="text-align:left;">
 ASAHIINDIA
@@ -1496,7 +1588,7 @@ ASAHI INDIA GLASS LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-113
+112
 </td>
 <td style="text-align:left;">
 JYOTHYLAB
@@ -1507,7 +1599,7 @@ JYOTHY LABORATORIES LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-114
+113
 </td>
 <td style="text-align:left;">
 MAHINDCIE
@@ -1518,7 +1610,7 @@ MAHINDRA CIE AUTOMOTIVE LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-115
+114
 </td>
 <td style="text-align:left;">
 FINCABLES
@@ -1529,7 +1621,7 @@ FINOLEX CABLES LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-116
+115
 </td>
 <td style="text-align:left;">
 INDIACEM
@@ -1540,7 +1632,7 @@ INDIA CEMENTS LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-117
+116
 </td>
 <td style="text-align:left;">
 HEIDELBERG
@@ -1551,7 +1643,7 @@ HEIDELBERGCEMENT INDIA LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-118
+117
 </td>
 <td style="text-align:left;">
 EIHOTEL
@@ -1562,7 +1654,7 @@ EIH LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-119
+118
 </td>
 <td style="text-align:left;">
 KPRMILL
@@ -1573,7 +1665,7 @@ KPR MILL LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-120
+119
 </td>
 <td style="text-align:left;">
 GRAPHITE
@@ -1584,7 +1676,7 @@ GRAPHITE INDIA LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-121
+120
 </td>
 <td style="text-align:left;">
 CENTURYTEX
@@ -1595,7 +1687,7 @@ CENTURY TEXTILES &amp; INDS LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-122
+121
 </td>
 <td style="text-align:left;">
 HEG
@@ -1606,7 +1698,7 @@ HEG Limited
 </tr>
 <tr>
 <td style="text-align:right;">
-123
+122
 </td>
 <td style="text-align:left;">
 WELSPUNIND
@@ -1617,7 +1709,7 @@ WELSPUN INDIA LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-124
+123
 </td>
 <td style="text-align:left;">
 PNCINFRA
@@ -1628,7 +1720,7 @@ PNC Infra
 </tr>
 <tr>
 <td style="text-align:right;">
-125
+124
 </td>
 <td style="text-align:left;">
 SUNCLAYLTD
@@ -1639,7 +1731,7 @@ SUNDARAM CLAYTON LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-126
+125
 </td>
 <td style="text-align:left;">
 KALPATPOWR
@@ -1650,7 +1742,7 @@ KALPATARU POWER TRANSMISSION
 </tr>
 <tr>
 <td style="text-align:right;">
-127
+126
 </td>
 <td style="text-align:left;">
 CCL
@@ -1661,7 +1753,7 @@ CCL PRODUCTS INDIA LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-128
+127
 </td>
 <td style="text-align:left;">
 NESCO
@@ -1672,7 +1764,7 @@ NESCO LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-129
+128
 </td>
 <td style="text-align:left;">
 REDINGTON
@@ -1683,7 +1775,7 @@ REDINGTON INDIA LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-130
+129
 </td>
 <td style="text-align:left;">
 GULFOILLUB
@@ -1694,7 +1786,7 @@ Gulf Oil Lubricants India
 </tr>
 <tr>
 <td style="text-align:right;">
-131
+130
 </td>
 <td style="text-align:left;">
 KNRCON
@@ -1705,7 +1797,7 @@ KNR CONSTRUCTIONS Limited
 </tr>
 <tr>
 <td style="text-align:right;">
-132
+131
 </td>
 <td style="text-align:left;">
 CHOLAFIN
@@ -1716,7 +1808,7 @@ CHOLAMANDALAM INVESTMENT AND
 </tr>
 <tr>
 <td style="text-align:right;">
-133
+132
 </td>
 <td style="text-align:left;">
 BALRAMCHIN
@@ -1727,7 +1819,7 @@ BALRAMPUR CHINI MILLS LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-134
+133
 </td>
 <td style="text-align:left;">
 HATHWAY
@@ -1738,7 +1830,7 @@ HATHWAY CABLE AND DATACOM
 </tr>
 <tr>
 <td style="text-align:right;">
-135
+134
 </td>
 <td style="text-align:left;">
 CERA
@@ -1749,7 +1841,7 @@ CERA SANITARYWARE LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-136
+135
 </td>
 <td style="text-align:left;">
 FACT
@@ -1760,7 +1852,7 @@ FERTILISERS &amp; CHEM TRAVANCR
 </tr>
 <tr>
 <td style="text-align:right;">
-137
+136
 </td>
 <td style="text-align:left;">
 CAPLIPOINT
@@ -1771,7 +1863,7 @@ CAPLIN POINT LABORATORIES
 </tr>
 <tr>
 <td style="text-align:right;">
-138
+137
 </td>
 <td style="text-align:left;">
 KEI
@@ -1782,7 +1874,7 @@ KEI INDUSTRIES Ltd
 </tr>
 <tr>
 <td style="text-align:right;">
-139
+138
 </td>
 <td style="text-align:left;">
 BEML
@@ -1793,7 +1885,7 @@ BEML LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-140
+139
 </td>
 <td style="text-align:left;">
 CENTURYPLY
@@ -1804,7 +1896,7 @@ CENTURY PLYBOARDS INDIA LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-141
+140
 </td>
 <td style="text-align:left;">
 MMTC
@@ -1815,7 +1907,7 @@ MMTC LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-142
+141
 </td>
 <td style="text-align:left;">
 DCBBANK
@@ -1826,7 +1918,7 @@ DCB BANK LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-143
+142
 </td>
 <td style="text-align:left;">
 CYIENT
@@ -1837,7 +1929,7 @@ CYIENT LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-144
+143
 </td>
 <td style="text-align:left;">
 INOXLEISUR
@@ -1848,7 +1940,7 @@ INOX LEISURE LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-145
+144
 </td>
 <td style="text-align:left;">
 IRB
@@ -1859,7 +1951,7 @@ IRB INFRASTRUCTURE DEVELOPER
 </tr>
 <tr>
 <td style="text-align:right;">
-146
+145
 </td>
 <td style="text-align:left;">
 GUJALKALI
@@ -1870,7 +1962,7 @@ GUJARAT ALKALIES &amp; CHEMICALS
 </tr>
 <tr>
 <td style="text-align:right;">
-147
+146
 </td>
 <td style="text-align:left;">
 JUSTDIAL
@@ -1881,7 +1973,7 @@ JUST DIAL LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-148
+147
 </td>
 <td style="text-align:left;">
 ICRA
@@ -1892,7 +1984,7 @@ ICRA LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-149
+148
 </td>
 <td style="text-align:left;">
 DELTACORP
@@ -1903,7 +1995,7 @@ DELTA CORP LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-150
+149
 </td>
 <td style="text-align:left;">
 PRSMJOHNSN
@@ -1914,7 +2006,7 @@ Prism Johnson
 </tr>
 <tr>
 <td style="text-align:right;">
-151
+150
 </td>
 <td style="text-align:left;">
 SONATSOFTW
@@ -1925,7 +2017,7 @@ SONATA SOFTWARE LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-152
+151
 </td>
 <td style="text-align:left;">
 FMGOETZE
@@ -1936,7 +2028,7 @@ Federal-Mogul Goetze (India) Limited
 </tr>
 <tr>
 <td style="text-align:right;">
-153
+152
 </td>
 <td style="text-align:left;">
 ELGIEQUIP
@@ -1947,7 +2039,7 @@ ELGI EQUIPMENTS LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-154
+153
 </td>
 <td style="text-align:left;">
 JSWHL
@@ -1958,7 +2050,7 @@ JSW HOLDINGS LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-155
+154
 </td>
 <td style="text-align:left;">
 LAOPALA
@@ -1969,7 +2061,7 @@ LA OPALA RG LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-156
+155
 </td>
 <td style="text-align:left;">
 SUPRAJIT
@@ -1980,7 +2072,7 @@ SUPRAJIT ENGINEERING LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-157
+156
 </td>
 <td style="text-align:left;">
 SCHNEIDER
@@ -1991,7 +2083,7 @@ SCHNEIDER ELECTRIC INFRASTRU
 </tr>
 <tr>
 <td style="text-align:right;">
-158
+157
 </td>
 <td style="text-align:left;">
 BRIGADE
@@ -2002,7 +2094,7 @@ BRIGADE ENTERPRISES LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-159
+158
 </td>
 <td style="text-align:left;">
 JINDALSAW
@@ -2013,7 +2105,7 @@ JINDAL SAW LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-160
+159
 </td>
 <td style="text-align:left;">
 NCC
@@ -2024,7 +2116,7 @@ NCC LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-161
+160
 </td>
 <td style="text-align:left;">
 JSL
@@ -2035,7 +2127,7 @@ JINDAL STAINLESS Ltd
 </tr>
 <tr>
 <td style="text-align:right;">
-162
+161
 </td>
 <td style="text-align:left;">
 RAYMOND
@@ -2046,7 +2138,7 @@ RAYMOND LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-163
+162
 </td>
 <td style="text-align:left;">
 JKPAPER
@@ -2057,7 +2149,7 @@ JK PAPER Ltd
 </tr>
 <tr>
 <td style="text-align:right;">
-164
+163
 </td>
 <td style="text-align:left;">
 SHARDACROP
@@ -2068,7 +2160,7 @@ SHARDA CROPCHEM LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-165
+164
 </td>
 <td style="text-align:left;">
 NILKAMAL
@@ -2079,7 +2171,7 @@ NILKAMAL Ltd
 </tr>
 <tr>
 <td style="text-align:right;">
-166
+165
 </td>
 <td style="text-align:left;">
 GREENLAM
@@ -2090,7 +2182,7 @@ Greenlam Industries
 </tr>
 <tr>
 <td style="text-align:right;">
-167
+166
 </td>
 <td style="text-align:left;">
 PHILIPCARB
@@ -2101,7 +2193,7 @@ PHILLIPS CARBON BLACK Ltd
 </tr>
 <tr>
 <td style="text-align:right;">
-168
+167
 </td>
 <td style="text-align:left;">
 IFBIND
@@ -2112,7 +2204,7 @@ IFB INDUSTRIES LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-169
+168
 </td>
 <td style="text-align:left;">
 SHOPERSTOP
@@ -2123,7 +2215,7 @@ SHOPPERS STOP LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-170
+169
 </td>
 <td style="text-align:left;">
 VENKEYS
@@ -2134,7 +2226,7 @@ VENKY’S (INDIA) Ltd
 </tr>
 <tr>
 <td style="text-align:right;">
-171
+170
 </td>
 <td style="text-align:left;">
 NIITLTD
@@ -2145,7 +2237,7 @@ NIIT Limited
 </tr>
 <tr>
 <td style="text-align:right;">
-172
+171
 </td>
 <td style="text-align:left;">
 MINDACORP
@@ -2156,7 +2248,7 @@ MINDA CORP LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-173
+172
 </td>
 <td style="text-align:left;">
 DISHTV
@@ -2167,7 +2259,7 @@ DISH TV INDIA LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-174
+173
 </td>
 <td style="text-align:left;">
 MAHSEAMLES
@@ -2178,7 +2270,7 @@ MAHARASHTRA SEAMLESS LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-175
+174
 </td>
 <td style="text-align:left;">
 RAMCOIND
@@ -2189,18 +2281,7 @@ RAMCO INDUSTRIES Ltd
 </tr>
 <tr>
 <td style="text-align:right;">
-176
-</td>
-<td style="text-align:left;">
-PAPERPROD
-</td>
-<td style="text-align:left;">
-HUHTAMAKI PPL LTD
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-177
+175
 </td>
 <td style="text-align:left;">
 BOMDYEING
@@ -2211,7 +2292,7 @@ BOMBAY DYEING &amp; MFG CO LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-178
+176
 </td>
 <td style="text-align:left;">
 TRIVENI
@@ -2222,7 +2303,7 @@ TRIVENI ENGINEERING &amp; INDUS
 </tr>
 <tr>
 <td style="text-align:right;">
-179
+177
 </td>
 <td style="text-align:left;">
 POLYPLEX
@@ -2233,7 +2314,7 @@ POLYPLEX CORPORATION Ltd
 </tr>
 <tr>
 <td style="text-align:right;">
-180
+178
 </td>
 <td style="text-align:left;">
 NOCIL
@@ -2244,7 +2325,7 @@ NOCIL Ltd
 </tr>
 <tr>
 <td style="text-align:right;">
-181
+179
 </td>
 <td style="text-align:left;">
 NFL
@@ -2255,7 +2336,7 @@ NATIONAL FERTILIZERS LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-182
+180
 </td>
 <td style="text-align:left;">
 VRLLOG
@@ -2266,7 +2347,7 @@ VRL Logistics
 </tr>
 <tr>
 <td style="text-align:right;">
-183
+181
 </td>
 <td style="text-align:left;">
 GABRIEL
@@ -2277,7 +2358,7 @@ GABRIEL INDIA LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-184
+182
 </td>
 <td style="text-align:left;">
 GHCL
@@ -2288,7 +2369,7 @@ GHCL Limited
 </tr>
 <tr>
 <td style="text-align:right;">
-185
+183
 </td>
 <td style="text-align:left;">
 JTEKTINDIA
@@ -2299,7 +2380,7 @@ JTEKT India Ltd
 </tr>
 <tr>
 <td style="text-align:right;">
-186
+184
 </td>
 <td style="text-align:left;">
 MEGH
@@ -2310,7 +2391,7 @@ MEGHMANI ORGANICS Ltd
 </tr>
 <tr>
 <td style="text-align:right;">
-187
+185
 </td>
 <td style="text-align:left;">
 TCI
@@ -2321,7 +2402,7 @@ TRANSPORT CORP OF INDIA LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-188
+186
 </td>
 <td style="text-align:left;">
 AHLUCONT
@@ -2332,7 +2413,7 @@ AHLUWALIA CONTRACTS LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-189
+187
 </td>
 <td style="text-align:left;">
 MOREPENLAB
@@ -2343,7 +2424,7 @@ MOREPEN LABORATORIES Ltd
 </tr>
 <tr>
 <td style="text-align:right;">
-190
+188
 </td>
 <td style="text-align:left;">
 MAITHANALL
@@ -2354,7 +2435,7 @@ MAITHAN ALLOYS Ltd
 </tr>
 <tr>
 <td style="text-align:right;">
-191
+189
 </td>
 <td style="text-align:left;">
 JAMNAAUTO
@@ -2365,7 +2446,7 @@ JAMNA AUTO INDUSTRIES Ltd
 </tr>
 <tr>
 <td style="text-align:right;">
-192
+190
 </td>
 <td style="text-align:left;">
 BANARISUG
@@ -2376,7 +2457,7 @@ BANNARI AMMAN SUGARS LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-193
+191
 </td>
 <td style="text-align:left;">
 HERITGFOOD
@@ -2387,7 +2468,7 @@ HERITAGE FOODS Limited
 </tr>
 <tr>
 <td style="text-align:right;">
-194
+192
 </td>
 <td style="text-align:left;">
 TVTODAY
@@ -2398,7 +2479,7 @@ TV TODAY NETWORK LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-195
+193
 </td>
 <td style="text-align:left;">
 WHEELS
@@ -2409,7 +2490,7 @@ WHEELS INDIA LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-196
+194
 </td>
 <td style="text-align:left;">
 SUBROS
@@ -2420,7 +2501,7 @@ SUBROS Ltd
 </tr>
 <tr>
 <td style="text-align:right;">
-197
+195
 </td>
 <td style="text-align:left;">
 TVSSRICHAK
@@ -2431,7 +2512,7 @@ TVS SRICHAKRA LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-198
+196
 </td>
 <td style="text-align:left;">
 AMRUTANJAN
@@ -2442,7 +2523,7 @@ AMRUTANJAN HEALTH CARE Ltd
 </tr>
 <tr>
 <td style="text-align:right;">
-199
+197
 </td>
 <td style="text-align:left;">
 WSTCSTPAPR
@@ -2453,7 +2534,7 @@ WEST COAST PAPER MILLS Ltd
 </tr>
 <tr>
 <td style="text-align:right;">
-200
+198
 </td>
 <td style="text-align:left;">
 VOLTAMP
@@ -2464,7 +2545,7 @@ VOLTAMP TRANSFORMERS Limited
 </tr>
 <tr>
 <td style="text-align:right;">
-201
+199
 </td>
 <td style="text-align:left;">
 HESTERBIO
@@ -2475,7 +2556,7 @@ Hester Biosciences Limited
 </tr>
 <tr>
 <td style="text-align:right;">
-202
+200
 </td>
 <td style="text-align:left;">
 HONDAPOWER
@@ -2486,7 +2567,7 @@ HONDA SIEL POWER PRODUCTS
 </tr>
 <tr>
 <td style="text-align:right;">
-203
+201
 </td>
 <td style="text-align:left;">
 BLISSGVS
@@ -2497,7 +2578,7 @@ BLISS GVS PHARMA Ltd
 </tr>
 <tr>
 <td style="text-align:right;">
-204
+202
 </td>
 <td style="text-align:left;">
 LUMAXIND
@@ -2508,7 +2589,7 @@ LUMAX INDUSTRIES Ltd
 </tr>
 <tr>
 <td style="text-align:right;">
-205
+203
 </td>
 <td style="text-align:left;">
 GIPCL
@@ -2519,7 +2600,7 @@ GUJARAT INDS POWER CO LTD
 </tr>
 <tr>
 <td style="text-align:right;">
-206
+204
 </td>
 <td style="text-align:left;">
 JBMA
@@ -2530,7 +2611,7 @@ JBM AUTO Ltd
 </tr>
 <tr>
 <td style="text-align:right;">
-207
+205
 </td>
 <td style="text-align:left;">
 STERTOOLS
@@ -2541,7 +2622,7 @@ STERLING TOOLS Ltd
 </tr>
 <tr>
 <td style="text-align:right;">
-208
+206
 </td>
 <td style="text-align:left;">
 TRIDENT
@@ -2569,7 +2650,7 @@ TRIDENT LTD
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -2577,6 +2658,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
