@@ -11,7 +11,7 @@
 
 
 
-<title>##R Analytics##</title>
+<title>R Analytics</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -316,7 +316,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">##<strong>R Analytics</strong>##</h1>
+<h1 class="title toc-ignore"><strong>R Analytics</strong></h1>
 
 </div>
 
@@ -407,14 +407,19 @@ $(document).ready(function () {
 
 </style>
 <hr class="flare">
-####<strong>1. How to Extract Multiple Bhavcopies in R</strong>####
+<h4>
+<strong>1. How to Extract Multiple Bhavcopies in R</strong>
+</h4>
 <div class="row">
 <div class="column left" align="justify">
 <p>To understand how the code works….watch</p>
 <p><a href = " https://www.youtube.com/watch?v=uUVf85BFMns" target="_blank"> <img src="nseLogo.png" width="50%" /> </a></p>
 </div>
 <div class="column right codediv">
-<p>####<strong>SAMPLE CODE</strong>#### //Set Working Directory: example –&gt; Bhavcopies for Feb 2019 setwd(‘C:/Users/monik/Desktop/Trades/Derivatives Bhavcopy/FO bhavcopies/2019/Feb’)</p>
+<h4>
+<strong>SAMPLE CODE</strong>
+</h4>
+<p>//Set Working Directory: example –&gt; Bhavcopies for Feb 2019 setwd(‘C:/Users/monik/Desktop/Trades/Derivatives Bhavcopy/FO bhavcopies/2019/Feb’)</p>
 <p>//Define start and end dates startDate = as.Date(“2019-02-01”, order=“ymd”) endDate = as.Date(“2019-02-28”, order=“ymd”)</p>
 <p>//Define date and filename variables myDate = startDate zippedFile &lt;- tempfile()</p>
 <p>//Start the loop for all dates while (myDate &lt;= endDate){ filenameDate = paste(as.character(myDate, “%y%m%d”), “.csv”, sep = "“) downloadfilename=paste(”fo“, toupper(as.character(myDate,”%d%b%Y“)),”bhav.csv“, sep =”“) temp =”"</p>
