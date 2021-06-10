@@ -13,6 +13,7 @@
 
 <title>Sector-wise Average Returns</title>
 
+<script src="site_libs/header-attrs-2.5/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -285,27 +286,7 @@ $(document).ready(function () {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li>
-  <a href="trades.html">Trades</a>
-</li>
-<li>
-  <a href="fno.html">FnO</a>
-</li>
-<li>
-  <a href="momentum.html">Momentum Investing</a>
-</li>
-<li>
-  <a href="analytics.html">Analytics</a>
-</li>
-<li>
-  <a href="blog.html">Blog</a>
-</li>
-<li>
-  <a href="contactUs.html">Feedback</a>
-</li>
-<li>
-  <a href="aboutUs.html">About US</a>
-</li>
+        
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
@@ -423,7 +404,17 @@ $(document).ready(function(){
 </li>
 </ul>
 <p><br/> <br/></p>
-<div class = "topStock" id = "top10Ytable" style="display:table">
+<div id="top10Ytable" class="topStock" style="display:table">
+<pre><code>## --------------------------------------------------------------------------------------------------------------</code></pre>
+<pre><code>## You have loaded plyr after dplyr - this is likely to cause problems.
+## If you need functions from both plyr and dplyr, please load plyr first, then dplyr:
+## library(plyr); library(dplyr)</code></pre>
+<pre><code>## --------------------------------------------------------------------------------------------------------------</code></pre>
+<pre><code>## 
+## Attaching package: &#39;plyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:dplyr&#39;:
+## 
+##     arrange, count, desc, failwith, id, mutate, rename, summarise, summarize</code></pre>
 <table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -1047,7 +1038,7 @@ Utilities
 </tbody>
 </table>
 </div>
-<div class = "topStock" id = "top5Ytable" style="display:table">
+<div id="top5Ytable" class="topStock" style="display:table">
 <table class="table table-striped table-hover table" style="margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -1685,7 +1676,7 @@ Utilities
 </tbody>
 </table>
 </div>
-<div class = "topStock" id = "top1Ytable" style="display:table">
+<div id="top1Ytable" class="topStock" style="display:table">
 <table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
